@@ -1,3 +1,5 @@
 pyodbc
 python-dotenv
 bcrypt
+mysql-connector-python
+ldap3

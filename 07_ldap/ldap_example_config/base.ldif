@@ -1,0 +1,141 @@
+# ============================================================
+# Example LDAP Structure (OpenLDAP format)
+# ============================================================
+# This is a TEMPLATE showing how your LDAP directory should
+# be organized. Adapt to your environment.
+#
+# For Active Directory: use ADUC (GUI) or PowerShell instead.
+# For OpenLDAP: ldapadd -x -D "cn=admin,dc=neeo,dc=com" -W -f base.ldif
+# ============================================================
+
+# Root
+dn: dc=neeo,dc=com
+objectClass: dcObject
+objectClass: organization
+o: Neeo
+dc: neeo
+
+# Organizational Units
+dn: ou=People,dc=neeo,dc=com
+objectClass: organizationalUnit
+ou: People
+
+dn: ou=Groups,dc=neeo,dc=com
+objectClass: organizationalUnit
+ou: Groups
+
+# ============================================================
+# Departments (sub-OUs under People)
+# ============================================================
+
+dn: ou=TI,ou=People,dc=neeo,dc=com
+objectClass: organizationalUnit
+ou: TI
+
+dn: ou=RH,ou=People,dc=neeo,dc=com
+objectClass: organizationalUnit
+ou: RH
+
+dn: ou=Financeiro,ou=People,dc=neeo,dc=com
+objectClass: organizationalUnit
+ou: Financeiro
+
+dn: ou=SST,ou=People,dc=neeo,dc=com
+objectClass: organizationalUnit
+ou: SST
+
+dn: ou=Operacoes,ou=People,dc=neeo,dc=com
+objectClass: organizationalUnit
+ou: Operacoes
+
+# ============================================================
+# Groups (map to RBAC roles in MySQL)
+# ============================================================
+
+dn: cn=Admins,ou=Groups,dc=neeo,dc=com
+objectClass: groupOfNames
+cn: Admins
+description: Administradores do sistema
+member: cn=admin,ou=TI,ou=People,dc=neeo,dc=com
+
+dn: cn=RH-Gestores,ou=Groups,dc=neeo,dc=com
+objectClass: groupOfNames
+cn: RH-Gestores
+description: Gestores de RH - acesso completo dados funcionarios
+member: cn=Maria Silva,ou=RH,ou=People,dc=neeo,dc=com
+
+dn: cn=RH-Analistas,ou=Groups,dc=neeo,dc=com
+objectClass: groupOfNames
+cn: RH-Analistas
+description: Analistas de RH - consulta sem dados sensiveis
+member: cn=Joao Santos,ou=RH,ou=People,dc=neeo,dc=com
+
+dn: cn=Financeiro,ou=Groups,dc=neeo,dc=com
+objectClass: groupOfNames
+cn: Financeiro
+description: Equipe financeira
+member: cn=Ana Oliveira,ou=Financeiro,ou=People,dc=neeo,dc=com
+
+dn: cn=SST,ou=Groups,dc=neeo,dc=com
+objectClass: groupOfNames
+cn: SST
+description: Saude e Seguranca do Trabalho
+member: cn=Dr Carlos Souza,ou=SST,ou=People,dc=neeo,dc=com
+
+dn: cn=Auditoria,ou=Groups,dc=neeo,dc=com
+objectClass: groupOfNames
+cn: Auditoria
+description: Auditores - acesso logs e classificacao
+member: cn=Pedro Auditor,ou=Operacoes,ou=People,dc=neeo,dc=com
+
+# ============================================================
+# Sample Users
+# ============================================================
+
+dn: cn=admin,ou=TI,ou=People,dc=neeo,dc=com
+objectClass: inetOrgPerson
+cn: Admin Sistema
+sn: Sistema
+uid: admin
+mail: admin@neeo.com
+userPassword: {SSHA}changeme
+
+dn: cn=Maria Silva,ou=RH,ou=People,dc=neeo,dc=com
+objectClass: inetOrgPerson
+cn: Maria Silva
+sn: Silva
+uid: maria.rh
+mail: maria@neeo.com
+userPassword: {SSHA}changeme
+
+dn: cn=Joao Santos,ou=RH,ou=People,dc=neeo,dc=com
+objectClass: inetOrgPerson
+cn: Joao Santos
+sn: Santos
+uid: joao.rh
+mail: joao@neeo.com
+userPassword: {SSHA}changeme
+
+dn: cn=Ana Oliveira,ou=Financeiro,ou=People,dc=neeo,dc=com
+objectClass: inetOrgPerson
+cn: Ana Oliveira
+sn: Oliveira
+uid: ana.fin
+mail: ana@neeo.com
+userPassword: {SSHA}changeme
+
+dn: cn=Dr Carlos Souza,ou=SST,ou=People,dc=neeo,dc=com
+objectClass: inetOrgPerson
+cn: Dr Carlos Souza
+sn: Souza
+uid: dr.carlos
+mail: carlos@neeo.com
+userPassword: {SSHA}changeme
+
+dn: cn=Pedro Auditor,ou=Operacoes,ou=People,dc=neeo,dc=com
+objectClass: inetOrgPerson
+cn: Pedro Auditor
+sn: Auditor
+uid: pedro.aud
+mail: pedro@neeo.com
+userPassword: {SSHA}changeme
