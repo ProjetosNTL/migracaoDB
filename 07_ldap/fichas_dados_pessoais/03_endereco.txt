@@ -1,0 +1,796 @@
+============================================================
+  ENDERECO
+============================================================
+
+  Destino LDAP: SIM - Centralizar no LDAP
+  Colunas encontradas: 358
+
+  MAPEAMENTO PARA LDAP:
+  Campo                          -> Atributo LDAP                 
+  --------------------------------------------------------------
+  endereco completo              -> postalAddress                 
+  cep                            -> postalCode                    
+  cidade                         -> l (locality)                  
+  uf/estado                      -> st (state)                    
+
+  CAMPOS UNICOS ENCONTRADOS (105):
+  ------------------------------------------------------------
+
+  atestado
+    Tipo: int
+    Presente em 1 tabelas:
+      - Funcionario.uploadDocumentoFolhaPontoHistorico
+
+  atestadoSaudeOcupacional
+    Tipo: int
+    Presente em 2 tabelas:
+      - Contratacao.atestadoSaudeOcupacionalUpload
+      - Funcionario.atestadoSaudeOcupacionalDetalhe
+
+  bairro
+    Tipo: varchar
+    Presente em 23 tabelas:
+      - Contratacao.candidato
+      - Contratacao.captacaoRecursos
+      - Contratacao.trabalheConoscoCurriculo
+      - Faturamento.contrato
+      - Funcionario.relatorioParentesco
+      - Implantacao.funcionario
+      - Ntl.alteraInformacoes
+      - Ntl.cadastroInicial
+      - Ntl.empresa
+      - Ntl.evento
+      - Ntl.fornecedor
+      - Ntl.funcionario
+      - Ntl.funcionarioEnderecoHistorico
+      - Ntl.funcionarioHistorico
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+      - Ntl.sindicato
+      - Sat.chamado
+      - Sat.cliente
+      - Sat.relatorioChromebook
+      - Sat.relatorioDesktopNotebook
+      - Sat.relatorioImpressora
+      - Sat.relatorioMonitor
+
+  bairroFaturamento
+    Tipo: varchar
+    Presente em 3 tabelas:
+      - Ntl.contratoFaturamento
+      - Ntl.projetoFaturamento
+      - Ntl.projetoFaturamentoHistorico
+
+  bairroFuncionario
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.preCadastroCandidato
+
+  bairroLocalTrabalho
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.preCadastroCandidato
+
+  cboNumero
+    Tipo: nvarchar
+    Presente em 1 tabelas:
+      - Ntl.sindicatoCargoSalario
+
+  cep
+    Tipo: varchar
+    Presente em 20 tabelas:
+      - Contratacao.candidato
+      - Contratacao.captacaoRecursos
+      - Contratacao.trabalheConoscoCurriculo
+      - Faturamento.contrato
+      - Funcionario.relatorioParentesco
+      - Implantacao.funcionario
+      - Ntl.alteraInformacoes
+      - Ntl.cadastroInicial
+      - Ntl.empresa
+      - Ntl.evento
+      - Ntl.fornecedor
+      - Ntl.funcionario
+      - Ntl.funcionarioEnderecoHistorico
+      - Ntl.funcionarioHistorico
+      - Ntl.importacaoCadastroFuncionario
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+      - Ntl.sindicato
+      - Sat.chamado
+      - Sat.cliente
+
+  cepFaturamento
+    Tipo: varchar
+    Presente em 3 tabelas:
+      - Ntl.contratoFaturamento
+      - Ntl.projetoFaturamento
+      - Ntl.projetoFaturamentoHistorico
+
+  cepFuncionario
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.preCadastroCandidato
+
+  cepLocalTrabalho
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.preCadastroCandidato
+
+  cidade
+    Tipo: varchar
+    Presente em 22 tabelas:
+      - Contratacao.candidato
+      - Contratacao.captacaoRecursos
+      - Faturamento.contrato
+      - Funcionario.relatorioParentesco
+      - Implantacao.funcionario
+      - Ntl.alteraInformacoes
+      - Ntl.diasUteisPorMunicipio
+      - Ntl.empresa
+      - Ntl.evento
+      - Ntl.fornecedor
+      - Ntl.funcionario
+      - Ntl.funcionarioEnderecoHistorico
+      - Ntl.funcionarioHistorico
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+      - Ntl.sindicato
+      - Sat.chamado
+      - Sat.cliente
+      - Sat.relatorioChromebook
+      - Sat.relatorioDesktopNotebook
+      - Sat.relatorioImpressora
+      - Sat.relatorioMonitor
+
+  cidadeFaturamento
+    Tipo: varchar
+    Presente em 3 tabelas:
+      - Ntl.contratoFaturamento
+      - Ntl.projetoFaturamento
+      - Ntl.projetoFaturamentoHistorico
+
+  cidadeFuncionario
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.preCadastroCandidato
+
+  cidadeLocalTrabalho
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.preCadastroCandidato
+
+  complemento
+    Tipo: varchar
+    Presente em 19 tabelas:
+      - Contratacao.candidato
+      - Contratacao.trabalheConoscoCurriculo
+      - Faturamento.contrato
+      - Funcionario.relatorioParentesco
+      - Implantacao.funcionario
+      - Ntl.alteraInformacoes
+      - Ntl.empresa
+      - Ntl.evento
+      - Ntl.fornecedor
+      - Ntl.funcionario
+      - Ntl.funcionarioEnderecoHistorico
+      - Ntl.funcionarioHistorico
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+      - Ntl.sindicato
+      - Sat.chamado
+      - Sat.cliente
+      - SaudeSegurancaTrabalho.ppraClassificacaoRiscos
+      - SaudeSegurancaTrabalho.ppraHistoricoClassificacaoRiscos
+
+  complemento_endereco
+    Tipo: varchar
+    Presente em 2 tabelas:
+      - Ntl.cadastroInicial
+      - Ntl.importacaoCadastroFuncionario
+
+  complementoFaturamento
+    Tipo: varchar
+    Presente em 3 tabelas:
+      - Ntl.contratoFaturamento
+      - Ntl.projetoFaturamento
+      - Ntl.projetoFaturamentoHistorico
+
+  complementoFuncionario
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.preCadastroCandidato
+
+  complementoLocalTrabalho
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.preCadastroCandidato
+
+  empresaEndereco
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Funcionario.importarAvisoFeriasExportado
+
+  endereco
+    Tipo: varchar
+    Presente em 19 tabelas:
+      - Contratacao.candidato
+      - Funcionario.relatorioParentesco
+      - Implantacao.funcionario
+      - Mensageria.solicitacao
+      - Ntl.alteraInformacoes
+      - Ntl.cadastroInicial
+      - Ntl.fornecedor
+      - Ntl.funcionario
+      - Ntl.funcionarioEnderecoHistorico
+      - Ntl.funcionarioHistorico
+      - Ntl.portal
+      - Ntl.pregaoDocumento
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+      - Sat.relatorioChromebook
+      - Sat.relatorioDesktopNotebook
+      - Sat.relatorioImpressora
+      - Sat.relatorioMonitor
+      - Sat.relatorioNtl
+
+  enderecoDocumento
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.candidatoDocumento
+
+  enderecoEntrega
+    Tipo: int
+    Presente em 2 tabelas:
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+
+  enderecoFuncionario
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.preCadastroCandidato
+
+  enderecoLocalTrabalho
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.preCadastroCandidato
+
+  estado
+    Tipo: varchar
+    Presente em 5 tabelas:
+      - Contratacao.candidato
+      - Ntl.alteraInformacoes
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+      - Ntl.sindicato
+
+  estadoCivil
+    Tipo: int
+    Presente em 4 tabelas:
+      - Contratacao.candidato
+      - Funcionario.importacaoAuditoriaSaude
+      - Implantacao.funcionario
+      - Ntl.funcionario
+
+  estadoCtps
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Implantacao.funcionario
+
+  estadoFuncionario
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.preCadastroCandidato
+
+  estadoLocalTrabalho
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.preCadastroCandidato
+
+  implantacaoEnderecoEntrega
+    Tipo: int
+    Presente em 4 tabelas:
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  implantacaoMunicipioDiasUteis
+    Tipo: int
+    Presente em 4 tabelas:
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  implantacaoMunicipioDiasUteisVT
+    Tipo: int
+    Presente em 4 tabelas:
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  logradouro
+    Tipo: varchar
+    Presente em 17 tabelas:
+      - Contratacao.candidato
+      - Contratacao.captacaoRecursos
+      - Contratacao.trabalheConoscoCurriculo
+      - Faturamento.contrato
+      - Funcionario.relatorioParentesco
+      - Implantacao.funcionario
+      - Ntl.alteraInformacoes
+      - Ntl.cadastroInicial
+      - Ntl.empresa
+      - Ntl.evento
+      - Ntl.fornecedor
+      - Ntl.funcionario
+      - Ntl.funcionarioEnderecoHistorico
+      - Ntl.funcionarioHistorico
+      - Ntl.sindicato
+      - Sat.chamado
+      - Sat.cliente
+
+  logradouroFaturamento
+    Tipo: varchar
+    Presente em 3 tabelas:
+      - Ntl.contratoFaturamento
+      - Ntl.projetoFaturamento
+      - Ntl.projetoFaturamentoHistorico
+
+  logradouroFuncionario
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.preCadastroCandidato
+
+  logradouroLocalTrabalho
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.preCadastroCandidato
+
+  municipio
+    Tipo: int
+    Presente em 6 tabelas:
+      - Ntl.beneficioProjetoVT
+      - Ntl.calendario
+      - Ntl.diasUteisPorMunicipio
+      - Ntl.feriado
+      - Ntl.tipoCartao
+      - Ntl.valeTransporteUnitario
+
+  municipioDiasUteisVAVR
+    Tipo: int
+    Presente em 2 tabelas:
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+
+  municipioDiasUteisVT
+    Tipo: int
+    Presente em 2 tabelas:
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+
+  municipioFerias
+    Tipo: int
+    Presente em 4 tabelas:
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  municipioNascimento
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
+  numero
+    Tipo: varchar
+    Presente em 17 tabelas:
+      - Contratacao.candidato
+      - Contratacao.captacaoRecursos
+      - Contratacao.trabalheConoscoCurriculo
+      - Estoque.estoque
+      - Estoque.fabricante
+      - Estoque.grupoItem
+      - Faturamento.contrato
+      - Faturamento.importacaoContasPagar
+      - Funcionario.relatorioParentesco
+      - Ntl.alteraInformacoes
+      - Ntl.cadastroInicial
+      - Ntl.empresa
+      - Ntl.evento
+      - Ntl.fornecedor
+      - Ntl.funcionarioEnderecoHistorico
+      - Ntl.importacaoCadastroFuncionario
+      - Sat.cliente
+
+  numero_carteira_trab
+    Tipo: varchar
+    Presente em 2 tabelas:
+      - Ntl.cadastroInicial
+      - Ntl.importacaoCadastroFuncionario
+
+  numero_centro_custo
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.cadastroInicial
+
+  numero_escala
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.cadastroInicial
+
+  numero_pais_nascimento
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.cadastroInicial
+
+  numeroAtivo
+    Tipo: int
+    Presente em 5 tabelas:
+      - Sat.relatorioChromebook
+      - Sat.relatorioDesktopNotebook
+      - Sat.relatorioImpressora
+      - Sat.relatorioMonitor
+      - Sat.relatorioNtl
+
+  numeroBermuda
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
+  numeroCalca
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
+  numeroCamisa
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
+  numeroCapaChuva
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
+  numeroCartao
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.funcionarioTransporte
+
+  numeroCartaoVt
+    Tipo: varchar
+    Presente em 4 tabelas:
+      - Contratacao.candidato
+      - Implantacao.funcionario
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+
+  numeroCarteiraTrabalho
+    Tipo: varchar
+    Presente em 2 tabelas:
+      - Ntl.funcionario
+      - Ntl.funcionarioHistorico
+
+  NumeroCentroCusto
+    Tipo: int
+    Presente em 3 tabelas:
+      - Ntl.importacaoVinculoBeneficio
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  numeroChamado
+    Tipo: int
+    Presente em 5 tabelas:
+      - Estoque.devolucaoMaterialItem
+      - Estoque.entradaMaterialItem
+      - Estoque.estoqueMovimento
+      - Estoque.pedidoMaterialItem
+      - Sat.atribuicaoChamado
+
+  numeroChamadoId
+    Tipo: int
+    Presente em 10 tabelas:
+      - Estoque.entradaMaterialItem
+      - Estoque.estoqueMovimento
+      - Estoque.pedidoMaterial
+      - Estoque.pedidoMaterialItem
+      - Sat.atribuicaoChamado
+      - Sat.relatorioChromebook
+      - Sat.relatorioDesktopNotebook
+      - Sat.relatorioImpressora
+      - Sat.relatorioMonitor
+      - Sat.relatorioNtl
+
+  numeroCinto
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
+  numeroContrato
+    Tipo: varchar
+    Presente em 2 tabelas:
+      - Faturamento.contrato
+      - Ntl.contrato
+
+  numeroCtps
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Funcionario.importacaoFeriasAvisoNovo
+
+  numeroDocumento
+    Tipo: int
+    Presente em 2 tabelas:
+      - Estoque.estoqueMovimento
+      - Estoque.reservaDocumento
+
+  numeroEmpregados
+    Tipo: int
+    Presente em 2 tabelas:
+      - SaudeSegurancaTrabalho.ppraClassificacaoRiscos
+      - SaudeSegurancaTrabalho.ppraHistoricoClassificacaoRiscos
+
+  numeroEndereco
+    Tipo: varchar
+    Presente em 3 tabelas:
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+      - Ntl.sindicato
+
+  numeroErro
+    Tipo: nvarchar
+    Presente em 1 tabelas:
+      - Ntl.logErro
+
+  numeroEscala
+    Tipo: int
+    Presente em 1 tabelas:
+      - Ntl.importacaoVinculoBeneficio
+
+  numeroFaturamento
+    Tipo: varchar
+    Presente em 3 tabelas:
+      - Ntl.contratoFaturamento
+      - Ntl.projetoFaturamento
+      - Ntl.projetoFaturamentoHistorico
+
+  numeroFuncionario
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.preCadastroCandidato
+
+  numeroJaleco
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
+  numeroLinha
+    Tipo: nvarchar
+    Presente em 1 tabelas:
+      - Ntl.logErro
+
+  numeroLocalTrabalho
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.preCadastroCandidato
+
+  numeroLogistica
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Estoque.entradaMaterial
+
+  numeroLogradouro
+    Tipo: varchar
+    Presente em 4 tabelas:
+      - Implantacao.funcionario
+      - Ntl.funcionario
+      - Ntl.funcionarioHistorico
+      - Sat.chamado
+
+  numeroMunicipio
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
+  numeroNF
+    Tipo: nvarchar
+    Presente em 4 tabelas:
+      - Estoque.entradaMaterial
+      - Estoque.entradaMaterialHistorico
+      - Faturamento.importacaoReceber
+      - Faturamento.solicitacao
+
+  numeroPais
+    Tipo: int
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
+  numeroPaisConjuge
+    Tipo: int
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
+  numeroPregao
+    Tipo: int
+    Presente em 3 tabelas:
+      - Faturamento.contrato
+      - Ntl.contrato
+      - Ntl.pregao
+
+  numeroRep
+    Tipo: numeric
+    Presente em 2 tabelas:
+      - Ntl.empresa
+      - Ntl.sindicato
+
+  numeroSaia
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
+  numeroSapato
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
+  numeroSequencialPar
+    Tipo: int
+    Presente em 1 tabelas:
+      - Ntl.alteracaoRegistroRep
+
+  numeroSolicitacao
+    Tipo: int
+    Presente em 3 tabelas:
+      - Contratacao.captacaoRecursos
+      - Contratacao.parametroContrato
+      - Contratacao.parametroRelatorio
+
+  numeroTitulo
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Implantacao.funcionario
+
+  numeroTopico
+    Tipo: varchar
+    Presente em 2 tabelas:
+      - Ntl.ataTarefa
+      - Ntl.ataTopico
+
+  numeroTopicoTarefa
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.ataTarefa
+
+  numeroVagas
+    Tipo: int
+    Presente em 3 tabelas:
+      - Contratacao.solicitacaoRecursos
+      - Contratacao.solicitacaoRecursosHistorico
+      - Contratacao.solicitacaoRecursosInterno
+
+  numeroVersao
+    Tipo: varchar
+    Presente em 2 tabelas:
+      - Ntl.controleVersao
+      - Sat.relatorioDesktopNotebook
+
+  periodicidadeAso
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Implantacao.funcionario
+
+  periodicidadeAvaliacao
+    Tipo: int
+    Presente em 4 tabelas:
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  receptividade
+    Tipo: int
+    Presente em 3 tabelas:
+      - Funcionario.avaliacaoDesempenho
+      - Funcionario.avaliacaoDesempenhoTecnico
+      - Funcionario.avaliacaoTecnica
+
+  sindicato_numero
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.cadastroInicial
+
+  sindicatoNumero
+    Tipo: int
+    Presente em 1 tabelas:
+      - Ntl.importacaoVinculoBeneficio
+
+  tipoLogradouro
+    Tipo: varchar
+    Presente em 5 tabelas:
+      - Ntl.empresa
+      - Ntl.evento
+      - Ntl.sindicato
+      - Sat.chamado
+      - Sat.cliente
+
+  uf
+    Tipo: varchar
+    Presente em 16 tabelas:
+      - Contratacao.captacaoRecursos
+      - Contratacao.trabalheConoscoCurriculo
+      - Faturamento.contrato
+      - Funcionario.relatorioParentesco
+      - Implantacao.funcionario
+      - Ntl.beneficioProjetoVT
+      - Ntl.beneficioProjetoVTHistorico
+      - Ntl.cadastroInicial
+      - Ntl.calendario
+      - Ntl.empresa
+      - Ntl.evento
+      - Ntl.fornecedor
+      - Ntl.funcionarioEnderecoHistorico
+      - Ntl.importacaoCadastroFuncionario
+      - Ntl.tipoCartao
+      - Sat.cliente
+
+  uf_carteira_identidade
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.cadastroInicial
+
+  uf_carteira_trab
+    Tipo: varchar
+    Presente em 2 tabelas:
+      - Ntl.cadastroInicial
+      - Ntl.importacaoCadastroFuncionario
+
+  ufCarteiraTrabalho
+    Tipo: varchar
+    Presente em 2 tabelas:
+      - Ntl.funcionario
+      - Ntl.funcionarioHistorico
+
+  ufFaturamento
+    Tipo: varchar
+    Presente em 3 tabelas:
+      - Ntl.contratoFaturamento
+      - Ntl.projetoFaturamento
+      - Ntl.projetoFaturamentoHistorico
+
+  ufIdentidade
+    Tipo: char
+    Presente em 2 tabelas:
+      - Ntl.funcionario
+      - Ntl.funcionarioHistorico
+
+  ufLogradouro
+    Tipo: varchar
+    Presente em 7 tabelas:
+      - Ntl.funcionario
+      - Ntl.funcionarioHistorico
+      - Sat.chamado
+      - Sat.relatorioChromebook
+      - Sat.relatorioDesktopNotebook
+      - Sat.relatorioImpressora
+      - Sat.relatorioMonitor
+
+  ufNascimento
+    Tipo: varchar
+    Presente em 4 tabelas:
+      - Contratacao.candidato
+      - Funcionario.relatorioParentesco
+      - Ntl.funcionario
+      - Ntl.funcionarioHistorico
+
+  ufNascimentoConjuge
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
+  verificaEndereco
+    Tipo: int
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+

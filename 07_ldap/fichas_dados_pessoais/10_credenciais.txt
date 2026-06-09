@@ -1,0 +1,417 @@
+============================================================
+  CREDENCIAIS DE ACESSO
+============================================================
+
+  Destino LDAP: SIM - Senha migra pro LDAP. Remover do banco.
+  Colunas encontradas: 289
+
+  MAPEAMENTO PARA LDAP:
+  Campo                          -> Atributo LDAP                 
+  --------------------------------------------------------------
+  login                          -> uid                           
+  senha                          -> userPassword (bcrypt/SSHA, NUNCA MD5)
+
+  CAMPOS UNICOS ENCONTRADOS (28):
+  ------------------------------------------------------------
+
+  login
+    Tipo: varchar
+    Presente em 4 tabelas:
+      - Ntl.usuario
+      - Ntl.usuarioHistorico
+      - Sat.usuario
+      - Scf.usuario
+
+  responsavelLogin
+    Tipo: int
+    Presente em 2 tabelas:
+      - Ntl.projetoResponsavel
+      - Ntl.projetoResponsavelHistorico
+
+  restaurarSenha
+    Tipo: bit
+    Presente em 2 tabelas:
+      - Ntl.usuario
+      - Ntl.usuarioHistorico
+
+  restauraSenha
+    Tipo: bit
+    Presente em 2 tabelas:
+      - Sat.usuario
+      - Scf.usuario
+
+  senha
+    Tipo: nvarchar
+    Presente em 7 tabelas:
+      - Ntl.parametro
+      - Ntl.parametroHistorico
+      - Ntl.usuario
+      - Ntl.usuarioHistorico
+      - Sat.parametro
+      - Sat.usuario
+      - Scf.usuario
+
+  senhaAnterior
+    Tipo: varchar
+    Presente em 2 tabelas:
+      - Ntl.usuario
+      - Ntl.usuarioHistorico
+
+  tipoUsuario
+    Tipo: char
+    Presente em 4 tabelas:
+      - Ntl.usuario
+      - Ntl.usuarioHistorico
+      - Sat.usuario
+      - Scf.usuario
+
+  usuario
+    Tipo: varchar
+    Presente em 20 tabelas:
+      - Contratacao.log_excluirCandidatoManual
+      - Faturamento.importacaoContasPagar
+      - Faturamento.tabelaBasicaTorino
+      - Faturamento.torino
+      - Funcionario.avisoFeriasUpload
+      - Funcionario.importacaoFeriasAviso
+      - Funcionario.importacaoFeriasAvisoNovo
+      - Funcionario.importarAvisoFeriasExportado
+      - Ntl.atendimentoLocalizacao
+      - Ntl.atendimentoRotina
+      - Ntl.denunciaAcusados
+      - Ntl.logErro
+      - Ntl.logOrdemServicoTarefa
+      - Ntl.logPermissao
+      - Ntl.menuItem
+      - Ntl.tipoSolicitacaoArquivo
+      - Ntl.usuarioFuncionalidade
+      - Ntl.usuarioHistorico
+      - Sat.tabelaBasicaTorino
+      - Sat.torino
+
+  usuarioAprovacao
+    Tipo: int
+    Presente em 1 tabelas:
+      - Funcionario.recadastramentoVtHistorico
+
+  usuarioAProvacaoContribuicaoSindical
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.beneficioProjeto
+
+  usuarioAprovacaoVT
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.alteraInformacoes
+
+  usuarioAtribuido
+    Tipo: int
+    Presente em 2 tabelas:
+      - Solicitacao.solicitacao
+      - Solicitacao.solicitacaoAtendimento
+
+  usuarioCadastramento
+    Tipo: nvarchar
+    Presente em 5 tabelas:
+      - Estoque.entradaMaterial
+      - Estoque.entradaMaterialHistorico
+      - Estoque.estoqueMovimento
+      - Estoque.pedidoMaterial
+      - Estoque.saidaMaterial
+
+  usuarioCadastro
+    Tipo: varchar
+    Presente em 207 tabelas:
+      - Beneficio.afastamento
+      - Beneficio.afastamentoFuncionario
+      - Beneficio.folga
+      - Beneficio.folhaPonto
+      - Beneficio.funcionarioFerias
+      - Beneficio.parametroFerias
+      - Beneficio.parametroFeriasPorPessoa
+      - Beneficio.pedidoBeneficioExtra
+      - Beneficio.processafuncionarioFerias
+      - Beneficio.produtoBeneficio
+      - Contratacao.atestadoSaudeOcupacional
+      - Contratacao.candidato
+      - Contratacao.captacaoRecursos
+      - Contratacao.controleFuncionario
+      - Contratacao.exportacao
+      - Contratacao.implementador
+      - Contratacao.parametroCampo
+      - Contratacao.preCadastroCandidato
+      - Contratacao.solicitacaoRecursos
+      - Contratacao.solicitacaoRecursosInterno
+      - Contratacao.tipoTransporte
+      - Contratacao.trabalheConoscoCurriculo
+      - Estoque.ajuda
+      - Estoque.codigoItem
+      - Estoque.estoque
+      - Estoque.fabricante
+      - Estoque.fornecimentoUpload
+      - Estoque.grupoItem
+      - Estoque.localizacaoItem
+      - Estoque.logQrCodeAtivo
+      - Estoque.naturezaOperacao
+      - Estoque.reservaDocumento
+      - Estoque.saidaMaterialUpload
+      - Estoque.tipoItem
+      - Estoque.unidadeItem
+      - Estoque.vinculoItem
+      - Faturamento.encargo
+      - Faturamento.valorPosto
+      - Funcionario.ajusteFolhaPontoDobra
+      - Funcionario.atestadoSaudeOcupacional
+      - Funcionario.autorizacaoHoraExtra
+      - Funcionario.autorizacaoUploadFolhaPonto
+      - Funcionario.avaliacaoDesempenho
+      - Funcionario.avaliacaoDesempenhoParametro
+      - Funcionario.avaliacaoDesempenhoTecnico
+      - Funcionario.avaliacaoTecnica
+      - Funcionario.bancoHoras
+      - Funcionario.centralTarefas
+      - Funcionario.centralTarefasAcompanhamento
+      - Funcionario.compensacaoFalta
+      - Funcionario.controleFerias
+      - Funcionario.controleFeriasAvisoUpload
+      - Funcionario.controleFeriasPedidos
+      - Funcionario.controleFeriasSubstituto
+      - Funcionario.controleSolicitacaoFolha
+      - Funcionario.folgaBancoHoras
+      - Funcionario.folgaFolhaPonto
+      - Funcionario.folhaPontoMensal
+      - Funcionario.folhaPontoMensalDetalheDiario
+      - Funcionario.folhaPontoMensalObservacao
+      - Funcionario.historicoPedidoFerias
+      - Funcionario.horaExtra
+      - Funcionario.importacaoSamu
+      - Funcionario.importacaoSamuTemporario
+      - Funcionario.justificativaGestor
+      - Funcionario.lancamentoFeedBack
+      - Funcionario.lancamentoOcorrencia
+      - Funcionario.logPagamentoBancoHoras
+      - Funcionario.logUploadFolhaPonto
+      - Funcionario.pausasDescanso
+      - Funcionario.pendencia
+      - Funcionario.periodoAquisitivo
+      - Funcionario.planejamentoDemissao
+      - Funcionario.planejamentoDemissaoInterrupcao
+      - Funcionario.protocoloRecebimento
+      - Funcionario.ronda
+      - Funcionario.solicitacaoAbonoFolha
+      - Funcionario.solicitacaoAlteracaoFolga
+      - Funcionario.solicitacaoAlteracaoPausa
+      - Funcionario.solicitacaoFolha
+      - Funcionario.solicitacaoJustificativa
+      - Funcionario.uploadDocumentoFolhaPonto
+      - Implantacao.funcionario
+      - Mensageria.solicitacao
+      - Ntl.ata
+      - Ntl.banco
+      - Ntl.baseConhecimento
+      - Ntl.bdi
+      - Ntl.beneficioIndireto
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoAvisoPrevio
+      - Ntl.beneficioProjetoHistorico
+      - Ntl.calendario
+      - Ntl.campoParametrizacao
+      - Ntl.cargo
+      - Ntl.cargoSindicato
+      - Ntl.cargoSubstituto
+      - Ntl.categoriaSolicitacao
+      - Ntl.classe
+      - Ntl.clinica
+      - Ntl.contrato
+      - Ntl.convenioSaude
+      - Ntl.decimoTerceiro
+      - Ntl.denunciaPermissao
+      - Ntl.departamento
+      - Ntl.diasUteisPorMunicipio
+      - Ntl.empresa
+      - Ntl.escala
+      - Ntl.especializacao
+      - Ntl.evento
+      - Ntl.exameComplementar
+      - Ntl.feriado
+      - Ntl.feriasTercoConstitucional
+      - Ntl.fornecedor
+      - Ntl.funcao
+      - Ntl.grauInstrucao
+      - Ntl.grupo
+      - Ntl.indiceReajuste
+      - Ntl.inicioReajuste
+      - Ntl.inss
+      - Ntl.insumo
+      - Ntl.ir
+      - Ntl.iss
+      - Ntl.lancamento
+      - Ntl.localizacao
+      - Ntl.logDenunciaPermissao
+      - Ntl.logFolhaPontoDetalheDiario
+      - Ntl.menuSubModulo
+      - Ntl.modeloImportacao
+      - Ntl.modulo
+      - Ntl.motivoAfastamento
+      - Ntl.multaFGTS
+      - Ntl.municipio
+      - Ntl.ordemServico
+      - Ntl.ordemServicoDetalhe
+      - Ntl.ordemServicoInformativo
+      - Ntl.ordemServicoParametro
+      - Ntl.ordemServicoTarefa
+      - Ntl.ordemServicoTarefaPlanejamento
+      - Ntl.ordemServicoVersao
+      - Ntl.periodoRenovacao
+      - Ntl.periodoVigencia
+      - Ntl.pisConfisCs
+      - Ntl.planejamentoDemissaoComprovante
+      - Ntl.portal
+      - Ntl.posto
+      - Ntl.pregao
+      - Ntl.produto
+      - Ntl.produtoServico
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+      - Ntl.projetoHorarioCobertura
+      - Ntl.protocoloRecebimentoDocumento
+      - Ntl.remuneracao
+      - Ntl.responsavel
+      - Ntl.servico
+      - Ntl.sindicato
+      - Ntl.situacao
+      - Ntl.status
+      - Ntl.statusEntrevista
+      - Ntl.statusSolicitacao
+      - Ntl.subDenuncia
+      - Ntl.tarefa
+      - Ntl.tipoArquivo
+      - Ntl.tipoCartao
+      - Ntl.tipoContrato
+      - Ntl.tipoContratoComercial
+      - Ntl.tipoDenuncia
+      - Ntl.tipoDocumento
+      - Ntl.tipoFeriado
+      - Ntl.tipoObrigacaoAcessoria
+      - Ntl.tipoReajuste
+      - Ntl.tipoRevezamento
+      - Ntl.tipoSistema
+      - Ntl.tipoSolicitacao
+      - Ntl.torre
+      - Ntl.unidade
+      - Ntl.unidadeFederacao
+      - Ntl.usuario
+      - Ntl.usuarioGrupo
+      - Ntl.valeTransporteModal
+      - Ntl.valeTransporteUnitario
+      - Ntl.vinculoTela
+      - Ntl.vinculoTelaLink
+      - Sat.analista
+      - Sat.atribuicaoChamadoDetalhe
+      - Sat.chamado
+      - Sat.equipamento
+      - Sat.parceiro
+      - Sat.relatorioChromebook
+      - Sat.relatorioDesktopNotebook
+      - Sat.relatorioImpressora
+      - Sat.relatorioMonitor
+      - Sat.relatorioNtl
+      - Sat.usuario
+      - SaudeSegurancaTrabalho.ltcatProjeto
+      - SaudeSegurancaTrabalho.ltcatUpload
+      - SaudeSegurancaTrabalho.pcmsoProjeto
+      - SaudeSegurancaTrabalho.pcmsoUpload
+      - SaudeSegurancaTrabalho.pgrRelatorioProjetos
+      - SaudeSegurancaTrabalho.pgrRelatorioUpload
+      - SaudeSegurancaTrabalho.ppra
+      - Scf.controleDespesas
+      - Scf.controleDespesasAutomatico
+      - Scf.despesa
+      - Scf.receita
+      - Scf.usuario
+
+  usuarioCadastroPausa
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Funcionario.planejamentoDemissao
+
+  usuarioCancelamento
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Funcionario.planejamentoDemissao
+
+  usuarioDataCredito
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Beneficio.processaBeneficio
+
+  usuarioExclusao
+    Tipo: varchar
+    Presente em 2 tabelas:
+      - Beneficio.processaBeneficio
+      - Estoque.entradaMaterial
+
+  usuarioFechamento
+    Tipo: varchar
+    Presente em 4 tabelas:
+      - Beneficio.processaBeneficio
+      - Faturamento.valorPosto
+      - SaudeSegurancaTrabalho.ppraHistoricoClassificacaoRiscos
+      - SaudeSegurancaTrabalho.ppraHistoricoLevantamentoRiscosAmbiente
+
+  usuarioGrupo
+    Tipo: int
+    Presente em 1 tabelas:
+      - Implantacao.funcionario
+
+  usuarioImportacao
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Funcionario.contrachequeSalarioMensalista
+
+  usuarioLog
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Funcionario.pedidosFeriasLog
+
+  usuarioReajuste
+    Tipo: varchar
+    Presente em 2 tabelas:
+      - Ntl.projetoCargoSalario
+      - Ntl.projetoCargoSalarioHistorico
+
+  usuarioUltimoDownload
+    Tipo: varchar
+    Presente em 8 tabelas:
+      - Funcionario.atestadoSaudeOcupacionalDetalhe
+      - Funcionario.controleFeriasAvisoUpload
+      - Funcionario.folhaContracheque
+      - Funcionario.folhaContrachequeAdiantamento
+      - Funcionario.folhaContrachequeComplementar
+      - Funcionario.folhaDecimo
+      - Funcionario.folhaRendimento
+      - Funcionario.logUploadFolhaPonto
+
+  usuarioUpload
+    Tipo: int
+    Presente em 1 tabelas:
+      - Ntl.obrigacaoAcessoriaEnvios
+
+  usuarioValida
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Funcionario.relatorioParentesco
+
+  usuarioValidacao
+    Tipo: int
+    Presente em 4 tabelas:
+      - Funcionario.horaExtraDetalhe
+      - Funcionario.pedidoFeriasAdiantamento
+      - Funcionario.pedidosFerias
+      - Funcionario.planejamentoDemissao
+
+  valeTransporteUsuarioCadastro
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+

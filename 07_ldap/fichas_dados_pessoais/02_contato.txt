@@ -1,0 +1,361 @@
+============================================================
+  DADOS DE CONTATO
+============================================================
+
+  Destino LDAP: SIM - Centralizar no LDAP
+  Colunas encontradas: 142
+
+  MAPEAMENTO PARA LDAP:
+  Campo                          -> Atributo LDAP                 
+  --------------------------------------------------------------
+  email                          -> mail                          
+  email corporativo              -> mail (primary)                
+  email pessoal                  -> custom: personalEmail         
+  telefone                       -> telephoneNumber               
+  celular                        -> mobile                        
+
+  CAMPOS UNICOS ENCONTRADOS (50):
+  ------------------------------------------------------------
+
+  acompanharEmail
+    Tipo: int
+    Presente em 1 tabelas:
+      - Solicitacao.solicitacaoAtendimento
+
+  agendamentoEmail
+    Tipo: bit
+    Presente em 1 tabelas:
+      - Ntl.clinica
+
+  celular
+    Tipo: varchar
+    Presente em 3 tabelas:
+      - Ntl.cadastroInicial
+      - Ntl.contratoContato
+      - Ntl.importacaoCadastroFuncionario
+
+  codigoEmail
+    Tipo: int
+    Presente em 1 tabelas:
+      - Ntl.funcionarioEmailHistorico
+
+  codigoTelefone
+    Tipo: int
+    Presente em 2 tabelas:
+      - Ntl.funcionarioTelefoneHistorico
+      - Ntl.projetoTelefoneHistorico
+
+  dataEmailEnviado
+    Tipo: datetime
+    Presente em 1 tabelas:
+      - Ntl.ordemServico
+
+  ddd
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.cadastroInicial
+
+  ddd_celular
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.cadastroInicial
+
+  departamentoEmail
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.projetoEmail
+
+  departamentoTelefone
+    Tipo: varchar
+    Presente em 2 tabelas:
+      - Ntl.projetoTelefone
+      - Ntl.projetoTelefoneHistorico
+
+  desejaMicrofone
+    Tipo: bit
+    Presente em 1 tabelas:
+      - Ntl.reservaSala
+
+  email
+    Tipo: varchar
+    Presente em 34 tabelas:
+      - Contratacao.candidato
+      - Contratacao.captacaoRecursoEmail
+      - Contratacao.preCadastroCandidato
+      - Contratacao.trabalheConoscoCurriculo
+      - Funcionario.relatorioParentesco
+      - Implantacao.funcionario
+      - Ntl.administradorDenuncia
+      - Ntl.alteraInformacoesEmail
+      - Ntl.cadastroInicial
+      - Ntl.contratoContato
+      - Ntl.coordenadorDenuncia
+      - Ntl.denunciaAcusados
+      - Ntl.denunciaApuracao
+      - Ntl.denunciaPermissao
+      - Ntl.departamentoEmail
+      - Ntl.empresaEmail
+      - Ntl.fornecedorEmail
+      - Ntl.funcionarioEmail
+      - Ntl.funcionarioEmailHistorico
+      - Ntl.importacaoCadastroFuncionario
+      - Ntl.parametro
+      - Ntl.parametroHistorico
+      - Ntl.parametroSistema
+      - Ntl.projetoContato
+      - Ntl.projetoContatoHistorico
+      - Ntl.projetoEmail
+      - Ntl.recuperaSenha
+      - Ntl.responsavelDenuncia
+      - Ntl.sindicatoEmail
+      - Ntl.usuario
+      - Ntl.usuarioHistorico
+      - Sat.parametro
+      - Sat.usuario
+      - Solicitacao.solicitacao
+
+  emailAso
+    Tipo: bit
+    Presente em 2 tabelas:
+      - Ntl.departamento
+      - Ntl.departamentoResponsavel
+
+  emailAtestadoComprovante
+    Tipo: bit
+    Presente em 2 tabelas:
+      - Ntl.departamento
+      - Ntl.departamentoResponsavel
+
+  emailAtribuido
+    Tipo: varchar
+    Presente em 2 tabelas:
+      - Solicitacao.solicitacao
+      - Solicitacao.solicitacaoAtendimento
+
+  emailDeAgendamento
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.clinica
+
+  emailDemissao
+    Tipo: bit
+    Presente em 2 tabelas:
+      - Ntl.departamento
+      - Ntl.departamentoResponsavel
+
+  emailEnviado
+    Tipo: bit
+    Presente em 1 tabelas:
+      - Ntl.ordemServico
+
+  emailFerias
+    Tipo: bit
+    Presente em 2 tabelas:
+      - Ntl.departamento
+      - Ntl.departamentoResponsavel
+
+  emailFeriasAgendamento
+    Tipo: bit
+    Presente em 1 tabelas:
+      - Ntl.departamentoResponsavel
+
+  emailFuncionario
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.atendimentoRotina
+
+  emailLtcatPgrPcmso
+    Tipo: bit
+    Presente em 1 tabelas:
+      - Ntl.departamento
+
+  emailNepotismo
+    Tipo: bit
+    Presente em 2 tabelas:
+      - Ntl.departamento
+      - Ntl.departamentoResponsavel
+
+  emailPrincipal
+    Tipo: bit
+    Presente em 2 tabelas:
+      - Contratacao.captacaoRecursoEmail
+      - Ntl.fornecedorEmail
+
+  emailProtocoloPonto
+    Tipo: int
+    Presente em 5 tabelas:
+      - Ntl.departamento
+      - Ntl.departamentoResponsavel
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  emailRecrutamento
+    Tipo: bit
+    Presente em 2 tabelas:
+      - Ntl.departamento
+      - Ntl.departamentoResponsavel
+
+  emailSolicitante
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Solicitacao.solicitacaoAtendimento
+
+  emailVencimento
+    Tipo: bit
+    Presente em 4 tabelas:
+      - SaudeSegurancaTrabalho.LTCATParametro
+      - SaudeSegurancaTrabalho.PCMSOParametro
+      - SaudeSegurancaTrabalho.PGRParametro
+      - SaudeSegurancaTrabalho.atestadoSaudeOcupacionalParametro
+
+  enviaEmailFeriasFuncionario
+    Tipo: bit
+    Presente em 2 tabelas:
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  enviarEmail
+    Tipo: bit
+    Presente em 2 tabelas:
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+
+  envioEmail1
+    Tipo: bit
+    Presente em 4 tabelas:
+      - SaudeSegurancaTrabalho.LTCATParametro
+      - SaudeSegurancaTrabalho.PCMSOParametro
+      - SaudeSegurancaTrabalho.PGRParametro
+      - SaudeSegurancaTrabalho.atestadoSaudeOcupacionalParametro
+
+  envioEmail2
+    Tipo: bit
+    Presente em 4 tabelas:
+      - SaudeSegurancaTrabalho.LTCATParametro
+      - SaudeSegurancaTrabalho.PCMSOParametro
+      - SaudeSegurancaTrabalho.PGRParametro
+      - SaudeSegurancaTrabalho.atestadoSaudeOcupacionalParametro
+
+  envioEmail3
+    Tipo: bit
+    Presente em 4 tabelas:
+      - SaudeSegurancaTrabalho.LTCATParametro
+      - SaudeSegurancaTrabalho.PCMSOParametro
+      - SaudeSegurancaTrabalho.PGRParametro
+      - SaudeSegurancaTrabalho.atestadoSaudeOcupacionalParametro
+
+  funcaoEmail
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.projetoEmail
+
+  funcaoTelefone
+    Tipo: varchar
+    Presente em 2 tabelas:
+      - Ntl.projetoTelefone
+      - Ntl.projetoTelefoneHistorico
+
+  manutencaoPredialEmail
+    Tipo: bit
+    Presente em 1 tabelas:
+      - Ntl.parametroResponsavelSolicitacoes
+
+  outroTelefone
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
+  qndMicrofone
+    Tipo: int
+    Presente em 1 tabelas:
+      - Ntl.reservaSala
+
+  realocacaoPessoasEmail
+    Tipo: bit
+    Presente em 1 tabelas:
+      - Ntl.parametroResponsavelSolicitacoes
+
+  recebeEmailSistema
+    Tipo: bit
+    Presente em 1 tabelas:
+      - Ntl.departamento
+
+  servicosExternosEmail
+    Tipo: bit
+    Presente em 1 tabelas:
+      - Ntl.parametroResponsavelSolicitacoes
+
+  telefone
+    Tipo: varchar
+    Presente em 25 tabelas:
+      - Contratacao.captacaoRecursoTelefone
+      - Contratacao.implementador
+      - Contratacao.preCadastroCandidato
+      - Contratacao.trabalheConoscoCurriculo
+      - Funcionario.relatorioParentesco
+      - Implantacao.funcionario
+      - Ntl.alteraInformacoesTelefone
+      - Ntl.cadastroInicial
+      - Ntl.contratoContato
+      - Ntl.denunciaAcusados
+      - Ntl.denunciaApuracao
+      - Ntl.departamentoTelefone
+      - Ntl.empresaTelefone
+      - Ntl.fornecedorTelefone
+      - Ntl.funcionarioTelefone
+      - Ntl.funcionarioTelefoneHistorico
+      - Ntl.importacaoCadastroFuncionario
+      - Ntl.projetoContato
+      - Ntl.projetoContatoHistorico
+      - Ntl.projetoTelefone
+      - Ntl.projetoTelefoneHistorico
+      - Ntl.responsavel
+      - Ntl.sindicatoTelefone
+      - Sat.relatorioNtl
+      - Scf.despesa
+
+  telefoneCelular
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
+  telefoneContato
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Sat.chamado
+
+  telefonePrincipal
+    Tipo: bit
+    Presente em 3 tabelas:
+      - Ntl.departamentoTelefone
+      - Ntl.empresaTelefone
+      - Ntl.fornecedorTelefone
+
+  telefoneRecado
+    Tipo: varchar
+    Presente em 2 tabelas:
+      - Ntl.projetoContato
+      - Ntl.projetoContatoHistorico
+
+  telefoneResidencia
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Implantacao.funcionario
+
+  telefoneResidencial
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
+  telefoneWpp
+    Tipo: bit
+    Presente em 2 tabelas:
+      - Ntl.departamentoTelefone
+      - Ntl.fornecedorTelefone
+
+  usuarioEmail
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.tipoSolicitacao
+

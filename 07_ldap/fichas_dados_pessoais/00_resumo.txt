@@ -1,0 +1,77 @@
+============================================================
+  RESUMO - DADOS PESSOAIS NO BANCO neeo_ntl
+  Data: 2026-06-09 14:37
+  Total colunas analisadas: 2547
+============================================================
+
+  ARQUIVOS GERADOS:
+  --------------------------------------------------
+
+  01_identificacao_pessoal.txt
+    IDENTIFICACAO PESSOAL
+    924 colunas / 188 campos unicos
+    Destino: LDAP
+
+  02_contato.txt
+    DADOS DE CONTATO
+    142 colunas / 50 campos unicos
+    Destino: LDAP
+
+  03_endereco.txt
+    ENDERECO
+    358 colunas / 105 campos unicos
+    Destino: LDAP
+
+  04_dados_profissionais.txt
+    DADOS PROFISSIONAIS
+    134 colunas / 42 campos unicos
+    Destino: LDAP
+
+  05_datas.txt
+    DATAS IMPORTANTES
+    416 colunas / 141 campos unicos
+    Destino: MySQL
+
+  06_documentos_trabalhistas.txt
+    DOCUMENTOS TRABALHISTAS
+    26 colunas / 10 campos unicos
+    Destino: LDAP
+
+  07_dados_financeiros.txt
+    DADOS FINANCEIROS
+    123 colunas / 52 campos unicos
+    Destino: MySQL
+
+  08_familia.txt
+    DADOS DE FAMILIA
+    32 colunas / 20 campos unicos
+    Destino: MySQL
+
+  09_saude_lgpd_sensivel.txt
+    SAUDE - LGPD DADO SENSIVEL (Art. 5, II)
+    90 colunas / 49 campos unicos
+    Destino: MySQL
+
+  10_credenciais.txt
+    CREDENCIAIS DE ACESSO
+    289 colunas / 28 campos unicos
+    Destino: LDAP
+
+
+  ==================================================
+  RESUMO POR DESTINO:
+  ==================================================
+
+  LDAP  <- IDENTIFICACAO PESSOAL: 188 campos
+  LDAP  <- DADOS DE CONTATO: 50 campos
+  LDAP  <- ENDERECO: 105 campos
+  LDAP  <- DADOS PROFISSIONAIS: 42 campos
+  MySQL <- DATAS IMPORTANTES: 141 campos
+  LDAP  <- DOCUMENTOS TRABALHISTAS: 10 campos
+  MySQL <- DADOS FINANCEIROS: 52 campos
+  MySQL <- DADOS DE FAMILIA: 20 campos
+  MySQL <- SAUDE - LGPD DADO SENSIVEL (Art. 5, II): 49 campos
+  LDAP  <- CREDENCIAIS DE ACESSO: 28 campos
+
+  Total campos para LDAP:  423
+  Total campos no MySQL:   262

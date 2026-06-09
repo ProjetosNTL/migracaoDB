@@ -1,0 +1,998 @@
+============================================================
+  DATAS IMPORTANTES
+============================================================
+
+  Destino LDAP: PARCIAL - nascimento e contratacao no LDAP
+  Colunas encontradas: 416
+
+  MAPEAMENTO PARA LDAP:
+  Campo                          -> Atributo LDAP                 
+  --------------------------------------------------------------
+  dataNascimento                 -> custom: birthDate             
+  dataAdmissao/Contratacao       -> custom: hireDate              
+  dataDemissao                   -> NAO - manter no MySQL         
+  ferias/folga                   -> NAO - manter no MySQL         
+
+  CAMPOS UNICOS ENCONTRADOS (141):
+  ------------------------------------------------------------
+
+  abrilImpedidoFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  abrilMelhorFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  abrilPiorFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  admissao
+    Tipo: date
+    Presente em 5 tabelas:
+      - Funcionario.importacaoFeriasAviso
+      - Funcionario.importacaoFeriasAvisoNovo
+      - Implantacao.funcionario
+      - Ntl.cadastroInicial
+      - Ntl.importacaoVinculoBeneficio
+
+  agostoImpedidoFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  agostoMelhorFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  agostoPiorFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  autorizacaoDadosContrato
+    Tipo: bit
+    Presente em 1 tabelas:
+      - Ntl.departamento
+
+  beneficioFolga
+    Tipo: int
+    Presente em 1 tabelas:
+      - Funcionario.folgaFolhaPonto
+
+  bloqueiaFolga
+    Tipo: bit
+    Presente em 3 tabelas:
+      - Ntl.departamento
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  coberturaFerias
+    Tipo: bit
+    Presente em 3 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.projeto
+
+  codigoContrato
+    Tipo: int
+    Presente em 1 tabelas:
+      - Ntl.projeto
+
+  codigoPlanejamentoDemissao
+    Tipo: int
+    Presente em 1 tabelas:
+      - Ntl.beneficioProjeto
+
+  contratado
+    Tipo: bit
+    Presente em 1 tabelas:
+      - Contratacao.captacaoRecursos
+
+  contrato
+    Tipo: int
+    Presente em 4 tabelas:
+      - Ntl.contratoContato
+      - Ntl.contratoFaturamento
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  contratoSYSGEF
+    Tipo: int
+    Presente em 2 tabelas:
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  controleFerias
+    Tipo: int
+    Presente em 3 tabelas:
+      - Funcionario.controleFeriasAvisoUpload
+      - Funcionario.controleFeriasDias
+      - Funcionario.controleFeriasSubstituto
+
+  controleFerias_id
+    Tipo: int
+    Presente em 1 tabelas:
+      - Funcionario.avisoFeriasUpload
+
+  data_nascimento
+    Tipo: date
+    Presente em 2 tabelas:
+      - Ntl.cadastroInicial
+      - Ntl.importacaoCadastroFuncionario
+
+  dataAdmissao
+    Tipo: date
+    Presente em 4 tabelas:
+      - Contratacao.controleFuncionario
+      - Faturamento.gastosFuncionarioPlanejado
+      - Faturamento.gastosFuncionarioReal
+      - Implantacao.funcionario
+
+  dataAdmissaoFuncionario
+    Tipo: datetime
+    Presente em 2 tabelas:
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+
+  dataDemissao
+    Tipo: datetime
+    Presente em 5 tabelas:
+      - Faturamento.gastosFuncionarioPlanejado
+      - Faturamento.gastosFuncionarioReal
+      - Funcionario.planejamentoDemissao
+      - Ntl.funcionario
+      - Ntl.funcionarioHistorico
+
+  dataDemissaoFuncionario
+    Tipo: datetime
+    Presente em 2 tabelas:
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+
+  dataFolga
+    Tipo: datetime
+    Presente em 1 tabelas:
+      - Funcionario.folgaBancoHoras
+
+  dataInicioContrato
+    Tipo: datetime
+    Presente em 2 tabelas:
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  dataNascimento
+    Tipo: datetime
+    Presente em 10 tabelas:
+      - Contratacao.candidato
+      - Contratacao.candidatoDependente
+      - Contratacao.candidatoFilho
+      - Contratacao.candidatoPensaoAlimenticia
+      - Contratacao.preCadastroCandidato
+      - Funcionario.importacaoAuditoriaSaude
+      - Implantacao.funcionario
+      - Ntl.funcionario
+      - Ntl.funcionarioHistorico
+      - Ntl.funcionarioPensaoAlimenticia
+
+  dataNascimentoConjuge
+    Tipo: datetime
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
+  dataNascimentoDependente
+    Tipo: datetime
+    Presente em 3 tabelas:
+      - Implantacao.funcionarioDependente
+      - Ntl.funcionarioDependente
+      - Ntl.funcionarioDependenteHistorico
+
+  dataPrevistaFolga
+    Tipo: datetime
+    Presente em 1 tabelas:
+      - Funcionario.solicitacaoAlteracaoFolga
+
+  demissao
+    Tipo: date
+    Presente em 1 tabelas:
+      - Ntl.cadastroInicial
+
+  demissaoAssinatura
+    Tipo: bigint
+    Presente em 2 tabelas:
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+
+  demissaoAssinaturaDigitalFuncionario
+    Tipo: bigint
+    Presente em 2 tabelas:
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+
+  demissaoAssinaturaFuncionario
+    Tipo: bigint
+    Presente em 1 tabelas:
+      - Funcionario.planejamentoDemissao
+
+  demissaoDataAssinatura
+    Tipo: datetime
+    Presente em 2 tabelas:
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+
+  demissaoDataAssinaturaDigitalFuncionario
+    Tipo: datetime
+    Presente em 2 tabelas:
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+
+  demissaoDataCienciaFuncionario
+    Tipo: datetime
+    Presente em 2 tabelas:
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+
+  demissaoDataFimAviso
+    Tipo: datetime
+    Presente em 2 tabelas:
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+
+  demissaoDataInicioAviso
+    Tipo: datetime
+    Presente em 2 tabelas:
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+
+  demissaoOpcaoAvisoTrabalhado
+    Tipo: int
+    Presente em 2 tabelas:
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+
+  demissaoTipoAviso
+    Tipo: varchar
+    Presente em 2 tabelas:
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+
+  descontarFeriasCestaBasica
+    Tipo: int
+    Presente em 1 tabelas:
+      - Ntl.sindicato
+
+  descontoFeriasAlimentacao
+    Tipo: int
+    Presente em 1 tabelas:
+      - Ntl.sindicato
+
+  descontoFeriasRefeicao
+    Tipo: int
+    Presente em 1 tabelas:
+      - Ntl.sindicato
+
+  descontoFeriasVAVR
+    Tipo: bit
+    Presente em 2 tabelas:
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  descontoFeriasVT
+    Tipo: int
+    Presente em 2 tabelas:
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  descricaoContrato
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.tipoContrato
+
+  dezembroImpedidoFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  dezembroMelhorFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  dezembroPiorFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  diaAbaterDemissaoVAVR
+    Tipo: int
+    Presente em 2 tabelas:
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+
+  diaAbaterDemissaoVT
+    Tipo: int
+    Presente em 2 tabelas:
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+
+  diaFeriasUltimoPeriodoGozo
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Implantacao.funcionario
+
+  diasAbatidosFeriasVT
+    Tipo: int
+    Presente em 1 tabelas:
+      - Beneficio.processaBeneficioDetalhe
+
+  diaUtilFerias
+    Tipo: int
+    Presente em 1 tabelas:
+      - Beneficio.processaBeneficioDetalhe
+
+  domingoImpedidoFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  escalaFerias
+    Tipo: bit
+    Presente em 2 tabelas:
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+
+  escalaFeriasVAVR
+    Tipo: bit
+    Presente em 2 tabelas:
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+
+  ferias
+    Tipo: decimal
+    Presente em 4 tabelas:
+      - Faturamento.gastosFuncionarioPlanejado
+      - Faturamento.gastosFuncionarioReal
+      - Ntl.contrato
+      - Sat.atribuicaoChamado
+
+  feriasDpFimPeriodo
+    Tipo: int
+    Presente em 3 tabelas:
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+
+  feriasFracionadas
+    Tipo: bit
+    Presente em 6 tabelas:
+      - Beneficio.parametroFerias
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  feriasFuncionarioFimPeriodo
+    Tipo: int
+    Presente em 3 tabelas:
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+
+  feriasGestorFimPeriodo
+    Tipo: int
+    Presente em 3 tabelas:
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+
+  feriasPlanejadas
+    Tipo: int
+    Presente em 3 tabelas:
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+
+  feriasSolicitacao
+    Tipo: int
+    Presente em 1 tabelas:
+      - Beneficio.funcionarioFerias
+
+  fevereiroImpedidoFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  fevereiroMelhorFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  fevereiroPiorFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  fimFerias
+    Tipo: datetime
+    Presente em 1 tabelas:
+      - Ntl.funcionarioPeriodoAquisitivoDetalhe
+
+  FimPeriodoFerias
+    Tipo: date
+    Presente em 1 tabelas:
+      - Ntl.importacaoFerias
+
+  folga
+    Tipo: varchar
+    Presente em 3 tabelas:
+      - Funcionario.importacaoSamu
+      - Funcionario.importacaoSamuTemporario
+      - Sat.atribuicaoChamado
+
+  folgaAbaterVAVR
+    Tipo: int
+    Presente em 1 tabelas:
+      - Beneficio.processaBeneficioDetalhe
+
+  folgaAbaterVT
+    Tipo: int
+    Presente em 1 tabelas:
+      - Beneficio.processaBeneficioDetalhe
+
+  folgaFixa
+    Tipo: int
+    Presente em 1 tabelas:
+      - Ntl.beneficioProjeto
+
+  funcionarioAdmissao
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Funcionario.importarAvisoFeriasExportado
+
+  implantacaoFeriasFracionadas
+    Tipo: bit
+    Presente em 4 tabelas:
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  indicativoAdmissao
+    Tipo: int
+    Presente em 1 tabelas:
+      - Contratacao.controleFuncionario
+
+  inicioFerias
+    Tipo: datetime
+    Presente em 2 tabelas:
+      - Funcionario.controleFeriasAvisoUpload
+      - Ntl.funcionarioPeriodoAquisitivoDetalhe
+
+  InicioPeriodoFerias
+    Tipo: date
+    Presente em 1 tabelas:
+      - Ntl.importacaoFerias
+
+  janeiroImpedidoFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  janeiroMelhorFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  janeiroPiorFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  julhoImpedidoFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  julhoMelhorFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  julhoPiorFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  junhoImpedidoFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  junhoMelhorFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  junhoPiorFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  maioImpedidoFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  maioMelhorFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  maioPiorFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  marcoImpedidoFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  marcoMelhorFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  marcoPiorFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  nascimentoConjuge
+    Tipo: date
+    Presente em 1 tabelas:
+      - Ntl.cadastroInicial
+
+  novembroImpedidoFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  novembroMelhorFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  novembroPiorFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  objetivoContrato
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Faturamento.contrato
+
+  objetoContrato
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.contrato
+
+  outubroImpedidoFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  outubroMelhorFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  outubroPiorFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  paisNascimento
+    Tipo: varchar
+    Presente em 4 tabelas:
+      - Contratacao.candidato
+      - Funcionario.relatorioParentesco
+      - Ntl.funcionario
+      - Ntl.funcionarioHistorico
+
+  pedidoFerias
+    Tipo: int
+    Presente em 1 tabelas:
+      - Beneficio.funcionarioFerias
+
+  periodoFerias
+    Tipo: datetime
+    Presente em 1 tabelas:
+      - Funcionario.controleFeriasSubstituto
+
+  planejamentoDemissao
+    Tipo: int
+    Presente em 2 tabelas:
+      - Ntl.beneficioProjetoAvisoPrevio
+      - Ntl.planejamentoDemissaoComprovante
+
+  prazoAgendamentoFolga
+    Tipo: int
+    Presente em 1 tabelas:
+      - Ntl.sindicato
+
+  provisaoFerias
+    Tipo: decimal
+    Presente em 1 tabelas:
+      - Scf.despesa
+
+  provisaoFgtsFerias
+    Tipo: decimal
+    Presente em 1 tabelas:
+      - Scf.despesa
+
+  provisaoInssFerias
+    Tipo: decimal
+    Presente em 1 tabelas:
+      - Scf.despesa
+
+  qtdDiasFerias
+    Tipo: int
+    Presente em 1 tabelas:
+      - Ntl.funcionarioPeriodoAquisitivoDetalhe
+
+  QtdeDiasFerias
+    Tipo: int
+    Presente em 1 tabelas:
+      - Ntl.importacaoFerias
+
+  qtdFolga
+    Tipo: int
+    Presente em 1 tabelas:
+      - Faturamento.dadosPlanilha
+
+  quartaImpedidoFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  quintaImpedidoFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  recebeFerias
+    Tipo: date
+    Presente em 2 tabelas:
+      - Funcionario.importacaoFeriasAviso
+      - Funcionario.importacaoFeriasAvisoNovo
+
+  reciboFerias
+    Tipo: bit
+    Presente em 3 tabelas:
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+
+  relatorioContratoExperienciaTexto1
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.parametroRelatorio
+
+  relatorioContratoExperienciaTexto2
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.parametroRelatorio
+
+  relatorioContratoIntermitenteTexto1
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.parametroRelatorio
+
+  sabadoImpedidoFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  segundaImpedidoFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  setembroImpedidoFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  setembroMelhorFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  setembroPiorFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  sextaImpedidoFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  situacaoFerias
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Funcionario.controleFeriasDias
+
+  solicitacaoFerias
+    Tipo: int
+    Presente em 1 tabelas:
+      - Ntl.funcionarioPeriodoAquisitivoDetalhe
+
+  statusFerias
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Funcionario.controleFeriasDias
+
+  tempoCancelamentoFerias
+    Tipo: int
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  tempoConfirmacaoFerias
+    Tipo: int
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  tercaImpedidoFerias
+    Tipo: bit
+    Presente em 5 tabelas:
+      - Beneficio.parametroFeriasPorPessoa
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  tipoAdmissao
+    Tipo: int
+    Presente em 1 tabelas:
+      - Contratacao.controleFuncionario
+
+  tipoContrato
+    Tipo: int
+    Presente em 13 tabelas:
+      - Contratacao.controleFuncionario
+      - Contratacao.solicitacaoRecursos
+      - Contratacao.solicitacaoRecursosHistorico
+      - Contratacao.solicitacaoRecursosInterno
+      - Ntl.baseConhecimento
+      - Ntl.baseConhecimentoHistorico
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.funcionario
+      - Ntl.funcionarioHistorico
+      - Ntl.projeto
+
+  tipoContratoTrabalho
+    Tipo: varchar
+    Presente em 2 tabelas:
+      - Ntl.cadastroInicial
+      - Ntl.importacaoVinculoBeneficio
+
+  tipoFolga
+    Tipo: varchar
+    Presente em 2 tabelas:
+      - Funcionario.folgaBancoHoras
+      - Funcionario.solicitacaoAlteracaoFolga
+
+  ultimoPeriodoFeriasTiradoFim
+    Tipo: date
+    Presente em 1 tabelas:
+      - Implantacao.funcionario
+
+  ultimoPeriodoFeriasTiradoInicio
+    Tipo: date
+    Presente em 1 tabelas:
+      - Implantacao.funcionario
+
+  validaContrato
+    Tipo: int
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
+  valorDasFerias
+    Tipo: decimal
+    Presente em 1 tabelas:
+      - Ntl.funcionarioPeriodoAquisitivoDetalhe
+
+  xmlAvisoFerias
+    Tipo: text
+    Presente em 2 tabelas:
+      - Funcionario.controleFeriasAvisoUpload
+      - Funcionario.lancamentoFeedBack
+

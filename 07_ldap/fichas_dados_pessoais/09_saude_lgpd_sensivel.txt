@@ -1,0 +1,296 @@
+============================================================
+  SAUDE - LGPD DADO SENSIVEL (Art. 5, II)
+============================================================
+
+  Destino LDAP: NAO - NUNCA colocar no LDAP. Acesso ultra-restrito
+  Colunas encontradas: 90
+
+  CAMPOS UNICOS ENCONTRADOS (49):
+  ------------------------------------------------------------
+
+  abonaAtraso
+    Tipo: bit
+    Presente em 1 tabelas:
+      - Ntl.lancamento
+
+  alteraSolicitacao
+    Tipo: int
+    Presente em 1 tabelas:
+      - Funcionario.controleFerias
+
+  alteraSolicitacao2
+    Tipo: int
+    Presente em 1 tabelas:
+      - Funcionario.controleFerias
+
+  alteraSolicitacao3
+    Tipo: int
+    Presente em 1 tabelas:
+      - Funcionario.controleFerias
+
+  asoObrigatorio
+    Tipo: bit
+    Presente em 2 tabelas:
+      - Contratacao.parametroContrato
+      - Contratacao.parametroRelatorio
+
+  asoObrigatório
+    Tipo: bit
+    Presente em 3 tabelas:
+      - Ntl.parametro
+      - Ntl.parametroHistorico
+      - Sat.parametro
+
+  atraso
+    Tipo: int
+    Presente em 5 tabelas:
+      - Funcionario.avaliacaoDesempenho
+      - Funcionario.avaliacaoDesempenhoTecnico
+      - Funcionario.avaliacaoTecnica
+      - Funcionario.folhaPontoMensalDetalheDiario
+      - Ntl.logFolhaPontoDetalheDiario
+
+  atrasoDois
+    Tipo: char
+    Presente em 1 tabelas:
+      - Funcionario.folhaPontoMensalDetalheDiario
+
+  caminhoPlanoSaudePdf
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.parametroRelatorio
+
+  codigoCid
+    Tipo: varchar
+    Presente em 3 tabelas:
+      - Contratacao.candidato
+      - Ntl.funcionario
+      - Ntl.funcionarioHistorico
+
+  convenioSaude
+    Tipo: int
+    Presente em 1 tabelas:
+      - Ntl.produto
+
+  dataAgendamentoAso
+    Tipo: datetime
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
+  dataASO
+    Tipo: datetime
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
+  dataCancelamentoPlanoSaude
+    Tipo: datetime
+    Presente em 2 tabelas:
+      - Ntl.funcionario
+      - Ntl.funcionarioHistorico
+
+  dataHoraSolucao
+    Tipo: datetime
+    Presente em 2 tabelas:
+      - Solicitacao.solicitacao
+      - Solicitacao.solicitacaoAtendimento
+
+  dataProximoAso
+    Tipo: datetime
+    Presente em 1 tabelas:
+      - Funcionario.atestadoSaudeOcupacional
+
+  dataProximoAsoLista
+    Tipo: datetime
+    Presente em 1 tabelas:
+      - Funcionario.atestadoSaudeOcupacionalDetalhe
+
+  dataRealizacaoAso
+    Tipo: datetime
+    Presente em 3 tabelas:
+      - Contratacao.atestadoSaudeOcupacional
+      - Contratacao.candidato
+      - Funcionario.atestadoSaudeOcupacionalDetalhe
+
+  dataRelatorioASO
+    Tipo: datetime
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
+  dataSolicitacao
+    Tipo: datetime
+    Presente em 5 tabelas:
+      - Contratacao.solicitacaoRecursos
+      - Contratacao.solicitacaoRecursosHistorico
+      - Contratacao.solicitacaoRecursosInterno
+      - Mensageria.solicitacao
+      - Ntl.pregaoDetalhe
+
+  dataUltimoAso
+    Tipo: datetime
+    Presente em 1 tabelas:
+      - Funcionario.atestadoSaudeOcupacional
+
+  descontoFolhaPlanoSaude
+    Tipo: decimal
+    Presente em 3 tabelas:
+      - Ntl.logValoresProjeto
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  diasAtraso
+    Tipo: int
+    Presente em 1 tabelas:
+      - Faturamento.solicitacao
+
+  documentoPlanoSaude
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.parametroContrato
+
+  exameComplementar
+    Tipo: int
+    Presente em 2 tabelas:
+      - Ntl.cargoExameComplementar
+      - Ntl.exameComplementar
+
+  horaSolicitacao
+    Tipo: varchar
+    Presente em 2 tabelas:
+      - Faturamento.solicitacao
+      - Mensageria.solicitacao
+
+  horaSolucionado
+    Tipo: datetime
+    Presente em 1 tabelas:
+      - Solicitacao.solicitacao
+
+  implantacaoValidadeAso
+    Tipo: int
+    Presente em 4 tabelas:
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  observacaoAuxilioSaude
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.sindicato
+
+  observacaoPlanoDeSaude
+    Tipo: varchar
+    Presente em 2 tabelas:
+      - Contratacao.solicitacaoRecursos
+      - Contratacao.solicitacaoRecursosHistorico
+
+  percentualAuxilioSaude
+    Tipo: decimal
+    Presente em 2 tabelas:
+      - Ntl.logValoresSindicato
+      - Ntl.sindicato
+
+  percentualBolsaPlanoSaude
+    Tipo: decimal
+    Presente em 2 tabelas:
+      - Ntl.logValoresSindicato
+      - Ntl.sindicato
+
+  relatorioASO
+    Tipo: bit
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
+  riscosConhecidos
+    Tipo: varchar
+    Presente em 2 tabelas:
+      - SaudeSegurancaTrabalho.ppraHistoricoLevantamentoRiscosAmbiente
+      - SaudeSegurancaTrabalho.ppraLevantamentoRiscosAmbiente
+
+  solicitanteAso
+    Tipo: int
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
+  tipoExame
+    Tipo: int
+    Presente em 1 tabelas:
+      - Funcionario.atestadoSaudeOcupacionalDetalhe
+
+  tipoExameCadastro
+    Tipo: int
+    Presente em 1 tabelas:
+      - Funcionario.atestadoSaudeOcupacional
+
+  totalAtraso
+    Tipo: char
+    Presente em 1 tabelas:
+      - Funcionario.lancamentoOcorrenciaDetalhe
+
+  ultimo_exame_aso
+    Tipo: date
+    Presente em 1 tabelas:
+      - Ntl.cadastroInicial
+
+  ultimoAso
+    Tipo: date
+    Presente em 1 tabelas:
+      - Implantacao.funcionario
+
+  ultimoExameAso
+    Tipo: date
+    Presente em 1 tabelas:
+      - Ntl.importacaoVinculoBeneficio
+
+  validadeAso
+    Tipo: int
+    Presente em 7 tabelas:
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+      - Ntl.cargo
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  valorAuxilioSaude
+    Tipo: decimal
+    Presente em 2 tabelas:
+      - Ntl.logValoresSindicato
+      - Ntl.sindicato
+
+  valorBolsaPlanoSaude
+    Tipo: decimal
+    Presente em 2 tabelas:
+      - Ntl.logValoresSindicato
+      - Ntl.sindicato
+
+  valorDescontoFolhaPlanoSaude
+    Tipo: decimal
+    Presente em 3 tabelas:
+      - Ntl.logValoresProjeto
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  valorTotalPlanoSaude
+    Tipo: decimal
+    Presente em 3 tabelas:
+      - Beneficio.processaBeneficioDetalhe
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+
+  valorTotalPlanoSaudeBeneficio
+    Tipo: decimal
+    Presente em 1 tabelas:
+      - Beneficio.processaBeneficioDetalhe
+
+  valorTotalTitularPlanoSaude
+    Tipo: decimal
+    Presente em 2 tabelas:
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+
+  verificaAso
+    Tipo: int
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+

@@ -1,0 +1,82 @@
+============================================================
+  DOCUMENTOS TRABALHISTAS
+============================================================
+
+  Destino LDAP: SIM - PIS/CTPS no LDAP
+  Colunas encontradas: 26
+
+  MAPEAMENTO PARA LDAP:
+  Campo                          -> Atributo LDAP                 
+  --------------------------------------------------------------
+  pis                            -> custom: pisNumber             
+  ctps                           -> custom: ctpsNumber            
+
+  CAMPOS UNICOS ENCONTRADOS (10):
+  ------------------------------------------------------------
+
+  ctps
+    Tipo: bit
+    Presente em 4 tabelas:
+      - Contratacao.candidato
+      - Funcionario.folhaDePagamento
+      - Funcionario.importacaoFeriasAviso
+      - Implantacao.funcionario
+
+  digito_serie_ctps
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.cadastroInicial
+
+  pis
+    Tipo: varchar
+    Presente em 7 tabelas:
+      - Contratacao.candidato
+      - Contratacao.preCadastroCandidato
+      - Funcionario.folhaDePagamento
+      - Funcionario.importacaoPontoEletronico
+      - Ntl.cadastroInicial
+      - Ntl.importacaoCadastroFuncionario
+      - Scf.despesa
+
+  pisConfisCs
+    Tipo: int
+    Presente em 2 tabelas:
+      - Ntl.contratoFaturamento
+      - Ntl.projetoFaturamento
+
+  piso
+    Tipo: decimal
+    Presente em 3 tabelas:
+      - Ntl.cargoSindicato
+      - Ntl.projetoCargoSalario
+      - Ntl.projetoCargoSalarioHistorico
+
+  pisPasep
+    Tipo: varchar
+    Presente em 3 tabelas:
+      - Implantacao.funcionario
+      - Ntl.funcionario
+      - Ntl.funcionarioHistorico
+
+  pisReter
+    Tipo: varchar
+    Presente em 2 tabelas:
+      - Faturamento.importacaoContasPagar
+      - Faturamento.importacaoReceber
+
+  retencaoPis
+    Tipo: decimal
+    Presente em 1 tabelas:
+      - Scf.receita
+
+  retencaoPisCumulativa
+    Tipo: decimal
+    Presente em 1 tabelas:
+      - Scf.receita
+
+  serieCtps
+    Tipo: int
+    Presente em 2 tabelas:
+      - Funcionario.folhaDePagamento
+      - Implantacao.funcionario
+

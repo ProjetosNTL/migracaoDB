@@ -1,0 +1,321 @@
+============================================================
+  DADOS PROFISSIONAIS
+============================================================
+
+  Destino LDAP: SIM - Centralizar no LDAP
+  Colunas encontradas: 134
+
+  MAPEAMENTO PARA LDAP:
+  Campo                          -> Atributo LDAP                 
+  --------------------------------------------------------------
+  cargo                          -> title                         
+  departamento                   -> departmentNumber / ou         
+  funcao                         -> custom: jobFunction           
+  setor                          -> custom: sector                
+  clienteAlocacao                -> custom: clientAllocation      
+
+  CAMPOS UNICOS ENCONTRADOS (42):
+  ------------------------------------------------------------
+
+  adicionalNoturno
+    Tipo: bit
+    Presente em 2 tabelas:
+      - Ntl.projetoCargoSalario
+      - Ntl.sindicato
+
+  agendamentoHorario
+    Tipo: bit
+    Presente em 1 tabelas:
+      - Ntl.clinica
+
+  cliente
+    Tipo: int
+    Presente em 14 tabelas:
+      - Faturamento.solicitacao
+      - Faturamento.tabelaBasicaTorino
+      - Faturamento.torino
+      - Ntl.baseConhecimento
+      - Ntl.baseConhecimentoHistorico
+      - Sat.atribuicaoChamado
+      - Sat.chamado
+      - Sat.relatorioChromebook
+      - Sat.relatorioDesktopNotebook
+      - Sat.relatorioImpressora
+      - Sat.relatorioMonitor
+      - Sat.relatorioNtl
+      - Sat.tabelaBasicaTorino
+      - Sat.torino
+
+  clienteFornecedor
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.fornecedor
+
+  clienteNtl
+    Tipo: bit
+    Presente em 1 tabelas:
+      - Sat.chamado
+
+  clienteProjeto
+    Tipo: int
+    Presente em 1 tabelas:
+      - Estoque.saidaMaterial
+
+  cnpjCliente
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Faturamento.importacaoReceber
+
+  codCliente
+    Tipo: int
+    Presente em 1 tabelas:
+      - Ntl.municipio
+
+  codigoCliente
+    Tipo: int
+    Presente em 10 tabelas:
+      - Ntl.departamento
+      - Ntl.fornecedor
+      - Ntl.projeto
+      - Ntl.projetoResponsavelClienteHistorico
+      - Ntl.tipoContrato
+      - Ntl.unidadeFederacao
+      - Sat.relatorioChromebook
+      - Sat.relatorioDesktopNotebook
+      - Sat.relatorioImpressora
+      - Sat.relatorioMonitor
+
+  codigoDepartamento
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.fornecedor
+
+  codigoHorarioContratual
+    Tipo: int
+    Presente em 2 tabelas:
+      - Ntl.alteracaoRegistroRep
+      - Ntl.logRegistroRep
+
+  compensaHorario
+    Tipo: bit
+    Presente em 4 tabelas:
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  departamento
+    Tipo: int
+    Presente em 41 tabelas:
+      - Contratacao.controleFuncionario
+      - Contratacao.solicitacaoRecursos
+      - Contratacao.solicitacaoRecursosHistorico
+      - Contratacao.solicitacaoRecursosInterno
+      - Estoque.responsavelEstoque
+      - Faturamento.dadosPlanilha
+      - Funcionario.avaliacaoDesempenhoParametro
+      - Funcionario.centralTarefas
+      - Funcionario.coberturaFuncionario
+      - Funcionario.lancamentoFeedBack
+      - Funcionario.lancamentoHorario
+      - Funcionario.ronda
+      - Funcionario.rondaFuncionario
+      - Implantacao.funcionario
+      - Mensageria.rotinaTarefas
+      - Mensageria.solicitacao
+      - Ntl.atendimentoRotina
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+      - Ntl.denunciaAcusados
+      - Ntl.denunciaApuracao
+      - Ntl.departamentoEmail
+      - Ntl.departamentoResponsavel
+      - Ntl.departamentoResponsavelCliente
+      - Ntl.departamentoResponsavelFolga
+      - Ntl.departamentoTelefone
+      - Ntl.duvidasFrequentesMenuResponsavel
+      - Ntl.fechamentoDenunciaEmail
+      - Ntl.importacaoVinculoBeneficio
+      - Ntl.notificacaoRotina
+      - Ntl.projetoContato
+      - Ntl.projetoContatoHistorico
+      - Ntl.projetoHorarioCobertura
+      - Ntl.sindicatoTelefone
+      - Ntl.tipoSolicitacao
+      - Ntl.tipoSolicitacaoDepartamento
+      - Ntl.tipoSolicitacaoResponsavel
+      - SaudeSegurancaTrabalho.ppraHistoricoLevantamentoRiscosAmbiente
+      - SaudeSegurancaTrabalho.ppraLevantamentoRiscosAmbiente
+      - Solicitacao.solicitacao
+      - Solicitacao.solicitacaoAtendimento
+
+  departamentoDinamica
+    Tipo: int
+    Presente em 2 tabelas:
+      - Contratacao.solicitacaoRecursos
+      - Contratacao.solicitacaoRecursosHistorico
+
+  departamentoFuncionarioFaltante
+    Tipo: int
+    Presente em 1 tabelas:
+      - Funcionario.coberturaFuncionario
+
+  departamentoInicial
+    Tipo: int
+    Presente em 2 tabelas:
+      - Contratacao.solicitacaoRecursos
+      - Contratacao.solicitacaoRecursosHistorico
+
+  departamentoProjetoId
+    Tipo: int
+    Presente em 1 tabelas:
+      - Ntl.torreDetalhe
+
+  departamentoRiscos
+    Tipo: int
+    Presente em 1 tabelas:
+      - SaudeSegurancaTrabalho.ppraClassificacaoRiscos
+
+  departamentoSocial
+    Tipo: int
+    Presente em 2 tabelas:
+      - Contratacao.solicitacaoRecursos
+      - Contratacao.solicitacaoRecursosHistorico
+
+  departamentoTecnico
+    Tipo: int
+    Presente em 2 tabelas:
+      - Contratacao.solicitacaoRecursos
+      - Contratacao.solicitacaoRecursosHistorico
+
+  departamentoTeste
+    Tipo: int
+    Presente em 2 tabelas:
+      - Contratacao.solicitacaoRecursos
+      - Contratacao.solicitacaoRecursosHistorico
+
+  descricaoDepartamento
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.sindicatoTelefone
+
+  escalaHorario
+    Tipo: int
+    Presente em 5 tabelas:
+      - Contratacao.controleFuncionario
+      - Contratacao.solicitacaoRecursos
+      - Contratacao.solicitacaoRecursosHistorico
+      - Contratacao.solicitacaoRecursosInterno
+      - Implantacao.funcionario
+
+  funcao
+    Tipo: int
+    Presente em 4 tabelas:
+      - Funcionario.folhaDePagamento
+      - Ntl.contratoContato
+      - Ntl.projetoContato
+      - Ntl.projetoContatoHistorico
+
+  horaFinalAdicionalNoturno
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.sindicato
+
+  horaInicialAdicionalNoturno
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.sindicato
+
+  horario
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Funcionario.lancamentoHorarioDetalhe
+
+  horarioBaixa
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Faturamento.solicitacao
+
+  horarioCobertura
+    Tipo: varchar
+    Presente em 2 tabelas:
+      - Funcionario.solicitacaoAbonoFolha
+      - Ntl.projetoHorarioCoberturaDetalhe
+
+  horarioEntradaGrauInstrucao
+    Tipo: varchar
+    Presente em 4 tabelas:
+      - Contratacao.candidato
+      - Contratacao.trabalheConoscoCurriculo
+      - Ntl.funcionario
+      - Ntl.funcionarioHistorico
+
+  horarioSaidaGrauInstrucao
+    Tipo: varchar
+    Presente em 4 tabelas:
+      - Contratacao.candidato
+      - Contratacao.trabalheConoscoCurriculo
+      - Ntl.funcionario
+      - Ntl.funcionarioHistorico
+
+  jornada
+    Tipo: varchar
+    Presente em 2 tabelas:
+      - SaudeSegurancaTrabalho.ppraClassificacaoRiscos
+      - SaudeSegurancaTrabalho.ppraHistoricoClassificacaoRiscos
+
+  lancamentoHorario
+    Tipo: int
+    Presente em 2 tabelas:
+      - Funcionario.lancamentoHorarioDetalhe
+      - Funcionario.lancamentoHorarioUpload
+
+  percentualAdicionalNoturno
+    Tipo: decimal
+    Presente em 1 tabelas:
+      - Ntl.projetoCargoSalario
+
+  percentualHoraExtraDomingoFeriadoNoturno
+    Tipo: decimal
+    Presente em 1 tabelas:
+      - Ntl.sindicato
+
+  percentualHoraExtraSegundaSabadoNoturno
+    Tipo: decimal
+    Presente em 1 tabelas:
+      - Ntl.sindicato
+
+  quadroHorario
+    Tipo: int
+    Presente em 1 tabelas:
+      - Implantacao.funcionario
+
+  regimeJornadaTrabalho
+    Tipo: int
+    Presente em 1 tabelas:
+      - Contratacao.controleFuncionario
+
+  responsavelClienteLogin
+    Tipo: int
+    Presente em 2 tabelas:
+      - Ntl.projetoResponsavelCliente
+      - Ntl.projetoResponsavelClienteHistorico
+
+  responsavelDepartamentoLogin
+    Tipo: int
+    Presente em 3 tabelas:
+      - Ntl.departamentoResponsavel
+      - Ntl.departamentoResponsavelCliente
+      - Ntl.departamentoResponsavelFolga
+
+  setor
+    Tipo: varchar
+    Presente em 2 tabelas:
+      - Contratacao.preCadastroCandidato
+      - Ntl.contratoContato
+
+  tipoJornadaESocial
+    Tipo: int
+    Presente em 1 tabelas:
+      - Contratacao.controleFuncionario
+

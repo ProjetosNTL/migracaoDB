@@ -1,0 +1,122 @@
+============================================================
+  DADOS DE FAMILIA
+============================================================
+
+  Destino LDAP: NAO - Manter APENAS no MySQL
+  Colunas encontradas: 32
+
+  CAMPOS UNICOS ENCONTRADOS (20):
+  ------------------------------------------------------------
+
+  codigoDependente
+    Tipo: int
+    Presente em 1 tabelas:
+      - Ntl.funcionarioDependenteHistorico
+
+  codigoPlanoDependente
+    Tipo: int
+    Presente em 1 tabelas:
+      - Ntl.beneficioProjetoPlanoSaudeDependenteHistorico
+
+  conjuge
+    Tipo: int
+    Presente em 2 tabelas:
+      - Funcionario.controleFeriasPedidos
+      - Ntl.cadastroInicial
+
+  conjugeMesmaEmpresa
+    Tipo: bit
+    Presente em 1 tabelas:
+      - Implantacao.funcionario
+
+  dependente
+    Tipo: int
+    Presente em 2 tabelas:
+      - Ntl.beneficioProjetoPlanoSaudeDependente
+      - Ntl.beneficioProjetoPlanoSaudeDependenteHistorico
+
+  dependenteFilho
+    Tipo: int
+    Presente em 1 tabelas:
+      - Contratacao.candidatoDependente
+
+  dependenteIrrf
+    Tipo: int
+    Presente em 1 tabelas:
+      - Contratacao.candidatoDependente
+
+  dependentePensaoAlimenticia
+    Tipo: int
+    Presente em 1 tabelas:
+      - Contratacao.candidatoDependente
+
+  dependentePlanoSaude
+    Tipo: int
+    Presente em 2 tabelas:
+      - Implantacao.funcionario
+      - Implantacao.funcionarioConvenio
+
+  filhos
+    Tipo: bit
+    Presente em 1 tabelas:
+      - Funcionario.controleFeriasPedidos
+
+  grauParentescoDependente
+    Tipo: int
+    Presente em 3 tabelas:
+      - Contratacao.candidatoDependente
+      - Ntl.funcionarioDependente
+      - Ntl.funcionarioDependenteHistorico
+
+  pai
+    Tipo: int
+    Presente em 3 tabelas:
+      - Ntl.fluxogramaBoxDetalhe
+      - Ntl.menuSubModulo
+      - Ntl.tarefaProjetoNovo
+
+  possuiFilhoMenor14
+    Tipo: int
+    Presente em 2 tabelas:
+      - Contratacao.candidato
+      - Implantacao.funcionario
+
+  problemaEncontrado
+    Tipo: varchar
+    Presente em 3 tabelas:
+      - Sat.relatorioChromebook
+      - Sat.relatorioImpressora
+      - Sat.relatorioNtl
+
+  tipoDependente
+    Tipo: int
+    Presente em 2 tabelas:
+      - Ntl.funcionarioDependente
+      - Ntl.funcionarioDependenteHistorico
+
+  validaFichaDependenteIr
+    Tipo: int
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
+  valorTotalDependentePlanoSaude
+    Tipo: decimal
+    Presente em 2 tabelas:
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+
+  verificaDadoConjuge
+    Tipo: int
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
+  verificaDependente
+    Tipo: int
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
+  verificaFilho
+    Tipo: int
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+

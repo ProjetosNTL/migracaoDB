@@ -1,0 +1,3940 @@
+======================================================================
+  DADOS PESSOAIS ENCONTRADOS NO BANCO neeo_ntl
+  Data: 2026-06-09 14:31
+  Total colunas com dados pessoais: 2547
+======================================================================
+
+======================================================================
+  FICHA DE DADOS PESSOAIS - Para modelagem LDAP
+======================================================================
+
+  DADOS ESSENCIAIS PARA O DIRETORIO LDAP (unificar):
+  --------------------------------------------------
+
+  [IDENTIFICACAO PESSOAL]
+    CPF                                 (varchar        ) <- Contratacao.candidato, Contratacao.candidatoDependente, Contratacao.candidatoFilho, Contratacao.candidatoPensaoAlimenticia, Contratacao.implementador, Contratacao.preCadastroCandidato, Funcionario.auditoriaValeTransporte, Funcionario.contrachequeSalarioMensalista, Funcionario.folhaContracheque, Funcionario.folhaContrachequeAdiantamento, Funcionario.folhaContrachequeComplementar, Funcionario.folhaDePagamento, Funcionario.folhaDecimo, Funcionario.folhaRendimento, Funcionario.importacaoAuditoriaSaude, Implantacao.funcionario, Ntl.cadastroInicial, Ntl.funcionario, Ntl.funcionarioHistorico, Ntl.funcionarioPensaoAlimenticia, Ntl.importacaoCadastroFuncionario, Ntl.importacaoFerias, Ntl.importacaoVinculoBeneficio, Ntl.recadastramentoVtUpload
+    Nome                                (varchar        ) <- Beneficio.produtoBeneficio, Contratacao.campo, Contratacao.implementador, Contratacao.trabalheConoscoCurriculo, Estoque.saidaMaterialUpload, Funcionario.auditoriaSaudeMensal, Funcionario.auditoriaSaudePlano, Funcionario.importacaoSamu, Funcionario.importacaoSamuTemporario, Funcionario.relatorioParentescoParente, Implantacao.funcionario, Ntl.alteraInformacoes, Ntl.arquivoTemporario, Ntl.cadastroInicial, Ntl.calendario, Ntl.contratoContato, Ntl.denunciaAcusados, Ntl.denunciaApuracao, Ntl.empresa, Ntl.funcionalidade, Ntl.funcionario, Ntl.funcionarioHistorico, Ntl.importacaoCadastroFuncionario, Ntl.importacaoFerias, Ntl.importacaoVinculoBeneficio, Ntl.logScript, Ntl.menuSubModulo, Ntl.modeloSolucao, Ntl.ordemServicoRequisitoFuncional, Ntl.ordemServicoRequisitoNaoFuncional, Ntl.parametroSistema, Ntl.projetoContato, Ntl.projetoContatoHistorico, Ntl.responsavel, Ntl.rotina, Ntl.sindicatoTelefone, Ntl.tipoSolicitacao, Ntl.tipoSolicitacaoArquivo, Sat.arquivoTemporario, Sat.cliente, SaudeSegurancaTrabalho.ltcat, SaudeSegurancaTrabalho.pcmso, SaudeSegurancaTrabalho.pgrRelatorio
+    accordion                           (int            ) <- Ntl.campoParametrizacao
+    administradorDenunciaNome           (varchar        ) <- Ntl.administradorDenuncia
+    autorizarAlteracao                  (bit            ) <- Funcionario.pedidosFerias
+    bloquearIpDivergente                (int            ) <- Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    caminhoFoto                         (varchar        ) <- Funcionario.relatorioParentesco
+    cargo                               (varchar        ) <- Contratacao.candidato, Contratacao.controleFuncionario, Contratacao.parametroContrato, Contratacao.preCadastroCandidato, Contratacao.solicitacaoRecursos, Contratacao.solicitacaoRecursosHistorico, Contratacao.solicitacaoRecursosInterno, Faturamento.dadosPlanilha, Implantacao.funcionario, Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico, Ntl.cargoExameComplementar, Ntl.cargoSubstituto, Ntl.cargoSubstitutoDetalhe, Ntl.funcionario, Ntl.funcionarioHistorico, Ntl.projetoCargoSalario, Ntl.projetoCargoSalarioHistorico, Ntl.sindicatoCargoSalario, SaudeSegurancaTrabalho.ppraClassificacaoRiscos, SaudeSegurancaTrabalho.ppraHistoricoClassificacaoRiscos
+    cargoEvento                         (int            ) <- Ntl.controleEvento
+    cargoInteresse                      (int            ) <- Contratacao.trabalheConoscoCurriculo, Contratacao.trabalheConoscoCurriculoExperiencia
+    cargoSalario                        (int            ) <- Contratacao.solicitacaoRecursos, Contratacao.solicitacaoRecursosHistorico, Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    cargoSindicato                      (int            ) <- Ntl.projetoCargoSalario, Ntl.projetoCargoSalarioHistorico
+    cargoSubstituto                     (int            ) <- Ntl.cargoSubstitutoDetalhe
+    categoriaCNH                        (int            ) <- Contratacao.candidato, Ntl.funcionario, Ntl.funcionarioHistorico
+    categoria_cnh                       (varchar        ) <- Ntl.cadastroInicial
+    cnh                                 (varchar        ) <- Contratacao.candidato, Ntl.cadastroInicial, Ntl.funcionario, Ntl.funcionarioHistorico
+    codigoAlteracao                     (int            ) <- Ntl.alteraInformacoesEmail, Ntl.alteraInformacoesTelefone, Ntl.funcionarioEnderecoHistorico, Ntl.funcionarioTransporte, Ntl.funcionarioValeTransporteValido
+    codigoCargoSCI                      (varchar        ) <- Ntl.cargo
+    codigoCargoSalario                  (int            ) <- Ntl.projetoCargoSalarioHistorico
+    codigo_matricula                    (varchar        ) <- Ntl.cadastroInicial
+    consideracao                        (varchar        ) <- Ntl.ordemServico
+    considerarRegistroBranco            (bit            ) <- Ntl.lancamento
+    contaCorrente                       (varchar        ) <- Contratacao.candidato, Ntl.fornecedorDadosBancarios
+    coordenadorDenunciaNome             (varchar        ) <- Ntl.coordenadorDenuncia
+    corFonte                            (varchar        ) <- Ntl.situacao
+    corFundo                            (varchar        ) <- Ntl.situacao
+    corpoEmail                          (nvarchar       ) <- Ntl.parametro, Ntl.parametroHistorico, Sat.parametro
+    corporativo                         (bit            ) <- Ntl.alteraInformacoesEmail, Ntl.alteraInformacoesTelefone, Ntl.funcionarioEmail, Ntl.funcionarioEmailHistorico, Ntl.funcionarioTelefone, Ntl.funcionarioTelefoneHistorico
+    cpfCandidato                        (varchar        ) <- Contratacao.candidatoUploadContratacao
+    cpfCnpjEmpregador                   (varchar        ) <- Ntl.logRegistroRep
+    cpfConjuge                          (varchar        ) <- Contratacao.candidato
+    cpfDependente                       (varchar        ) <- Ntl.funcionarioDependente, Ntl.funcionarioDependenteHistorico
+    cpfFuncionario                      (varchar        ) <- Ntl.logRegistroRep
+    cpfFuncionarioCadastro              (varchar        ) <- Ntl.logRegistroRep
+    dataAlteracao                       (datetime       ) <- Beneficio.afastamento, Beneficio.afastamentoFuncionario, Beneficio.folga, Beneficio.folhaPonto, Beneficio.funcionarioFerias, Beneficio.parametroFerias, Beneficio.parametroFeriasPorPessoa, Beneficio.pedidoBeneficioExtra, Beneficio.processafuncionarioFerias, Beneficio.produtoBeneficio, Contratacao.atestadoSaudeOcupacional, Contratacao.candidato, Contratacao.candidatoTransporte, Contratacao.captacaoRecursos, Contratacao.controleFuncionario, Contratacao.exportacao, Contratacao.implementador, Contratacao.parametroCampo, Contratacao.parametroContrato, Contratacao.preCadastroCandidato, Contratacao.solicitacaoRecursos, Contratacao.solicitacaoRecursosHistorico, Contratacao.solicitacaoRecursosInterno, Contratacao.tipoTransporte, Contratacao.trabalheConoscoCurriculo, Estoque.ajuda, Estoque.codigoItem, Estoque.entradaMaterial, Estoque.entradaMaterialHistorico, Estoque.estoque, Estoque.estoqueMovimento, Estoque.fabricante, Estoque.grupoItem, Estoque.localizacaoItem, Estoque.naturezaOperacao, Estoque.pedidoMaterial, Estoque.reservaDocumento, Estoque.saidaMaterial, Estoque.tipoItem, Estoque.unidadeItem, Faturamento.encargo, Faturamento.importacaoConciliacaoBancaria, Faturamento.importacaoContasPagar, Faturamento.importacaoReceber, Faturamento.logEncargo, Faturamento.solicitacao, Faturamento.tabelaBasicaTorino, Faturamento.torino, Faturamento.valorPosto, Funcionario.atestadoSaudeOcupacional, Funcionario.autorizacaoHoraExtra, Funcionario.avaliacaoDesempenho, Funcionario.avaliacaoDesempenhoParametro, Funcionario.avaliacaoDesempenhoTecnico, Funcionario.avaliacaoTecnica, Funcionario.centralTarefas, Funcionario.controleFerias, Funcionario.controleFeriasAvisoUpload, Funcionario.controleFeriasPedidos, Funcionario.folgaBancoHoras, Funcionario.folgaFolhaPonto, Funcionario.folhaPontoMensal, Funcionario.folhaPontoMensalDetalheDiario, Funcionario.folhaPontoMensalHistorico, Funcionario.importacaoAuditoriaSaude, Funcionario.importacaoFeriasAviso, Funcionario.importacaoPontoEletronico, Funcionario.justificativaGestor, Funcionario.lancamentoFeedBack, Funcionario.lancamentoOcorrencia, Funcionario.logUploadFolhaPonto, Funcionario.pedidosFerias, Funcionario.pendencia, Funcionario.planejamentoDemissao, Funcionario.planejamentoDemissaoHistorico, Funcionario.protocoloRecebimento, Funcionario.solicitacaoAbonoFolha, Funcionario.solicitacaoAlteracaoFolga, Funcionario.solicitacaoAlteracaoPausa, Funcionario.solicitacaoFolha, Funcionario.solicitacaoJustificativa, Funcionario.uploadDocumentoFolhaPonto, Funcionario.uploadDocumentoFolhaPontoHistorico, Implantacao.funcionario, Mensageria.solicitacao, Ntl.acompanhamento, Ntl.ata, Ntl.banco, Ntl.baseConhecimentoHistorico, Ntl.bdi, Ntl.beneficioIndireto, Ntl.beneficioProjeto, Ntl.beneficioProjetoAvisoPrevio, Ntl.beneficioProjetoHistorico, Ntl.calendario, Ntl.campoParametrizacao, Ntl.cargo, Ntl.cargoSindicato, Ntl.cargoSubstituto, Ntl.categoriaSolicitacao, Ntl.classe, Ntl.clinica, Ntl.contrato, Ntl.convenioSaude, Ntl.decimoTerceiro, Ntl.denunciaAcompanhamento, Ntl.denunciaAcusados, Ntl.denunciaApuracao, Ntl.denunciaPermissao, Ntl.departamento, Ntl.diasUteisPorMunicipio, Ntl.duvidasFrequentes, Ntl.duvidasFrequentesMenu, Ntl.empresa, Ntl.escala, Ntl.especializacao, Ntl.exameComplementar, Ntl.feriado, Ntl.feriasTercoConstitucional, Ntl.fornecedor, Ntl.funcao, Ntl.funcionalidade, Ntl.funcionarioHistorico, Ntl.grauInstrucao, Ntl.grupo, Ntl.indiceReajuste, Ntl.inicioReajuste, Ntl.inss, Ntl.insumo, Ntl.ir, Ntl.iss, Ntl.lancamento, Ntl.localizacao, Ntl.logBdi, Ntl.logBeneficioProjeto, Ntl.logEmpresa, Ntl.logFuncionario, Ntl.logInsumo, Ntl.logPermissao, Ntl.logPermissaoGrupo, Ntl.logProjeto, Ntl.logValoresProjeto, Ntl.logValoresSindicato, Ntl.menuSubModulo, Ntl.modeloImportacao, Ntl.modeloSolucao, Ntl.modulo, Ntl.motivoAfastamento, Ntl.multaFGTS, Ntl.municipio, Ntl.ordemServico, Ntl.ordemServicoDetalhe, Ntl.ordemServicoInformativo, Ntl.ordemServicoParametro, Ntl.ordemServicoTarefa, Ntl.ordemServicoTarefaPlanejamento, Ntl.ordemServicoVersao, Ntl.parametro, Ntl.parametroHistorico, Ntl.parametroSistema, Ntl.periodoRenovacao, Ntl.periodoVigencia, Ntl.pisConfisCs, Ntl.planejamentoDemissaoComprovante, Ntl.portal, Ntl.posto, Ntl.pregao, Ntl.produto, Ntl.produtoServico, Ntl.projeto, Ntl.projetoHistorico, Ntl.projetoHorarioCobertura, Ntl.protocoloRecebimentoDocumento, Ntl.remuneracao, Ntl.responsavel, Ntl.servico, Ntl.sindicato, Ntl.situacao, Ntl.status, Ntl.statusEntrevista, Ntl.statusSolicitacao, Ntl.subDenuncia, Ntl.tarefa, Ntl.tarefaProjeto, Ntl.tarefaProjetoDetalhe, Ntl.tarefaProjetoDetalheNovo, Ntl.tarefaProjetoNovo, Ntl.tipoArquivo, Ntl.tipoCartao, Ntl.tipoContrato, Ntl.tipoDenuncia, Ntl.tipoFeriado, Ntl.tipoObrigacaoAcessoria, Ntl.tipoReajuste, Ntl.tipoRevezamento, Ntl.tipoSistema, Ntl.tipoSolicitacao, Ntl.torre, Ntl.unidade, Ntl.unidadeFederacao, Ntl.usuario, Ntl.usuarioGrupo, Ntl.usuarioGrupoHistorico, Ntl.usuarioHistorico, Ntl.valeTransporteModal, Ntl.valeTransporteUnitario, Ntl.vinculoTela, Ntl.vinculoTelaLink, Sat.acompanhamentoChamado, Sat.analista, Sat.atribuicaoChamadoDetalhe, Sat.chamado, Sat.cliente, Sat.equipamento, Sat.parceiro, Sat.relatorioChromebook, Sat.relatorioDesktopNotebook, Sat.relatorioImpressora, Sat.relatorioMonitor, Sat.relatorioNtl, Sat.tabelaBasicaTorino, Sat.torino, Sat.usuario, SaudeSegurancaTrabalho.ltcat, SaudeSegurancaTrabalho.pcmso, SaudeSegurancaTrabalho.pgrRelatorio, SaudeSegurancaTrabalho.ppra, Scf.controleDespesas, Scf.controleDespesasAutomatico, Scf.despesa, Scf.receita, Scf.usuario, Solicitacao.acompanhamento, Solicitacao.solicitacao, Solicitacao.solicitacaoAtendimento
+    dataAlteracaoFim                    (datetime       ) <- Funcionario.controleFerias
+    dataAlteracaoFim11                  (datetime       ) <- Funcionario.controleFerias
+    dataAlteracaoFim12                  (datetime       ) <- Funcionario.controleFerias
+    dataAlteracaoFim13                  (datetime       ) <- Funcionario.controleFerias
+    dataAlteracaoInicio                 (datetime       ) <- Funcionario.controleFerias
+    dataAlteracaoInicio11               (datetime       ) <- Funcionario.controleFerias
+    dataAlteracaoInicio12               (datetime       ) <- Funcionario.controleFerias
+    dataAlteracaoInicio13               (datetime       ) <- Funcionario.controleFerias
+    dataApuracao                        (datetime       ) <- Ntl.denuncia
+    dataEmissaoCNH                      (datetime       ) <- Contratacao.candidato, Ntl.funcionario, Ntl.funcionarioHistorico
+    dataEmissaoRG                       (datetime       ) <- Contratacao.candidato, Ntl.funcionario, Ntl.funcionarioHistorico
+    dataFimRecorrencia                  (date           ) <- Funcionario.centralTarefas
+    dataGeracao                         (date           ) <- Ntl.notificacaoRotina
+    dataHoraCadastro                    (datetime       ) <- Ntl.logRegistroRep
+    dataInicioRecorrencia               (date           ) <- Funcionario.centralTarefas
+    dataIntegracao                      (datetime       ) <- Funcionario.pedidosFerias, Funcionario.pedidosFeriasLog, Funcionario.planejamentoDemissao
+    dataIntegracao1                     (datetime       ) <- Funcionario.controleFerias
+    dataIntegracao2                     (datetime       ) <- Funcionario.controleFerias
+    dataIntegracao3                     (datetime       ) <- Funcionario.controleFerias
+    dataOcorrencia                      (datetime       ) <- Funcionario.uploadDocumentoFolhaPonto
+    dataRegistro                        (datetime       ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico, Ntl.funcionario, Ntl.funcionarioHistorico
+    dataVencimentoCNH                   (datetime       ) <- Contratacao.candidato, Ntl.funcionario, Ntl.funcionarioHistorico
+    data_emissao_rg                     (date           ) <- Ntl.cadastroInicial, Ntl.importacaoCadastroFuncionario
+    diaMaximoAlteracaoFolga             (int            ) <- Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    diaTesteCorrecao                    (int            ) <- Ntl.ordemServicoParametro
+    diasSolicAlteracao                  (int            ) <- Funcionario.controleFerias
+    diasSolicAlteracao11                (int            ) <- Funcionario.controleFerias
+    diasSolicAlteracao12                (int            ) <- Funcionario.controleFerias
+    duracao                             (int            ) <- Ntl.tipoObrigacaoAcessoria
+    duracaoReuniao                      (char           ) <- Ntl.reservaSala
+    emailAlteracaoDados                 (bit            ) <- Ntl.departamento, Ntl.departamentoResponsavel
+    emissao_cnh                         (date           ) <- Ntl.cadastroInicial
+    emissorRg                           (varchar        ) <- Contratacao.candidato
+    empresaNome                         (varchar        ) <- Funcionario.importarAvisoFeriasExportado
+    encargo                             (int            ) <- Faturamento.logEncargo, Faturamento.valorPostoEncargo
+    encargos                            (decimal        ) <- Scf.controleDespesas, Scf.controleDespesasAutomatico
+    energiaEletrica                     (decimal        ) <- Scf.despesa
+    fileName                            (varchar        ) <- Estoque.entradaMaterial, Estoque.entradaMaterialHistorico, Estoque.fornecimentoUpload, Funcionario.atestadoSaudeOcupacionalDetalhe, Funcionario.comprovanteRegistroPonto, Funcionario.controleFeriasAvisoUpload, Funcionario.lancamentoFeedBack, Funcionario.logUploadFolhaPonto, Funcionario.solicitacaoAlteracaoFolga, Funcionario.uploadDocumentoFolhaPonto, Ntl.baseConhecimento, Ntl.baseConhecimentoHistorico, Ntl.ordemServicoTarefa, Ntl.ordemServicoTarefaPlanejamento, SaudeSegurancaTrabalho.ltcatUpload, SaudeSegurancaTrabalho.pcmsoUpload, SaudeSegurancaTrabalho.pgrRelatorioUpload, SaudeSegurancaTrabalho.ppraRelatorio
+    fileNameContato                     (varchar        ) <- Ntl.projetoContato
+    fileNameLogistica                   (varchar        ) <- Estoque.entradaMaterial
+    fileNamePdf                         (varchar        ) <- Estoque.entradaMaterial, Funcionario.protocoloRecebimento, Ntl.beneficioProjetoAvisoPrevio, Ntl.planejamentoDemissaoComprovante, Ntl.protocoloRecebimentoDocumento
+    formacao                            (varchar        ) <- Contratacao.solicitacaoRecursos, Contratacao.solicitacaoRecursosHistorico, Contratacao.solicitacaoRecursosInterno, Ntl.projetoCargoSalario, Ntl.projetoCargoSalarioHistorico
+    funcionarioApuracao                 (int            ) <- Ntl.denuncia
+    funcionarioCargo                    (varchar        ) <- Funcionario.importarAvisoFeriasExportado
+    funcionarioNome                     (varchar        ) <- Funcionario.importarAvisoFeriasExportado, Ntl.reservaSalaFuncionario
+    genero                              (int            ) <- Funcionario.relatorioParentesco
+    hostName                            (nvarchar       ) <- Ntl.logErro
+    identidadeGenero                    (int            ) <- Funcionario.relatorioParentesco
+    imprimeCargo                        (bit            ) <- Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    informacaoFolhaPonto                (varchar        ) <- Ntl.projeto
+    interacaoSocial                     (int            ) <- Funcionario.avaliacaoDesempenho, Funcionario.avaliacaoDesempenhoTecnico, Funcionario.avaliacaoTecnica
+    justificaAlteracaoGestor            (varchar        ) <- Funcionario.controleFerias
+    justificaAlteracaoGestor2           (varchar        ) <- Funcionario.controleFerias
+    justificaAlteracaoGestor3           (varchar        ) <- Funcionario.controleFerias
+    justificativaAlteracao              (varchar        ) <- Funcionario.controleFerias
+    lancamentoOcorrencia                (int            ) <- Funcionario.lancamentoOcorrenciaDetalhe
+    liberacaoAbonoPeriodo               (int            ) <- Ntl.departamento, Ntl.empresa, Ntl.projeto
+    liberacaoDecimoAdiantado            (bit            ) <- Ntl.departamento, Ntl.empresa, Ntl.projeto
+    liberacaoSolicitacaoFeriasFuturas   (bit            ) <- Ntl.empresa
+    linkName                            (nvarchar       ) <- Ntl.parametro, Ntl.parametroHistorico
+    localRg                             (varchar        ) <- Contratacao.candidato
+    matricula                           (varchar        ) <- Funcionario.auditoriaSaudeMensal, Funcionario.historicoPedidoFerias, Funcionario.importacaoAuditoriaSaude, Funcionario.importacaoFeriasAviso, Funcionario.importacaoFeriasAvisoNovo, Funcionario.importacaoSamu, Funcionario.importacaoSamuTemporario, Funcionario.relatorioParentescoParente, Implantacao.funcionario, Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico, Ntl.cadastroInicial, Ntl.importacaoFerias, Ntl.importacaoVinculoBeneficio
+    matriculaSCI                        (varchar        ) <- Contratacao.controleFuncionario
+    motivoAlteracao                     (varchar        ) <- Ntl.alteracaoRegistroRep
+    motivoAlteracaoUpload               (varchar        ) <- Estoque.entradaMaterial
+    nacionalidade                       (varchar        ) <- Contratacao.candidato, Implantacao.funcionario
+    name                                (nvarchar       ) <- dbo.sysdiagrams
+    naturezaOperacao                    (int            ) <- Estoque.entradaMaterial, Estoque.entradaMaterialHistorico, Estoque.saidaMaterial
+    nomeArquivo                         (varchar        ) <- Contratacao.candidatoDocumento, Ntl.pregaoDocumento
+    nomeBanco                           (varchar        ) <- Ntl.banco
+    nomeCandidato                       (varchar        ) <- Contratacao.captacaoRecursos, Contratacao.log_excluirCandidatoManual
+    nomeCidadeRes                       (varchar        ) <- Ntl.cadastroInicial
+    nomeClienteLogin                    (varchar        ) <- Ntl.projetoResponsavelCliente, Ntl.projetoResponsavelClienteHistorico
+    nomeClinica                         (varchar        ) <- Contratacao.candidato
+    nomeCompleto                        (varchar        ) <- Contratacao.campo, Contratacao.candidato, Contratacao.candidatoDependente, Contratacao.candidatoFilho, Contratacao.candidatoPensaoAlimenticia, Contratacao.preCadastroCandidato, Funcionario.folhaDePagamento, Funcionario.importacaoAuditoriaSaude, Ntl.funcionalidade, Ntl.funcionarioPensaoAlimenticia
+    nomeConjuge                         (varchar        ) <- Contratacao.candidato
+    nomeContato                         (varchar        ) <- Sat.chamado
+    nomeDepartamento                    (varchar        ) <- Ntl.fornecedor
+    nomeDependente                      (varchar        ) <- Implantacao.funcionarioDependente, Ntl.funcionarioDependente, Ntl.funcionarioDependenteHistorico
+    nomeDia                             (varchar        ) <- Ntl.escalaHorarios
+    nomeEmail                           (varchar        ) <- Ntl.projetoEmail
+    nomeEmpresa                         (varchar        ) <- Contratacao.trabalheConoscoCurriculoExperiencia
+    nomeEnderecoColegioUniversidade     (varchar        ) <- Contratacao.candidato, Contratacao.trabalheConoscoCurriculo, Ntl.funcionario, Ntl.funcionarioHistorico
+    nomeFuncionario                     (varchar        ) <- Ntl.logRegistroRep
+    nomeFuncionarioCadastro             (varchar        ) <- Funcionario.planejamentoDemissao
+    nomeMae                             (varchar        ) <- Contratacao.candidato
+    nomeOrdemServico                    (varchar        ) <- Ntl.ordemServico
+    nomePai                             (varchar        ) <- Contratacao.candidato
+    nomeParametro                       (varchar        ) <- Beneficio.parametroFerias
+    nomeProcedure                       (nvarchar       ) <- Ntl.logErro
+    nomeProduto                         (varchar        ) <- Beneficio.processaBeneficioDetalhe
+    nomeResponsavelDepartamentoLogin    (varchar        ) <- Ntl.departamentoResponsavel, Ntl.departamentoResponsavelCliente, Ntl.departamentoResponsavelFolga
+    nomeSemana                          (varchar        ) <- Ntl.escalaHorarios
+    nomeTarefa                          (varchar        ) <- Ntl.ataTarefa, Ntl.ordemServicoTarefa, Ntl.tarefaProjeto, Ntl.tarefaProjetoNovo
+    nomeTarefaPlanejamento              (varchar        ) <- Ntl.ordemServicoTarefaPlanejamento
+    nomeTela                            (varchar        ) <- Ntl.vinculoTela
+    nomeTelefone                        (varchar        ) <- Ntl.projetoTelefone, Ntl.projetoTelefoneHistorico
+    nomeTxtGerado                       (varchar        ) <- Contratacao.exportacao
+    nomeUsuario                         (varchar        ) <- Ntl.usuario, Ntl.usuarioHistorico, Sat.usuario, Scf.usuario
+    nome_banco                          (varchar        ) <- Ntl.cadastroInicial
+    nome_cargo                          (varchar        ) <- Ntl.cadastroInicial
+    nome_centro_custo                   (varchar        ) <- Ntl.cadastroInicial
+    nome_da_cidade                      (int            ) <- Ntl.cadastroInicial
+    nome_pais_nascimento                (varchar        ) <- Ntl.cadastroInicial
+    nome_sindicato                      (varchar        ) <- Ntl.cadastroInicial
+    novoCargo                           (int            ) <- Contratacao.candidato
+    numeroCargo                         (int            ) <- Ntl.importacaoVinculoBeneficio
+    numero_cargo                        (varchar        ) <- Ntl.cadastroInicial
+    observacaoCargo                     (varchar        ) <- Contratacao.solicitacaoRecursos, Contratacao.solicitacaoRecursosHistorico
+    observacaoEscolaridade              (varchar        ) <- Contratacao.solicitacaoRecursos, Contratacao.solicitacaoRecursosHistorico, Contratacao.solicitacaoRecursosInterno
+    ocorrencia                          (int            ) <- Contratacao.captacaoRecursos, Faturamento.torino, Funcionario.lancamentoOcorrenciaDetalhe, Sat.torino
+    orgaoEmissorDependente              (varchar        ) <- Ntl.funcionarioDependente, Ntl.funcionarioDependenteHistorico
+    orgaoEmissorRG                      (varchar        ) <- Ntl.funcionario, Ntl.funcionarioHistorico
+    orgaoLicitante                      (varchar        ) <- Ntl.pregao
+    orgao_emissor_rg                    (varchar        ) <- Ntl.cadastroInicial, Ntl.importacaoCadastroFuncionario
+    participanteNome                    (varchar        ) <- Ntl.tarefaProjetoParticipante, Ntl.tarefaProjetoResponsavel, Ntl.tarefaProjetoResponsavelNovo
+    percentualDescontoMesCorrenteVAVR   (decimal        ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    percentualDescontoMesCorrenteVR     (decimal        ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    pergunta                            (varchar        ) <- Ntl.empresaChecklist
+    primeiraCnh                         (varchar        ) <- Contratacao.candidato
+    primeiraHabilitacaoCNH              (datetime       ) <- Ntl.funcionario, Ntl.funcionarioHistorico
+    provisionamento                     (decimal        ) <- Scf.controleDespesas, Scf.controleDespesasAutomatico
+    qtdDiasAlteracao11                  (int            ) <- Funcionario.controleFerias
+    qtdDiasAlteracao12                  (int            ) <- Funcionario.controleFerias
+    qtdDiasAlteracao13                  (int            ) <- Funcionario.controleFerias
+    quantidadeAlteracaoFolgaDepartamento (int            ) <- Ntl.departamento
+    quantidadeMaximaAlteracaoFolga      (int            ) <- Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    racaCor                             (int            ) <- Contratacao.candidato, Funcionario.relatorioParentesco
+    recorrencia                         (int            ) <- Funcionario.centralTarefas, Ntl.tipoObrigacaoAcessoria
+    recorrente                          (bit            ) <- Ntl.feriado, Ntl.tipoObrigacaoAcessoria, SaudeSegurancaTrabalho.ltcat, SaudeSegurancaTrabalho.pcmso, SaudeSegurancaTrabalho.pgrRelatorio, SaudeSegurancaTrabalho.ppraRelatorio
+    registroANS                         (varchar        ) <- Ntl.convenioSaude
+    remuneracao                         (int            ) <- Faturamento.valorPostoRemuneracao, Faturamento.valorPostoRemuneracaoPercentual, Funcionario.importarAvisoFeriasExportado, Ntl.projetoCargoSalario
+    requisitosCargo                     (varchar        ) <- Ntl.projetoCargoSalario, Ntl.projetoCargoSalarioHistorico
+    responsavelDenunciaNome             (varchar        ) <- Ntl.responsavelDenuncia
+    retornoMesmoMes                     (int            ) <- Beneficio.afastamentoFuncionario
+    rg                                  (varchar        ) <- Contratacao.candidato, Contratacao.candidatoDependente, Implantacao.funcionario, Ntl.alteraInformacoes, Ntl.cadastroInicial, Ntl.funcionario, Ntl.funcionarioHistorico, Ntl.importacaoCadastroFuncionario
+    rgDependente                        (varchar        ) <- Ntl.funcionarioDependente, Ntl.funcionarioDependenteHistorico
+    sequencialDeclaracao                (int            ) <- Estoque.entradaMaterial
+    sexo                                (int            ) <- Contratacao.candidato, Funcionario.importacaoAuditoriaSaude, Implantacao.funcionario, Ntl.cadastroInicial, Ntl.funcionario, Ntl.funcionarioHistorico, Ntl.importacaoCadastroFuncionario
+    tipoAlteracao                       (int            ) <- Contratacao.solicitacaoRecursosLocalizacaoHistorico, Funcionario.folhaPontoMensalHistorico, Funcionario.planejamentoDemissaoHistorico, Funcionario.uploadDocumentoFolhaPontoHistorico, Ntl.funcionarioDependenteHistorico, Ntl.funcionarioEmailHistorico, Ntl.funcionarioEspecializacaoHistorico, Ntl.funcionarioTelefoneHistorico, Ntl.projetoCargoSalarioHistorico, Ntl.projetoChefeHistorico, Ntl.projetoContatoHistorico, Ntl.projetoFaturamentoHistorico, Ntl.projetoIpPermitidoHistorico, Ntl.projetoItemHistorico, Ntl.projetoRenovacaoHistorico, Ntl.projetoResponsavelClienteHistorico, Ntl.projetoResponsavelHistorico
+    tipoOperacao                        (varchar        ) <- Ntl.logRegistroRep
+    tipoRegistro                        (int            ) <- Ntl.logRegistroRep
+    ufCNH                               (varchar        ) <- Contratacao.candidato, Ntl.funcionario, Ntl.funcionarioHistorico
+    uf_cnh                              (varchar        ) <- Ntl.cadastroInicial
+    unidadeFederacao                    (varchar        ) <- Ntl.diasUteisPorMunicipio, Ntl.feriado, Ntl.fornecedor, Ntl.funcionarioValeTransporteValido, Ntl.municipio, Ntl.unidadeFederacao, Ntl.valeTransporteUnitario
+    urgente                             (bit            ) <- Mensageria.solicitacao
+    usuarioAlteracao                    (varchar        ) <- Beneficio.afastamento, Beneficio.afastamentoFuncionario, Beneficio.folga, Beneficio.folhaPonto, Beneficio.funcionarioFerias, Beneficio.parametroFerias, Beneficio.parametroFeriasPorPessoa, Beneficio.pedidoBeneficioExtra, Beneficio.processafuncionarioFerias, Beneficio.produtoBeneficio, Contratacao.atestadoSaudeOcupacional, Contratacao.candidato, Contratacao.candidatoTransporte, Contratacao.captacaoRecursos, Contratacao.controleFuncionario, Contratacao.exportacao, Contratacao.implementador, Contratacao.parametroCampo, Contratacao.parametroContrato, Contratacao.preCadastroCandidato, Contratacao.solicitacaoRecursos, Contratacao.solicitacaoRecursosHistorico, Contratacao.solicitacaoRecursosInterno, Contratacao.tipoTransporte, Contratacao.trabalheConoscoCurriculo, Estoque.ajuda, Estoque.codigoItem, Estoque.entradaMaterial, Estoque.entradaMaterialHistorico, Estoque.estoque, Estoque.estoqueMovimento, Estoque.fabricante, Estoque.grupoItem, Estoque.localizacaoItem, Estoque.naturezaOperacao, Estoque.pedidoMaterial, Estoque.reservaDocumento, Estoque.saidaMaterial, Estoque.tipoItem, Estoque.unidadeItem, Faturamento.encargo, Faturamento.importacaoConciliacaoBancaria, Faturamento.importacaoReceber, Faturamento.logEncargo, Faturamento.solicitacao, Faturamento.valorPosto, Funcionario.atestadoSaudeOcupacional, Funcionario.autorizacaoHoraExtra, Funcionario.avaliacaoDesempenho, Funcionario.avaliacaoDesempenhoParametro, Funcionario.avaliacaoDesempenhoTecnico, Funcionario.avaliacaoTecnica, Funcionario.centralTarefas, Funcionario.controleFerias, Funcionario.controleFeriasAvisoUpload, Funcionario.controleFeriasPedidos, Funcionario.folgaBancoHoras, Funcionario.folgaFolhaPonto, Funcionario.folhaPontoMensal, Funcionario.folhaPontoMensalDetalheDiario, Funcionario.folhaPontoMensalHistorico, Funcionario.importacaoAuditoriaSaude, Funcionario.importacaoFeriasAviso, Funcionario.importacaoPontoEletronico, Funcionario.justificativaGestor, Funcionario.lancamentoFeedBack, Funcionario.lancamentoOcorrencia, Funcionario.logUploadFolhaPonto, Funcionario.pedidosFerias, Funcionario.pendencia, Funcionario.planejamentoDemissao, Funcionario.planejamentoDemissaoHistorico, Funcionario.protocoloRecebimento, Funcionario.solicitacaoAbonoFolha, Funcionario.solicitacaoAlteracaoFolga, Funcionario.solicitacaoAlteracaoPausa, Funcionario.solicitacaoFolha, Funcionario.solicitacaoJustificativa, Funcionario.uploadDocumentoFolhaPonto, Funcionario.uploadDocumentoFolhaPontoHistorico, Implantacao.funcionario, Mensageria.solicitacao, Ntl.acompanhamento, Ntl.ata, Ntl.banco, Ntl.baseConhecimento, Ntl.baseConhecimentoHistorico, Ntl.bdi, Ntl.beneficioIndireto, Ntl.beneficioProjeto, Ntl.beneficioProjetoAvisoPrevio, Ntl.beneficioProjetoHistorico, Ntl.calendario, Ntl.campoParametrizacao, Ntl.cargo, Ntl.cargoSindicato, Ntl.cargoSubstituto, Ntl.categoriaSolicitacao, Ntl.classe, Ntl.clinica, Ntl.contrato, Ntl.convenioSaude, Ntl.decimoTerceiro, Ntl.denunciaAcompanhamento, Ntl.denunciaAcusados, Ntl.denunciaApuracao, Ntl.denunciaPermissao, Ntl.departamento, Ntl.diasUteisPorMunicipio, Ntl.duvidasFrequentes, Ntl.duvidasFrequentesMenu, Ntl.empresa, Ntl.escala, Ntl.especializacao, Ntl.exameComplementar, Ntl.feriado, Ntl.feriasTercoConstitucional, Ntl.fornecedor, Ntl.funcao, Ntl.funcionalidade, Ntl.funcionarioHistorico, Ntl.grauInstrucao, Ntl.grupo, Ntl.indiceReajuste, Ntl.inicioReajuste, Ntl.inss, Ntl.insumo, Ntl.ir, Ntl.iss, Ntl.lancamento, Ntl.localizacao, Ntl.logBdi, Ntl.logBeneficioProjeto, Ntl.logEmpresa, Ntl.logFuncionario, Ntl.logInsumo, Ntl.logPermissao, Ntl.logPermissaoGrupo, Ntl.logProjeto, Ntl.logValoresProjeto, Ntl.logValoresSindicato, Ntl.menuSubModulo, Ntl.modeloImportacao, Ntl.modeloSolucao, Ntl.modulo, Ntl.motivoAfastamento, Ntl.multaFGTS, Ntl.municipio, Ntl.ordemServico, Ntl.ordemServicoDetalhe, Ntl.ordemServicoInformativo, Ntl.ordemServicoParametro, Ntl.ordemServicoTarefa, Ntl.ordemServicoTarefaPlanejamento, Ntl.ordemServicoVersao, Ntl.parametro, Ntl.parametroHistorico, Ntl.parametroSistema, Ntl.periodoRenovacao, Ntl.periodoVigencia, Ntl.pisConfisCs, Ntl.planejamentoDemissaoComprovante, Ntl.portal, Ntl.posto, Ntl.pregao, Ntl.produto, Ntl.produtoServico, Ntl.projeto, Ntl.projetoHistorico, Ntl.projetoHorarioCobertura, Ntl.protocoloRecebimentoDocumento, Ntl.remuneracao, Ntl.responsavel, Ntl.servico, Ntl.sindicato, Ntl.situacao, Ntl.status, Ntl.statusEntrevista, Ntl.statusSolicitacao, Ntl.subDenuncia, Ntl.tarefa, Ntl.tipoArquivo, Ntl.tipoCartao, Ntl.tipoContrato, Ntl.tipoDenuncia, Ntl.tipoFeriado, Ntl.tipoObrigacaoAcessoria, Ntl.tipoReajuste, Ntl.tipoRevezamento, Ntl.tipoSistema, Ntl.tipoSolicitacao, Ntl.torre, Ntl.unidade, Ntl.unidadeFederacao, Ntl.usuario, Ntl.usuarioGrupo, Ntl.usuarioGrupoHistorico, Ntl.usuarioHistorico, Ntl.valeTransporteModal, Ntl.valeTransporteUnitario, Ntl.vinculoTela, Ntl.vinculoTelaLink, Sat.acompanhamentoChamado, Sat.analista, Sat.atribuicaoChamadoDetalhe, Sat.chamado, Sat.cliente, Sat.equipamento, Sat.parceiro, Sat.relatorioChromebook, Sat.relatorioDesktopNotebook, Sat.relatorioImpressora, Sat.relatorioMonitor, Sat.relatorioNtl, Sat.usuario, SaudeSegurancaTrabalho.ltcat, SaudeSegurancaTrabalho.pcmso, SaudeSegurancaTrabalho.pgrRelatorio, SaudeSegurancaTrabalho.ppra, Scf.controleDespesas, Scf.controleDespesasAutomatico, Scf.despesa, Scf.receita, Scf.usuario, Solicitacao.acompanhamento, Solicitacao.solicitacao, Solicitacao.solicitacaoAtendimento
+    usuarioIntegracao                   (bigint         ) <- Funcionario.pedidosFerias, Funcionario.pedidosFeriasLog, Funcionario.planejamentoDemissao
+    valorDescontoMesCorrenteVAVR        (decimal        ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    valorDescontoMesCorrenteVR          (decimal        ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    vencimento_cnh                      (date           ) <- Ntl.cadastroInicial
+    verificaCargo                       (int            ) <- Contratacao.candidato
+    verificaEscolaridade                (int            ) <- Contratacao.candidato
+
+  [CONTATO]
+    acompanharEmail                     (int            ) <- Solicitacao.solicitacaoAtendimento
+    agendamentoEmail                    (bit            ) <- Ntl.clinica
+    celular                             (varchar        ) <- Ntl.cadastroInicial, Ntl.contratoContato, Ntl.importacaoCadastroFuncionario
+    codigoEmail                         (int            ) <- Ntl.funcionarioEmailHistorico
+    codigoTelefone                      (int            ) <- Ntl.funcionarioTelefoneHistorico, Ntl.projetoTelefoneHistorico
+    dataEmailEnviado                    (datetime       ) <- Ntl.ordemServico
+    ddd                                 (varchar        ) <- Ntl.cadastroInicial
+    ddd_celular                         (varchar        ) <- Ntl.cadastroInicial
+    departamentoEmail                   (varchar        ) <- Ntl.projetoEmail
+    departamentoTelefone                (varchar        ) <- Ntl.projetoTelefone, Ntl.projetoTelefoneHistorico
+    desejaMicrofone                     (bit            ) <- Ntl.reservaSala
+    email                               (varchar        ) <- Contratacao.candidato, Contratacao.captacaoRecursoEmail, Contratacao.preCadastroCandidato, Contratacao.trabalheConoscoCurriculo, Funcionario.relatorioParentesco, Implantacao.funcionario, Ntl.administradorDenuncia, Ntl.alteraInformacoesEmail, Ntl.cadastroInicial, Ntl.contratoContato, Ntl.coordenadorDenuncia, Ntl.denunciaAcusados, Ntl.denunciaApuracao, Ntl.denunciaPermissao, Ntl.departamentoEmail, Ntl.empresaEmail, Ntl.fornecedorEmail, Ntl.funcionarioEmail, Ntl.funcionarioEmailHistorico, Ntl.importacaoCadastroFuncionario, Ntl.parametro, Ntl.parametroHistorico, Ntl.parametroSistema, Ntl.projetoContato, Ntl.projetoContatoHistorico, Ntl.projetoEmail, Ntl.recuperaSenha, Ntl.responsavelDenuncia, Ntl.sindicatoEmail, Ntl.usuario, Ntl.usuarioHistorico, Sat.parametro, Sat.usuario, Solicitacao.solicitacao
+    emailAso                            (bit            ) <- Ntl.departamento, Ntl.departamentoResponsavel
+    emailAtestadoComprovante            (bit            ) <- Ntl.departamento, Ntl.departamentoResponsavel
+    emailAtribuido                      (varchar        ) <- Solicitacao.solicitacao, Solicitacao.solicitacaoAtendimento
+    emailDeAgendamento                  (varchar        ) <- Ntl.clinica
+    emailDemissao                       (bit            ) <- Ntl.departamento, Ntl.departamentoResponsavel
+    emailEnviado                        (bit            ) <- Ntl.ordemServico
+    emailFerias                         (bit            ) <- Ntl.departamento, Ntl.departamentoResponsavel
+    emailFeriasAgendamento              (bit            ) <- Ntl.departamentoResponsavel
+    emailFuncionario                    (varchar        ) <- Ntl.atendimentoRotina
+    emailLtcatPgrPcmso                  (bit            ) <- Ntl.departamento
+    emailNepotismo                      (bit            ) <- Ntl.departamento, Ntl.departamentoResponsavel
+    emailPrincipal                      (bit            ) <- Contratacao.captacaoRecursoEmail, Ntl.fornecedorEmail
+    emailProtocoloPonto                 (int            ) <- Ntl.departamento, Ntl.departamentoResponsavel, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    emailRecrutamento                   (bit            ) <- Ntl.departamento, Ntl.departamentoResponsavel
+    emailSolicitante                    (varchar        ) <- Solicitacao.solicitacaoAtendimento
+    emailVencimento                     (bit            ) <- SaudeSegurancaTrabalho.LTCATParametro, SaudeSegurancaTrabalho.PCMSOParametro, SaudeSegurancaTrabalho.PGRParametro, SaudeSegurancaTrabalho.atestadoSaudeOcupacionalParametro
+    enviaEmailFeriasFuncionario         (bit            ) <- Ntl.projeto, Ntl.projetoHistorico
+    enviarEmail                         (bit            ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    envioEmail1                         (bit            ) <- SaudeSegurancaTrabalho.LTCATParametro, SaudeSegurancaTrabalho.PCMSOParametro, SaudeSegurancaTrabalho.PGRParametro, SaudeSegurancaTrabalho.atestadoSaudeOcupacionalParametro
+    envioEmail2                         (bit            ) <- SaudeSegurancaTrabalho.LTCATParametro, SaudeSegurancaTrabalho.PCMSOParametro, SaudeSegurancaTrabalho.PGRParametro, SaudeSegurancaTrabalho.atestadoSaudeOcupacionalParametro
+    envioEmail3                         (bit            ) <- SaudeSegurancaTrabalho.LTCATParametro, SaudeSegurancaTrabalho.PCMSOParametro, SaudeSegurancaTrabalho.PGRParametro, SaudeSegurancaTrabalho.atestadoSaudeOcupacionalParametro
+    funcaoEmail                         (varchar        ) <- Ntl.projetoEmail
+    funcaoTelefone                      (varchar        ) <- Ntl.projetoTelefone, Ntl.projetoTelefoneHistorico
+    manutencaoPredialEmail              (bit            ) <- Ntl.parametroResponsavelSolicitacoes
+    outroTelefone                       (varchar        ) <- Contratacao.candidato
+    qndMicrofone                        (int            ) <- Ntl.reservaSala
+    realocacaoPessoasEmail              (bit            ) <- Ntl.parametroResponsavelSolicitacoes
+    recebeEmailSistema                  (bit            ) <- Ntl.departamento
+    servicosExternosEmail               (bit            ) <- Ntl.parametroResponsavelSolicitacoes
+    telefone                            (varchar        ) <- Contratacao.captacaoRecursoTelefone, Contratacao.implementador, Contratacao.preCadastroCandidato, Contratacao.trabalheConoscoCurriculo, Funcionario.relatorioParentesco, Implantacao.funcionario, Ntl.alteraInformacoesTelefone, Ntl.cadastroInicial, Ntl.contratoContato, Ntl.denunciaAcusados, Ntl.denunciaApuracao, Ntl.departamentoTelefone, Ntl.empresaTelefone, Ntl.fornecedorTelefone, Ntl.funcionarioTelefone, Ntl.funcionarioTelefoneHistorico, Ntl.importacaoCadastroFuncionario, Ntl.projetoContato, Ntl.projetoContatoHistorico, Ntl.projetoTelefone, Ntl.projetoTelefoneHistorico, Ntl.responsavel, Ntl.sindicatoTelefone, Sat.relatorioNtl, Scf.despesa
+    telefoneCelular                     (varchar        ) <- Contratacao.candidato
+    telefoneContato                     (varchar        ) <- Sat.chamado
+    telefonePrincipal                   (bit            ) <- Ntl.departamentoTelefone, Ntl.empresaTelefone, Ntl.fornecedorTelefone
+    telefoneRecado                      (varchar        ) <- Ntl.projetoContato, Ntl.projetoContatoHistorico
+    telefoneResidencia                  (varchar        ) <- Implantacao.funcionario
+    telefoneResidencial                 (varchar        ) <- Contratacao.candidato
+    telefoneWpp                         (bit            ) <- Ntl.departamentoTelefone, Ntl.fornecedorTelefone
+    usuarioEmail                        (varchar        ) <- Ntl.tipoSolicitacao
+
+  [ENDERECO]
+    NumeroCentroCusto                   (int            ) <- Ntl.importacaoVinculoBeneficio, Ntl.projeto, Ntl.projetoHistorico
+    UF                                  (varchar        ) <- Contratacao.captacaoRecursos, Contratacao.trabalheConoscoCurriculo, Faturamento.contrato, Funcionario.relatorioParentesco, Implantacao.funcionario, Ntl.beneficioProjetoVT, Ntl.beneficioProjetoVTHistorico, Ntl.cadastroInicial, Ntl.calendario, Ntl.empresa, Ntl.evento, Ntl.fornecedor, Ntl.funcionarioEnderecoHistorico, Ntl.importacaoCadastroFuncionario, Ntl.tipoCartao, Sat.cliente
+    atestado                            (int            ) <- Funcionario.uploadDocumentoFolhaPontoHistorico
+    atestadoSaudeOcupacional            (int            ) <- Contratacao.atestadoSaudeOcupacionalUpload, Funcionario.atestadoSaudeOcupacionalDetalhe
+    bairro                              (varchar        ) <- Contratacao.candidato, Contratacao.captacaoRecursos, Contratacao.trabalheConoscoCurriculo, Faturamento.contrato, Funcionario.relatorioParentesco, Implantacao.funcionario, Ntl.alteraInformacoes, Ntl.cadastroInicial, Ntl.empresa, Ntl.evento, Ntl.fornecedor, Ntl.funcionario, Ntl.funcionarioEnderecoHistorico, Ntl.funcionarioHistorico, Ntl.projeto, Ntl.projetoHistorico, Ntl.sindicato, Sat.chamado, Sat.cliente, Sat.relatorioChromebook, Sat.relatorioDesktopNotebook, Sat.relatorioImpressora, Sat.relatorioMonitor
+    bairroFaturamento                   (varchar        ) <- Ntl.contratoFaturamento, Ntl.projetoFaturamento, Ntl.projetoFaturamentoHistorico
+    bairroFuncionario                   (varchar        ) <- Contratacao.preCadastroCandidato
+    bairroLocalTrabalho                 (varchar        ) <- Contratacao.preCadastroCandidato
+    cboNumero                           (nvarchar       ) <- Ntl.sindicatoCargoSalario
+    cep                                 (varchar        ) <- Contratacao.candidato, Contratacao.captacaoRecursos, Contratacao.trabalheConoscoCurriculo, Faturamento.contrato, Funcionario.relatorioParentesco, Implantacao.funcionario, Ntl.alteraInformacoes, Ntl.cadastroInicial, Ntl.empresa, Ntl.evento, Ntl.fornecedor, Ntl.funcionario, Ntl.funcionarioEnderecoHistorico, Ntl.funcionarioHistorico, Ntl.importacaoCadastroFuncionario, Ntl.projeto, Ntl.projetoHistorico, Ntl.sindicato, Sat.chamado, Sat.cliente
+    cepFaturamento                      (varchar        ) <- Ntl.contratoFaturamento, Ntl.projetoFaturamento, Ntl.projetoFaturamentoHistorico
+    cepFuncionario                      (varchar        ) <- Contratacao.preCadastroCandidato
+    cepLocalTrabalho                    (varchar        ) <- Contratacao.preCadastroCandidato
+    cidade                              (varchar        ) <- Contratacao.candidato, Contratacao.captacaoRecursos, Faturamento.contrato, Funcionario.relatorioParentesco, Implantacao.funcionario, Ntl.alteraInformacoes, Ntl.diasUteisPorMunicipio, Ntl.empresa, Ntl.evento, Ntl.fornecedor, Ntl.funcionario, Ntl.funcionarioEnderecoHistorico, Ntl.funcionarioHistorico, Ntl.projeto, Ntl.projetoHistorico, Ntl.sindicato, Sat.chamado, Sat.cliente, Sat.relatorioChromebook, Sat.relatorioDesktopNotebook, Sat.relatorioImpressora, Sat.relatorioMonitor
+    cidadeFaturamento                   (varchar        ) <- Ntl.contratoFaturamento, Ntl.projetoFaturamento, Ntl.projetoFaturamentoHistorico
+    cidadeFuncionario                   (varchar        ) <- Contratacao.preCadastroCandidato
+    cidadeLocalTrabalho                 (varchar        ) <- Contratacao.preCadastroCandidato
+    complemento                         (varchar        ) <- Contratacao.candidato, Contratacao.trabalheConoscoCurriculo, Faturamento.contrato, Funcionario.relatorioParentesco, Implantacao.funcionario, Ntl.alteraInformacoes, Ntl.empresa, Ntl.evento, Ntl.fornecedor, Ntl.funcionario, Ntl.funcionarioEnderecoHistorico, Ntl.funcionarioHistorico, Ntl.projeto, Ntl.projetoHistorico, Ntl.sindicato, Sat.chamado, Sat.cliente, SaudeSegurancaTrabalho.ppraClassificacaoRiscos, SaudeSegurancaTrabalho.ppraHistoricoClassificacaoRiscos
+    complementoFaturamento              (varchar        ) <- Ntl.contratoFaturamento, Ntl.projetoFaturamento, Ntl.projetoFaturamentoHistorico
+    complementoFuncionario              (varchar        ) <- Contratacao.preCadastroCandidato
+    complementoLocalTrabalho            (varchar        ) <- Contratacao.preCadastroCandidato
+    complemento_endereco                (varchar        ) <- Ntl.cadastroInicial, Ntl.importacaoCadastroFuncionario
+    empresaEndereco                     (varchar        ) <- Funcionario.importarAvisoFeriasExportado
+    endereco                            (varchar        ) <- Contratacao.candidato, Funcionario.relatorioParentesco, Implantacao.funcionario, Mensageria.solicitacao, Ntl.alteraInformacoes, Ntl.cadastroInicial, Ntl.fornecedor, Ntl.funcionario, Ntl.funcionarioEnderecoHistorico, Ntl.funcionarioHistorico, Ntl.portal, Ntl.pregaoDocumento, Ntl.projeto, Ntl.projetoHistorico, Sat.relatorioChromebook, Sat.relatorioDesktopNotebook, Sat.relatorioImpressora, Sat.relatorioMonitor, Sat.relatorioNtl
+    enderecoDocumento                   (varchar        ) <- Contratacao.candidatoDocumento
+    enderecoEntrega                     (int            ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    enderecoFuncionario                 (varchar        ) <- Contratacao.preCadastroCandidato
+    enderecoLocalTrabalho               (varchar        ) <- Contratacao.preCadastroCandidato
+    estado                              (varchar        ) <- Contratacao.candidato, Ntl.alteraInformacoes, Ntl.projeto, Ntl.projetoHistorico, Ntl.sindicato
+    estadoCivil                         (int            ) <- Contratacao.candidato, Funcionario.importacaoAuditoriaSaude, Implantacao.funcionario, Ntl.funcionario
+    estadoCtps                          (varchar        ) <- Implantacao.funcionario
+    estadoFuncionario                   (varchar        ) <- Contratacao.preCadastroCandidato
+    estadoLocalTrabalho                 (varchar        ) <- Contratacao.preCadastroCandidato
+    implantacaoEnderecoEntrega          (int            ) <- Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    implantacaoMunicipioDiasUteis       (int            ) <- Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    implantacaoMunicipioDiasUteisVT     (int            ) <- Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    logradouro                          (varchar        ) <- Contratacao.candidato, Contratacao.captacaoRecursos, Contratacao.trabalheConoscoCurriculo, Faturamento.contrato, Funcionario.relatorioParentesco, Implantacao.funcionario, Ntl.alteraInformacoes, Ntl.cadastroInicial, Ntl.empresa, Ntl.evento, Ntl.fornecedor, Ntl.funcionario, Ntl.funcionarioEnderecoHistorico, Ntl.funcionarioHistorico, Ntl.sindicato, Sat.chamado, Sat.cliente
+    logradouroFaturamento               (varchar        ) <- Ntl.contratoFaturamento, Ntl.projetoFaturamento, Ntl.projetoFaturamentoHistorico
+    logradouroFuncionario               (varchar        ) <- Contratacao.preCadastroCandidato
+    logradouroLocalTrabalho             (varchar        ) <- Contratacao.preCadastroCandidato
+    municipio                           (int            ) <- Ntl.beneficioProjetoVT, Ntl.calendario, Ntl.diasUteisPorMunicipio, Ntl.feriado, Ntl.tipoCartao, Ntl.valeTransporteUnitario
+    municipioDiasUteisVAVR              (int            ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    municipioDiasUteisVT                (int            ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    municipioFerias                     (int            ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico, Ntl.projeto, Ntl.projetoHistorico
+    municipioNascimento                 (varchar        ) <- Contratacao.candidato
+    numero                              (varchar        ) <- Contratacao.candidato, Contratacao.captacaoRecursos, Contratacao.trabalheConoscoCurriculo, Estoque.estoque, Estoque.fabricante, Estoque.grupoItem, Faturamento.contrato, Faturamento.importacaoContasPagar, Funcionario.relatorioParentesco, Ntl.alteraInformacoes, Ntl.cadastroInicial, Ntl.empresa, Ntl.evento, Ntl.fornecedor, Ntl.funcionarioEnderecoHistorico, Ntl.importacaoCadastroFuncionario, Sat.cliente
+    numeroAtivo                         (int            ) <- Sat.relatorioChromebook, Sat.relatorioDesktopNotebook, Sat.relatorioImpressora, Sat.relatorioMonitor, Sat.relatorioNtl
+    numeroBermuda                       (varchar        ) <- Contratacao.candidato
+    numeroCalca                         (varchar        ) <- Contratacao.candidato
+    numeroCamisa                        (varchar        ) <- Contratacao.candidato
+    numeroCapaChuva                     (varchar        ) <- Contratacao.candidato
+    numeroCartao                        (varchar        ) <- Ntl.funcionarioTransporte
+    numeroCartaoVt                      (varchar        ) <- Contratacao.candidato, Implantacao.funcionario, Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    numeroCarteiraTrabalho              (varchar        ) <- Ntl.funcionario, Ntl.funcionarioHistorico
+    numeroChamado                       (int            ) <- Estoque.devolucaoMaterialItem, Estoque.entradaMaterialItem, Estoque.estoqueMovimento, Estoque.pedidoMaterialItem, Sat.atribuicaoChamado
+    numeroChamadoId                     (int            ) <- Estoque.entradaMaterialItem, Estoque.estoqueMovimento, Estoque.pedidoMaterial, Estoque.pedidoMaterialItem, Sat.atribuicaoChamado, Sat.relatorioChromebook, Sat.relatorioDesktopNotebook, Sat.relatorioImpressora, Sat.relatorioMonitor, Sat.relatorioNtl
+    numeroCinto                         (varchar        ) <- Contratacao.candidato
+    numeroContrato                      (varchar        ) <- Faturamento.contrato, Ntl.contrato
+    numeroCtps                          (varchar        ) <- Funcionario.importacaoFeriasAvisoNovo
+    numeroDocumento                     (int            ) <- Estoque.estoqueMovimento, Estoque.reservaDocumento
+    numeroEmpregados                    (int            ) <- SaudeSegurancaTrabalho.ppraClassificacaoRiscos, SaudeSegurancaTrabalho.ppraHistoricoClassificacaoRiscos
+    numeroEndereco                      (varchar        ) <- Ntl.projeto, Ntl.projetoHistorico, Ntl.sindicato
+    numeroErro                          (nvarchar       ) <- Ntl.logErro
+    numeroEscala                        (int            ) <- Ntl.importacaoVinculoBeneficio
+    numeroFaturamento                   (varchar        ) <- Ntl.contratoFaturamento, Ntl.projetoFaturamento, Ntl.projetoFaturamentoHistorico
+    numeroFuncionario                   (varchar        ) <- Contratacao.preCadastroCandidato
+    numeroJaleco                        (varchar        ) <- Contratacao.candidato
+    numeroLinha                         (nvarchar       ) <- Ntl.logErro
+    numeroLocalTrabalho                 (varchar        ) <- Contratacao.preCadastroCandidato
+    numeroLogistica                     (varchar        ) <- Estoque.entradaMaterial
+    numeroLogradouro                    (varchar        ) <- Implantacao.funcionario, Ntl.funcionario, Ntl.funcionarioHistorico, Sat.chamado
+    numeroMunicipio                     (varchar        ) <- Contratacao.candidato
+    numeroNF                            (nvarchar       ) <- Estoque.entradaMaterial, Estoque.entradaMaterialHistorico, Faturamento.importacaoReceber, Faturamento.solicitacao
+    numeroPais                          (int            ) <- Contratacao.candidato
+    numeroPaisConjuge                   (int            ) <- Contratacao.candidato
+    numeroPregao                        (int            ) <- Faturamento.contrato, Ntl.contrato, Ntl.pregao
+    numeroRep                           (numeric        ) <- Ntl.empresa, Ntl.sindicato
+    numeroSaia                          (varchar        ) <- Contratacao.candidato
+    numeroSapato                        (varchar        ) <- Contratacao.candidato
+    numeroSequencialPar                 (int            ) <- Ntl.alteracaoRegistroRep
+    numeroSolicitacao                   (int            ) <- Contratacao.captacaoRecursos, Contratacao.parametroContrato, Contratacao.parametroRelatorio
+    numeroTitulo                        (varchar        ) <- Implantacao.funcionario
+    numeroTopico                        (varchar        ) <- Ntl.ataTarefa, Ntl.ataTopico
+    numeroTopicoTarefa                  (varchar        ) <- Ntl.ataTarefa
+    numeroVagas                         (int            ) <- Contratacao.solicitacaoRecursos, Contratacao.solicitacaoRecursosHistorico, Contratacao.solicitacaoRecursosInterno
+    numeroVersao                        (varchar        ) <- Ntl.controleVersao, Sat.relatorioDesktopNotebook
+    numero_carteira_trab                (varchar        ) <- Ntl.cadastroInicial, Ntl.importacaoCadastroFuncionario
+    numero_centro_custo                 (varchar        ) <- Ntl.cadastroInicial
+    numero_escala                       (varchar        ) <- Ntl.cadastroInicial
+    numero_pais_nascimento              (varchar        ) <- Ntl.cadastroInicial
+    periodicidadeAso                    (varchar        ) <- Implantacao.funcionario
+    periodicidadeAvaliacao              (int            ) <- Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    receptividade                       (int            ) <- Funcionario.avaliacaoDesempenho, Funcionario.avaliacaoDesempenhoTecnico, Funcionario.avaliacaoTecnica
+    sindicatoNumero                     (int            ) <- Ntl.importacaoVinculoBeneficio
+    sindicato_numero                    (varchar        ) <- Ntl.cadastroInicial
+    tipoLogradouro                      (varchar        ) <- Ntl.empresa, Ntl.evento, Ntl.sindicato, Sat.chamado, Sat.cliente
+    ufCarteiraTrabalho                  (varchar        ) <- Ntl.funcionario, Ntl.funcionarioHistorico
+    ufFaturamento                       (varchar        ) <- Ntl.contratoFaturamento, Ntl.projetoFaturamento, Ntl.projetoFaturamentoHistorico
+    ufIdentidade                        (char           ) <- Ntl.funcionario, Ntl.funcionarioHistorico
+    ufLogradouro                        (varchar        ) <- Ntl.funcionario, Ntl.funcionarioHistorico, Sat.chamado, Sat.relatorioChromebook, Sat.relatorioDesktopNotebook, Sat.relatorioImpressora, Sat.relatorioMonitor
+    ufNascimento                        (varchar        ) <- Contratacao.candidato, Funcionario.relatorioParentesco, Ntl.funcionario, Ntl.funcionarioHistorico
+    ufNascimentoConjuge                 (varchar        ) <- Contratacao.candidato
+    uf_carteira_identidade              (varchar        ) <- Ntl.cadastroInicial
+    uf_carteira_trab                    (varchar        ) <- Ntl.cadastroInicial, Ntl.importacaoCadastroFuncionario
+    verificaEndereco                    (int            ) <- Contratacao.candidato
+
+  [DATAS]
+    FimPeriodoFerias                    (date           ) <- Ntl.importacaoFerias
+    InicioPeriodoFerias                 (date           ) <- Ntl.importacaoFerias
+    QtdeDiasFerias                      (int            ) <- Ntl.importacaoFerias
+    abrilImpedidoFerias                 (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    abrilMelhorFerias                   (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    abrilPiorFerias                     (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    admissao                            (date           ) <- Funcionario.importacaoFeriasAviso, Funcionario.importacaoFeriasAvisoNovo, Implantacao.funcionario, Ntl.cadastroInicial, Ntl.importacaoVinculoBeneficio
+    agostoImpedidoFerias                (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    agostoMelhorFerias                  (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    agostoPiorFerias                    (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    autorizacaoDadosContrato            (bit            ) <- Ntl.departamento
+    beneficioFolga                      (int            ) <- Funcionario.folgaFolhaPonto
+    bloqueiaFolga                       (bit            ) <- Ntl.departamento, Ntl.projeto, Ntl.projetoHistorico
+    coberturaFerias                     (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.projeto
+    codigoContrato                      (int            ) <- Ntl.projeto
+    codigoHorarioContratual             (int            ) <- Ntl.alteracaoRegistroRep, Ntl.logRegistroRep
+    codigoPlanejamentoDemissao          (int            ) <- Ntl.beneficioProjeto
+    contratado                          (bit            ) <- Contratacao.captacaoRecursos
+    contrato                            (int            ) <- Ntl.contratoContato, Ntl.contratoFaturamento, Ntl.projeto, Ntl.projetoHistorico
+    contratoSYSGEF                      (int            ) <- Ntl.projeto, Ntl.projetoHistorico
+    controleFerias                      (int            ) <- Funcionario.controleFeriasAvisoUpload, Funcionario.controleFeriasDias, Funcionario.controleFeriasSubstituto
+    controleFerias_id                   (int            ) <- Funcionario.avisoFeriasUpload
+    dataAdmissao                        (date           ) <- Contratacao.controleFuncionario, Faturamento.gastosFuncionarioPlanejado, Faturamento.gastosFuncionarioReal, Implantacao.funcionario
+    dataAdmissaoFuncionario             (datetime       ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    dataDemissao                        (datetime       ) <- Faturamento.gastosFuncionarioPlanejado, Faturamento.gastosFuncionarioReal, Funcionario.planejamentoDemissao, Ntl.funcionario, Ntl.funcionarioHistorico
+    dataDemissaoFuncionario             (datetime       ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    dataFolga                           (datetime       ) <- Funcionario.folgaBancoHoras
+    dataInicioContrato                  (datetime       ) <- Ntl.projeto, Ntl.projetoHistorico
+    dataNascimento                      (datetime       ) <- Contratacao.candidato, Contratacao.candidatoDependente, Contratacao.candidatoFilho, Contratacao.candidatoPensaoAlimenticia, Contratacao.preCadastroCandidato, Funcionario.importacaoAuditoriaSaude, Implantacao.funcionario, Ntl.funcionario, Ntl.funcionarioHistorico, Ntl.funcionarioPensaoAlimenticia
+    dataNascimentoConjuge               (datetime       ) <- Contratacao.candidato
+    dataNascimentoDependente            (datetime       ) <- Implantacao.funcionarioDependente, Ntl.funcionarioDependente, Ntl.funcionarioDependenteHistorico
+    dataPrevistaFolga                   (datetime       ) <- Funcionario.solicitacaoAlteracaoFolga
+    data_nascimento                     (date           ) <- Ntl.cadastroInicial, Ntl.importacaoCadastroFuncionario
+    demissao                            (date           ) <- Ntl.cadastroInicial
+    demissaoAssinatura                  (bigint         ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    demissaoAssinaturaDigitalFuncionario (bigint         ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    demissaoAssinaturaFuncionario       (bigint         ) <- Funcionario.planejamentoDemissao
+    demissaoDataAssinatura              (datetime       ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    demissaoDataAssinaturaDigitalFuncionario (datetime       ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    demissaoDataCienciaFuncionario      (datetime       ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    demissaoDataFimAviso                (datetime       ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    demissaoDataInicioAviso             (datetime       ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    demissaoOpcaoAvisoTrabalhado        (int            ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    demissaoTipoAviso                   (varchar        ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    descontarFeriasCestaBasica          (int            ) <- Ntl.sindicato
+    descontoFeriasAlimentacao           (int            ) <- Ntl.sindicato
+    descontoFeriasRefeicao              (int            ) <- Ntl.sindicato
+    descontoFeriasVAVR                  (bit            ) <- Ntl.projeto, Ntl.projetoHistorico
+    descontoFeriasVT                    (int            ) <- Ntl.projeto, Ntl.projetoHistorico
+    descricaoContrato                   (varchar        ) <- Ntl.tipoContrato
+    dezembroImpedidoFerias              (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    dezembroMelhorFerias                (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    dezembroPiorFerias                  (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    diaAbaterDemissaoVAVR               (int            ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    diaAbaterDemissaoVT                 (int            ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    diaFeriasUltimoPeriodoGozo          (varchar        ) <- Implantacao.funcionario
+    diaUtilFerias                       (int            ) <- Beneficio.processaBeneficioDetalhe
+    diasAbatidosFeriasVT                (int            ) <- Beneficio.processaBeneficioDetalhe
+    domingoImpedidoFerias               (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    escalaFerias                        (bit            ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    escalaFeriasVAVR                    (bit            ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    ferias                              (decimal        ) <- Faturamento.gastosFuncionarioPlanejado, Faturamento.gastosFuncionarioReal, Ntl.contrato, Sat.atribuicaoChamado
+    feriasDpFimPeriodo                  (int            ) <- Ntl.departamento, Ntl.empresa, Ntl.projeto
+    feriasFracionadas                   (bit            ) <- Beneficio.parametroFerias, Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    feriasFuncionarioFimPeriodo         (int            ) <- Ntl.departamento, Ntl.empresa, Ntl.projeto
+    feriasGestorFimPeriodo              (int            ) <- Ntl.departamento, Ntl.empresa, Ntl.projeto
+    feriasPlanejadas                    (int            ) <- Ntl.departamento, Ntl.empresa, Ntl.projeto
+    feriasSolicitacao                   (int            ) <- Beneficio.funcionarioFerias
+    fevereiroImpedidoFerias             (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    fevereiroMelhorFerias               (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    fevereiroPiorFerias                 (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    fimFerias                           (datetime       ) <- Ntl.funcionarioPeriodoAquisitivoDetalhe
+    folga                               (varchar        ) <- Funcionario.importacaoSamu, Funcionario.importacaoSamuTemporario, Sat.atribuicaoChamado
+    folgaAbaterVAVR                     (int            ) <- Beneficio.processaBeneficioDetalhe
+    folgaAbaterVT                       (int            ) <- Beneficio.processaBeneficioDetalhe
+    folgaFixa                           (int            ) <- Ntl.beneficioProjeto
+    funcionarioAdmissao                 (varchar        ) <- Funcionario.importarAvisoFeriasExportado
+    implantacaoFeriasFracionadas        (bit            ) <- Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    indicativoAdmissao                  (int            ) <- Contratacao.controleFuncionario
+    inicioFerias                        (datetime       ) <- Funcionario.controleFeriasAvisoUpload, Ntl.funcionarioPeriodoAquisitivoDetalhe
+    janeiroImpedidoFerias               (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    janeiroMelhorFerias                 (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    janeiroPiorFerias                   (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    julhoImpedidoFerias                 (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    julhoMelhorFerias                   (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    julhoPiorFerias                     (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    junhoImpedidoFerias                 (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    junhoMelhorFerias                   (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    junhoPiorFerias                     (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    maioImpedidoFerias                  (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    maioMelhorFerias                    (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    maioPiorFerias                      (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    marcoImpedidoFerias                 (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    marcoMelhorFerias                   (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    marcoPiorFerias                     (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    nascimentoConjuge                   (date           ) <- Ntl.cadastroInicial
+    novembroImpedidoFerias              (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    novembroMelhorFerias                (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    novembroPiorFerias                  (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    objetivoContrato                    (varchar        ) <- Faturamento.contrato
+    objetoContrato                      (varchar        ) <- Ntl.contrato
+    outubroImpedidoFerias               (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    outubroMelhorFerias                 (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    outubroPiorFerias                   (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    paisNascimento                      (varchar        ) <- Contratacao.candidato, Funcionario.relatorioParentesco, Ntl.funcionario, Ntl.funcionarioHistorico
+    pedidoFerias                        (int            ) <- Beneficio.funcionarioFerias
+    periodoFerias                       (datetime       ) <- Funcionario.controleFeriasSubstituto
+    planejamentoDemissao                (int            ) <- Ntl.beneficioProjetoAvisoPrevio, Ntl.planejamentoDemissaoComprovante
+    prazoAgendamentoFolga               (int            ) <- Ntl.sindicato
+    provisaoFerias                      (decimal        ) <- Scf.despesa
+    provisaoFgtsFerias                  (decimal        ) <- Scf.despesa
+    provisaoInssFerias                  (decimal        ) <- Scf.despesa
+    qtdDiasFerias                       (int            ) <- Ntl.funcionarioPeriodoAquisitivoDetalhe
+    qtdFolga                            (int            ) <- Faturamento.dadosPlanilha
+    quartaImpedidoFerias                (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    quintaImpedidoFerias                (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    recebeFerias                        (date           ) <- Funcionario.importacaoFeriasAviso, Funcionario.importacaoFeriasAvisoNovo
+    reciboFerias                        (bit            ) <- Ntl.departamento, Ntl.empresa, Ntl.projeto
+    relatorioContratoExperienciaTexto1  (varchar        ) <- Contratacao.parametroRelatorio
+    relatorioContratoExperienciaTexto2  (varchar        ) <- Contratacao.parametroRelatorio
+    relatorioContratoIntermitenteTexto1 (varchar        ) <- Contratacao.parametroRelatorio
+    sabadoImpedidoFerias                (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    segundaImpedidoFerias               (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    setembroImpedidoFerias              (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    setembroMelhorFerias                (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    setembroPiorFerias                  (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    sextaImpedidoFerias                 (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    situacaoFerias                      (varchar        ) <- Funcionario.controleFeriasDias
+    solicitacaoFerias                   (int            ) <- Ntl.funcionarioPeriodoAquisitivoDetalhe
+    statusFerias                        (varchar        ) <- Funcionario.controleFeriasDias
+    tempoCancelamentoFerias             (int            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    tempoConfirmacaoFerias              (int            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    tercaImpedidoFerias                 (bit            ) <- Beneficio.parametroFeriasPorPessoa, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    tipoAdmissao                        (int            ) <- Contratacao.controleFuncionario
+    tipoContrato                        (int            ) <- Contratacao.controleFuncionario, Contratacao.solicitacaoRecursos, Contratacao.solicitacaoRecursosHistorico, Contratacao.solicitacaoRecursosInterno, Ntl.baseConhecimento, Ntl.baseConhecimentoHistorico, Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico, Ntl.departamento, Ntl.empresa, Ntl.funcionario, Ntl.funcionarioHistorico, Ntl.projeto
+    tipoContratoTrabalho                (varchar        ) <- Ntl.cadastroInicial, Ntl.importacaoVinculoBeneficio
+    tipoFolga                           (varchar        ) <- Funcionario.folgaBancoHoras, Funcionario.solicitacaoAlteracaoFolga
+    ultimoPeriodoFeriasTiradoFim        (date           ) <- Implantacao.funcionario
+    ultimoPeriodoFeriasTiradoInicio     (date           ) <- Implantacao.funcionario
+    validaContrato                      (int            ) <- Contratacao.candidato
+    valorDasFerias                      (decimal        ) <- Ntl.funcionarioPeriodoAquisitivoDetalhe
+    xmlAvisoFerias                      (text           ) <- Funcionario.controleFeriasAvisoUpload, Funcionario.lancamentoFeedBack
+
+  [DADOS PROFISSIONAIS]
+    adicionalNoturno                    (bit            ) <- Ntl.projetoCargoSalario, Ntl.sindicato
+    agendamentoHorario                  (bit            ) <- Ntl.clinica
+    cliente                             (int            ) <- Faturamento.solicitacao, Faturamento.tabelaBasicaTorino, Faturamento.torino, Ntl.baseConhecimento, Ntl.baseConhecimentoHistorico, Sat.atribuicaoChamado, Sat.chamado, Sat.relatorioChromebook, Sat.relatorioDesktopNotebook, Sat.relatorioImpressora, Sat.relatorioMonitor, Sat.relatorioNtl, Sat.tabelaBasicaTorino, Sat.torino
+    clienteFornecedor                   (varchar        ) <- Ntl.fornecedor
+    clienteNtl                          (bit            ) <- Sat.chamado
+    clienteProjeto                      (int            ) <- Estoque.saidaMaterial
+    cnpjCliente                         (varchar        ) <- Faturamento.importacaoReceber
+    codCliente                          (int            ) <- Ntl.municipio
+    codigoCliente                       (int            ) <- Ntl.departamento, Ntl.fornecedor, Ntl.projeto, Ntl.projetoResponsavelClienteHistorico, Ntl.tipoContrato, Ntl.unidadeFederacao, Sat.relatorioChromebook, Sat.relatorioDesktopNotebook, Sat.relatorioImpressora, Sat.relatorioMonitor
+    codigoDepartamento                  (varchar        ) <- Ntl.fornecedor
+    compensaHorario                     (bit            ) <- Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    departamento                        (int            ) <- Contratacao.controleFuncionario, Contratacao.solicitacaoRecursos, Contratacao.solicitacaoRecursosHistorico, Contratacao.solicitacaoRecursosInterno, Estoque.responsavelEstoque, Faturamento.dadosPlanilha, Funcionario.avaliacaoDesempenhoParametro, Funcionario.centralTarefas, Funcionario.coberturaFuncionario, Funcionario.lancamentoFeedBack, Funcionario.lancamentoHorario, Funcionario.ronda, Funcionario.rondaFuncionario, Implantacao.funcionario, Mensageria.rotinaTarefas, Mensageria.solicitacao, Ntl.atendimentoRotina, Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico, Ntl.denunciaAcusados, Ntl.denunciaApuracao, Ntl.departamentoEmail, Ntl.departamentoResponsavel, Ntl.departamentoResponsavelCliente, Ntl.departamentoResponsavelFolga, Ntl.departamentoTelefone, Ntl.duvidasFrequentesMenuResponsavel, Ntl.fechamentoDenunciaEmail, Ntl.importacaoVinculoBeneficio, Ntl.notificacaoRotina, Ntl.projetoContato, Ntl.projetoContatoHistorico, Ntl.projetoHorarioCobertura, Ntl.sindicatoTelefone, Ntl.tipoSolicitacao, Ntl.tipoSolicitacaoDepartamento, Ntl.tipoSolicitacaoResponsavel, SaudeSegurancaTrabalho.ppraHistoricoLevantamentoRiscosAmbiente, SaudeSegurancaTrabalho.ppraLevantamentoRiscosAmbiente, Solicitacao.solicitacao, Solicitacao.solicitacaoAtendimento
+    departamentoDinamica                (int            ) <- Contratacao.solicitacaoRecursos, Contratacao.solicitacaoRecursosHistorico
+    departamentoFuncionarioFaltante     (int            ) <- Funcionario.coberturaFuncionario
+    departamentoInicial                 (int            ) <- Contratacao.solicitacaoRecursos, Contratacao.solicitacaoRecursosHistorico
+    departamentoProjetoId               (int            ) <- Ntl.torreDetalhe
+    departamentoRiscos                  (int            ) <- SaudeSegurancaTrabalho.ppraClassificacaoRiscos
+    departamentoSocial                  (int            ) <- Contratacao.solicitacaoRecursos, Contratacao.solicitacaoRecursosHistorico
+    departamentoTecnico                 (int            ) <- Contratacao.solicitacaoRecursos, Contratacao.solicitacaoRecursosHistorico
+    departamentoTeste                   (int            ) <- Contratacao.solicitacaoRecursos, Contratacao.solicitacaoRecursosHistorico
+    descricaoDepartamento               (varchar        ) <- Ntl.sindicatoTelefone
+    escalaHorario                       (int            ) <- Contratacao.controleFuncionario, Contratacao.solicitacaoRecursos, Contratacao.solicitacaoRecursosHistorico, Contratacao.solicitacaoRecursosInterno, Implantacao.funcionario
+    funcao                              (int            ) <- Funcionario.folhaDePagamento, Ntl.contratoContato, Ntl.projetoContato, Ntl.projetoContatoHistorico
+    horaFinalAdicionalNoturno           (varchar        ) <- Ntl.sindicato
+    horaInicialAdicionalNoturno         (varchar        ) <- Ntl.sindicato
+    horario                             (varchar        ) <- Funcionario.lancamentoHorarioDetalhe
+    horarioBaixa                        (varchar        ) <- Faturamento.solicitacao
+    horarioCobertura                    (varchar        ) <- Funcionario.solicitacaoAbonoFolha, Ntl.projetoHorarioCoberturaDetalhe
+    horarioEntradaGrauInstrucao         (varchar        ) <- Contratacao.candidato, Contratacao.trabalheConoscoCurriculo, Ntl.funcionario, Ntl.funcionarioHistorico
+    horarioSaidaGrauInstrucao           (varchar        ) <- Contratacao.candidato, Contratacao.trabalheConoscoCurriculo, Ntl.funcionario, Ntl.funcionarioHistorico
+    jornada                             (varchar        ) <- SaudeSegurancaTrabalho.ppraClassificacaoRiscos, SaudeSegurancaTrabalho.ppraHistoricoClassificacaoRiscos
+    lancamentoHorario                   (int            ) <- Funcionario.lancamentoHorarioDetalhe, Funcionario.lancamentoHorarioUpload
+    percentualAdicionalNoturno          (decimal        ) <- Ntl.projetoCargoSalario
+    percentualHoraExtraDomingoFeriadoNoturno (decimal        ) <- Ntl.sindicato
+    percentualHoraExtraSegundaSabadoNoturno (decimal        ) <- Ntl.sindicato
+    quadroHorario                       (int            ) <- Implantacao.funcionario
+    regimeJornadaTrabalho               (int            ) <- Contratacao.controleFuncionario
+    responsavelClienteLogin             (int            ) <- Ntl.projetoResponsavelCliente, Ntl.projetoResponsavelClienteHistorico
+    responsavelDepartamentoLogin        (int            ) <- Ntl.departamentoResponsavel, Ntl.departamentoResponsavelCliente, Ntl.departamentoResponsavelFolga
+    setor                               (varchar        ) <- Contratacao.preCadastroCandidato, Ntl.contratoContato
+    tipoJornadaESocial                  (int            ) <- Contratacao.controleFuncionario
+
+  [DOCUMENTOS TRABALHISTAS]
+    ctps                                (bit            ) <- Contratacao.candidato, Funcionario.folhaDePagamento, Funcionario.importacaoFeriasAviso, Implantacao.funcionario
+    digito_serie_ctps                   (varchar        ) <- Ntl.cadastroInicial
+    pis                                 (varchar        ) <- Contratacao.candidato, Contratacao.preCadastroCandidato, Funcionario.folhaDePagamento, Funcionario.importacaoPontoEletronico, Ntl.cadastroInicial, Ntl.importacaoCadastroFuncionario, Scf.despesa
+    pisConfisCs                         (int            ) <- Ntl.contratoFaturamento, Ntl.projetoFaturamento
+    pisPasep                            (varchar        ) <- Implantacao.funcionario, Ntl.funcionario, Ntl.funcionarioHistorico
+    pisReter                            (varchar        ) <- Faturamento.importacaoContasPagar, Faturamento.importacaoReceber
+    piso                                (decimal        ) <- Ntl.cargoSindicato, Ntl.projetoCargoSalario, Ntl.projetoCargoSalarioHistorico
+    retencaoPis                         (decimal        ) <- Scf.receita
+    retencaoPisCumulativa               (decimal        ) <- Scf.receita
+    serieCtps                           (int            ) <- Funcionario.folhaDePagamento, Implantacao.funcionario
+
+  [DADOS FINANCEIROS]
+    abateBancoHoras                     (bit            ) <- Ntl.lancamento, Ntl.sindicato
+    agenciaBanco                        (varchar        ) <- Contratacao.candidato, Ntl.alteraInformacoes, Ntl.fornecedorDadosBancarios, Ntl.funcionario, Ntl.funcionarioHistorico
+    banco                               (varchar        ) <- Faturamento.importacaoContasPagar, Ntl.alteraInformacoes, Ntl.funcionario, Ntl.funcionarioHistorico, Scf.controleDespesas, Scf.controleDespesasAutomatico
+    bancoHoras                          (bit            ) <- Implantacao.funcionario, Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico, Ntl.departamento, Ntl.empresa, Ntl.funcionario, Ntl.funcionarioHistorico, Ntl.importacaoVinculoBeneficio, Ntl.projeto, Ntl.projetoHistorico
+    banco_agencia                       (int            ) <- Ntl.cadastroInicial
+    chavePix                            (varchar        ) <- Contratacao.candidato, Ntl.alteraInformacoes, Ntl.funcionario, Ntl.funcionarioHistorico
+    codigoBanco                         (varchar        ) <- Ntl.banco
+    codigoContato                       (int            ) <- Ntl.projetoContatoHistorico
+    conta                               (varchar        ) <- Faturamento.importacaoConciliacaoBancaria, Faturamento.importacaoContasPagar
+    contaBanco                          (varchar        ) <- Ntl.alteraInformacoes, Ntl.funcionario, Ntl.funcionarioHistorico
+    contaPg                             (varchar        ) <- Faturamento.importacaoContasPagar
+    contaVinculada                      (bit            ) <- Faturamento.contrato, Ntl.contrato
+    conta_deposito                      (int            ) <- Ntl.cadastroInicial
+    contabil                            (decimal        ) <- Scf.controleDespesas, Scf.controleDespesasAutomatico
+    contador                            (bit            ) <- Ntl.usuario
+    contato                             (varchar        ) <- Sat.relatorioNtl
+    dataVencimento                      (datetime       ) <- Estoque.entradaMaterialFormaPagamento, Faturamento.solicitacao, Ntl.obrigacaoAcessoriaEnvios, Ntl.obrigacaoAcessoriaVencimentos
+    descontaVAVR                        (bit            ) <- Funcionario.planejamentoDemissao
+    descontaVT                          (bit            ) <- Funcionario.planejamentoDemissao
+    descontarCestaBasica                (int            ) <- Beneficio.afastamento
+    descontarTransporte                 (int            ) <- Beneficio.afastamento, Beneficio.folga, Funcionario.folgaFolhaPonto
+    descontarVAVR                       (int            ) <- Beneficio.afastamento, Beneficio.folga, Funcionario.folgaFolhaPonto
+    diaVencimento                       (int            ) <- Ntl.tipoObrigacaoAcessoria
+    digitoAgenciaBanco                  (varchar        ) <- Contratacao.candidato, Ntl.alteraInformacoes, Ntl.fornecedorDadosBancarios, Ntl.funcionario, Ntl.funcionarioHistorico
+    digitoContaBanco                    (varchar        ) <- Contratacao.candidato, Ntl.alteraInformacoes, Ntl.fornecedorDadosBancarios, Ntl.funcionario, Ntl.funcionarioHistorico
+    filePathContato                     (varchar        ) <- Ntl.projetoContato
+    fileTypeContato                     (varchar        ) <- Ntl.projetoContato
+    fk_banco                            (int            ) <- Contratacao.candidato, Ntl.fornecedorDadosBancarios
+    funcionarioSalario                  (varchar        ) <- Funcionario.importarAvisoFeriasExportado
+    implantacaoBancoHoras               (bit            ) <- Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    inicioBancoHoras                    (datetime       ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico, Ntl.funcionario, Ntl.funcionarioHistorico
+    porcentagemBanco                    (decimal        ) <- Scf.controleDespesas, Scf.controleDespesasAutomatico
+    possuiContaBancaria                 (bit            ) <- Contratacao.candidato
+    salario                             (decimal        ) <- Faturamento.gastosFuncionarioPlanejado, Faturamento.gastosFuncionarioReal, Ntl.cadastroInicial, Ntl.cargo, Ntl.projetoCargoSalario, Ntl.projetoCargoSalarioHistorico, Ntl.sindicatoCargoSalario
+    salarioBase                         (decimal        ) <- Contratacao.controleFuncionario, Contratacao.solicitacaoRecursos, Contratacao.solicitacaoRecursosHistorico, Contratacao.solicitacaoRecursosInterno, Implantacao.funcionario
+    salarioDiaria                       (varchar        ) <- Contratacao.solicitacaoRecursosInterno
+    salarioFgts                         (varchar        ) <- Funcionario.folhaDePagamento
+    salarioFuncionario                  (decimal        ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    salarioHora                         (varchar        ) <- Contratacao.solicitacaoRecursosInterno
+    salarioInss                         (varchar        ) <- Funcionario.folhaDePagamento
+    salarioLiquido                      (varchar        ) <- Funcionario.folhaDePagamento
+    salarioMensalista                   (decimal        ) <- Funcionario.contrachequeSalarioMensalista
+    tipoConta                           (int            ) <- Contratacao.candidato, Faturamento.importacaoConciliacaoBancaria, Ntl.fornecedorDadosBancarios
+    tipoContaBanco                      (int            ) <- Ntl.alteraInformacoes, Ntl.funcionario, Ntl.funcionarioHistorico
+    tipoContagemDias                    (int            ) <- Ntl.lancamento, Ntl.lancamentoSindicato
+    tipoPix                             (int            ) <- Contratacao.candidato, Ntl.alteraInformacoes, Ntl.funcionario, Ntl.funcionarioHistorico
+    tipo_conta                          (varchar        ) <- Ntl.cadastroInicial
+    totalVencimento                     (varchar        ) <- Funcionario.folhaDePagamento
+    variacaoBanco                       (varchar        ) <- Ntl.alteraInformacoes, Ntl.funcionario, Ntl.funcionarioHistorico
+    vencimento                          (varchar        ) <- Faturamento.importacaoContasPagar
+    vencimentoNf                        (date           ) <- Faturamento.importacaoReceber
+    verificaDadoContato                 (int            ) <- Contratacao.candidato
+
+  [FAMILIA]
+    codigoDependente                    (int            ) <- Ntl.funcionarioDependenteHistorico
+    codigoPlanoDependente               (int            ) <- Ntl.beneficioProjetoPlanoSaudeDependenteHistorico
+    conjuge                             (int            ) <- Funcionario.controleFeriasPedidos, Ntl.cadastroInicial
+    conjugeMesmaEmpresa                 (bit            ) <- Implantacao.funcionario
+    dependente                          (int            ) <- Ntl.beneficioProjetoPlanoSaudeDependente, Ntl.beneficioProjetoPlanoSaudeDependenteHistorico
+    dependenteFilho                     (int            ) <- Contratacao.candidatoDependente
+    dependenteIrrf                      (int            ) <- Contratacao.candidatoDependente
+    dependentePensaoAlimenticia         (int            ) <- Contratacao.candidatoDependente
+    dependentePlanoSaude                (int            ) <- Implantacao.funcionario, Implantacao.funcionarioConvenio
+    filhos                              (bit            ) <- Funcionario.controleFeriasPedidos
+    grauParentescoDependente            (int            ) <- Contratacao.candidatoDependente, Ntl.funcionarioDependente, Ntl.funcionarioDependenteHistorico
+    pai                                 (int            ) <- Ntl.fluxogramaBoxDetalhe, Ntl.menuSubModulo, Ntl.tarefaProjetoNovo
+    possuiFilhoMenor14                  (int            ) <- Contratacao.candidato, Implantacao.funcionario
+    problemaEncontrado                  (varchar        ) <- Sat.relatorioChromebook, Sat.relatorioImpressora, Sat.relatorioNtl
+    tipoDependente                      (int            ) <- Ntl.funcionarioDependente, Ntl.funcionarioDependenteHistorico
+    validaFichaDependenteIr             (int            ) <- Contratacao.candidato
+    valorTotalDependentePlanoSaude      (decimal        ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    verificaDadoConjuge                 (int            ) <- Contratacao.candidato
+    verificaDependente                  (int            ) <- Contratacao.candidato
+    verificaFilho                       (int            ) <- Contratacao.candidato
+
+  DADOS SENSIVEIS - LGPD Art. 5 (acesso restrito):
+  --------------------------------------------------
+
+  [SAUDE (LGPD SENSIVEL)]
+    abonaAtraso                         (bit            ) <- Ntl.lancamento
+    alteraSolicitacao                   (int            ) <- Funcionario.controleFerias
+    alteraSolicitacao2                  (int            ) <- Funcionario.controleFerias
+    alteraSolicitacao3                  (int            ) <- Funcionario.controleFerias
+    asoObrigatorio                      (bit            ) <- Contratacao.parametroContrato, Contratacao.parametroRelatorio
+    asoObrigatório                      (bit            ) <- Ntl.parametro, Ntl.parametroHistorico, Sat.parametro
+    atraso                              (int            ) <- Funcionario.avaliacaoDesempenho, Funcionario.avaliacaoDesempenhoTecnico, Funcionario.avaliacaoTecnica, Funcionario.folhaPontoMensalDetalheDiario, Ntl.logFolhaPontoDetalheDiario
+    atrasoDois                          (char           ) <- Funcionario.folhaPontoMensalDetalheDiario
+    caminhoPlanoSaudePdf                (varchar        ) <- Contratacao.parametroRelatorio
+    codigoCid                           (varchar        ) <- Contratacao.candidato, Ntl.funcionario, Ntl.funcionarioHistorico
+    convenioSaude                       (int            ) <- Ntl.produto
+    dataASO                             (datetime       ) <- Contratacao.candidato
+    dataAgendamentoAso                  (datetime       ) <- Contratacao.candidato
+    dataCancelamentoPlanoSaude          (datetime       ) <- Ntl.funcionario, Ntl.funcionarioHistorico
+    dataHoraSolucao                     (datetime       ) <- Solicitacao.solicitacao, Solicitacao.solicitacaoAtendimento
+    dataProximoAso                      (datetime       ) <- Funcionario.atestadoSaudeOcupacional
+    dataProximoAsoLista                 (datetime       ) <- Funcionario.atestadoSaudeOcupacionalDetalhe
+    dataRealizacaoAso                   (datetime       ) <- Contratacao.atestadoSaudeOcupacional, Contratacao.candidato, Funcionario.atestadoSaudeOcupacionalDetalhe
+    dataRelatorioASO                    (datetime       ) <- Contratacao.candidato
+    dataSolicitacao                     (datetime       ) <- Contratacao.solicitacaoRecursos, Contratacao.solicitacaoRecursosHistorico, Contratacao.solicitacaoRecursosInterno, Mensageria.solicitacao, Ntl.pregaoDetalhe
+    dataUltimoAso                       (datetime       ) <- Funcionario.atestadoSaudeOcupacional
+    descontoFolhaPlanoSaude             (decimal        ) <- Ntl.logValoresProjeto, Ntl.projeto, Ntl.projetoHistorico
+    diasAtraso                          (int            ) <- Faturamento.solicitacao
+    documentoPlanoSaude                 (varchar        ) <- Contratacao.parametroContrato
+    exameComplementar                   (int            ) <- Ntl.cargoExameComplementar, Ntl.exameComplementar
+    horaSolicitacao                     (varchar        ) <- Faturamento.solicitacao, Mensageria.solicitacao
+    horaSolucionado                     (datetime       ) <- Solicitacao.solicitacao
+    implantacaoValidadeAso              (int            ) <- Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    observacaoAuxilioSaude              (varchar        ) <- Ntl.sindicato
+    observacaoPlanoDeSaude              (varchar        ) <- Contratacao.solicitacaoRecursos, Contratacao.solicitacaoRecursosHistorico
+    percentualAuxilioSaude              (decimal        ) <- Ntl.logValoresSindicato, Ntl.sindicato
+    percentualBolsaPlanoSaude           (decimal        ) <- Ntl.logValoresSindicato, Ntl.sindicato
+    relatorioASO                        (bit            ) <- Contratacao.candidato
+    riscosConhecidos                    (varchar        ) <- SaudeSegurancaTrabalho.ppraHistoricoLevantamentoRiscosAmbiente, SaudeSegurancaTrabalho.ppraLevantamentoRiscosAmbiente
+    solicitanteAso                      (int            ) <- Contratacao.candidato
+    tipoExame                           (int            ) <- Funcionario.atestadoSaudeOcupacionalDetalhe
+    tipoExameCadastro                   (int            ) <- Funcionario.atestadoSaudeOcupacional
+    totalAtraso                         (char           ) <- Funcionario.lancamentoOcorrenciaDetalhe
+    ultimoAso                           (date           ) <- Implantacao.funcionario
+    ultimoExameAso                      (date           ) <- Ntl.importacaoVinculoBeneficio
+    ultimo_exame_aso                    (date           ) <- Ntl.cadastroInicial
+    validadeAso                         (int            ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico, Ntl.cargo, Ntl.departamento, Ntl.empresa, Ntl.projeto, Ntl.projetoHistorico
+    valorAuxilioSaude                   (decimal        ) <- Ntl.logValoresSindicato, Ntl.sindicato
+    valorBolsaPlanoSaude                (decimal        ) <- Ntl.logValoresSindicato, Ntl.sindicato
+    valorDescontoFolhaPlanoSaude        (decimal        ) <- Ntl.logValoresProjeto, Ntl.projeto, Ntl.projetoHistorico
+    valorTotalPlanoSaude                (decimal        ) <- Beneficio.processaBeneficioDetalhe, Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    valorTotalPlanoSaudeBeneficio       (decimal        ) <- Beneficio.processaBeneficioDetalhe
+    valorTotalTitularPlanoSaude         (decimal        ) <- Ntl.beneficioProjeto, Ntl.beneficioProjetoHistorico
+    verificaAso                         (int            ) <- Contratacao.candidato
+
+  [CREDENCIAIS (REMOVER DO BANCO)]
+    login                               (varchar        ) <- Ntl.usuario, Ntl.usuarioHistorico, Sat.usuario, Scf.usuario
+    responsavelLogin                    (int            ) <- Ntl.projetoResponsavel, Ntl.projetoResponsavelHistorico
+    restauraSenha                       (bit            ) <- Sat.usuario, Scf.usuario
+    restaurarSenha                      (bit            ) <- Ntl.usuario, Ntl.usuarioHistorico
+    senha                               (nvarchar       ) <- Ntl.parametro, Ntl.parametroHistorico, Ntl.usuario, Ntl.usuarioHistorico, Sat.parametro, Sat.usuario, Scf.usuario
+    senhaAnterior                       (varchar        ) <- Ntl.usuario, Ntl.usuarioHistorico
+    tipoUsuario                         (char           ) <- Ntl.usuario, Ntl.usuarioHistorico, Sat.usuario, Scf.usuario
+    usuario                             (varchar        ) <- Contratacao.log_excluirCandidatoManual, Faturamento.importacaoContasPagar, Faturamento.tabelaBasicaTorino, Faturamento.torino, Funcionario.avisoFeriasUpload, Funcionario.importacaoFeriasAviso, Funcionario.importacaoFeriasAvisoNovo, Funcionario.importarAvisoFeriasExportado, Ntl.atendimentoLocalizacao, Ntl.atendimentoRotina, Ntl.denunciaAcusados, Ntl.logErro, Ntl.logOrdemServicoTarefa, Ntl.logPermissao, Ntl.menuItem, Ntl.tipoSolicitacaoArquivo, Ntl.usuarioFuncionalidade, Ntl.usuarioHistorico, Sat.tabelaBasicaTorino, Sat.torino
+    usuarioAProvacaoContribuicaoSindical (varchar        ) <- Ntl.beneficioProjeto
+    usuarioAprovacao                    (int            ) <- Funcionario.recadastramentoVtHistorico
+    usuarioAprovacaoVT                  (varchar        ) <- Ntl.alteraInformacoes
+    usuarioAtribuido                    (int            ) <- Solicitacao.solicitacao, Solicitacao.solicitacaoAtendimento
+    usuarioCadastramento                (nvarchar       ) <- Estoque.entradaMaterial, Estoque.entradaMaterialHistorico, Estoque.estoqueMovimento, Estoque.pedidoMaterial, Estoque.saidaMaterial
+    usuarioCadastro                     (varchar        ) <- Beneficio.afastamento, Beneficio.afastamentoFuncionario, Beneficio.folga, Beneficio.folhaPonto, Beneficio.funcionarioFerias, Beneficio.parametroFerias, Beneficio.parametroFeriasPorPessoa, Beneficio.pedidoBeneficioExtra, Beneficio.processafuncionarioFerias, Beneficio.produtoBeneficio, Contratacao.atestadoSaudeOcupacional, Contratacao.candidato, Contratacao.captacaoRecursos, Contratacao.controleFuncionario, Contratacao.exportacao, Contratacao.implementador, Contratacao.parametroCampo, Contratacao.preCadastroCandidato, Contratacao.solicitacaoRecursos, Contratacao.solicitacaoRecursosInterno, Contratacao.tipoTransporte, Contratacao.trabalheConoscoCurriculo, Estoque.ajuda, Estoque.codigoItem, Estoque.estoque, Estoque.fabricante, Estoque.fornecimentoUpload, Estoque.grupoItem, Estoque.localizacaoItem, Estoque.logQrCodeAtivo, Estoque.naturezaOperacao, Estoque.reservaDocumento, Estoque.saidaMaterialUpload, Estoque.tipoItem, Estoque.unidadeItem, Estoque.vinculoItem, Faturamento.encargo, Faturamento.valorPosto, Funcionario.ajusteFolhaPontoDobra, Funcionario.atestadoSaudeOcupacional, Funcionario.autorizacaoHoraExtra, Funcionario.autorizacaoUploadFolhaPonto, Funcionario.avaliacaoDesempenho, Funcionario.avaliacaoDesempenhoParametro, Funcionario.avaliacaoDesempenhoTecnico, Funcionario.avaliacaoTecnica, Funcionario.bancoHoras, Funcionario.centralTarefas, Funcionario.centralTarefasAcompanhamento, Funcionario.compensacaoFalta, Funcionario.controleFerias, Funcionario.controleFeriasAvisoUpload, Funcionario.controleFeriasPedidos, Funcionario.controleFeriasSubstituto, Funcionario.controleSolicitacaoFolha, Funcionario.folgaBancoHoras, Funcionario.folgaFolhaPonto, Funcionario.folhaPontoMensal, Funcionario.folhaPontoMensalDetalheDiario, Funcionario.folhaPontoMensalObservacao, Funcionario.historicoPedidoFerias, Funcionario.horaExtra, Funcionario.importacaoSamu, Funcionario.importacaoSamuTemporario, Funcionario.justificativaGestor, Funcionario.lancamentoFeedBack, Funcionario.lancamentoOcorrencia, Funcionario.logPagamentoBancoHoras, Funcionario.logUploadFolhaPonto, Funcionario.pausasDescanso, Funcionario.pendencia, Funcionario.periodoAquisitivo, Funcionario.planejamentoDemissao, Funcionario.planejamentoDemissaoInterrupcao, Funcionario.protocoloRecebimento, Funcionario.ronda, Funcionario.solicitacaoAbonoFolha, Funcionario.solicitacaoAlteracaoFolga, Funcionario.solicitacaoAlteracaoPausa, Funcionario.solicitacaoFolha, Funcionario.solicitacaoJustificativa, Funcionario.uploadDocumentoFolhaPonto, Implantacao.funcionario, Mensageria.solicitacao, Ntl.ata, Ntl.banco, Ntl.baseConhecimento, Ntl.bdi, Ntl.beneficioIndireto, Ntl.beneficioProjeto, Ntl.beneficioProjetoAvisoPrevio, Ntl.beneficioProjetoHistorico, Ntl.calendario, Ntl.campoParametrizacao, Ntl.cargo, Ntl.cargoSindicato, Ntl.cargoSubstituto, Ntl.categoriaSolicitacao, Ntl.classe, Ntl.clinica, Ntl.contrato, Ntl.convenioSaude, Ntl.decimoTerceiro, Ntl.denunciaPermissao, Ntl.departamento, Ntl.diasUteisPorMunicipio, Ntl.empresa, Ntl.escala, Ntl.especializacao, Ntl.evento, Ntl.exameComplementar, Ntl.feriado, Ntl.feriasTercoConstitucional, Ntl.fornecedor, Ntl.funcao, Ntl.grauInstrucao, Ntl.grupo, Ntl.indiceReajuste, Ntl.inicioReajuste, Ntl.inss, Ntl.insumo, Ntl.ir, Ntl.iss, Ntl.lancamento, Ntl.localizacao, Ntl.logDenunciaPermissao, Ntl.logFolhaPontoDetalheDiario, Ntl.menuSubModulo, Ntl.modeloImportacao, Ntl.modulo, Ntl.motivoAfastamento, Ntl.multaFGTS, Ntl.municipio, Ntl.ordemServico, Ntl.ordemServicoDetalhe, Ntl.ordemServicoInformativo, Ntl.ordemServicoParametro, Ntl.ordemServicoTarefa, Ntl.ordemServicoTarefaPlanejamento, Ntl.ordemServicoVersao, Ntl.periodoRenovacao, Ntl.periodoVigencia, Ntl.pisConfisCs, Ntl.planejamentoDemissaoComprovante, Ntl.portal, Ntl.posto, Ntl.pregao, Ntl.produto, Ntl.produtoServico, Ntl.projeto, Ntl.projetoHistorico, Ntl.projetoHorarioCobertura, Ntl.protocoloRecebimentoDocumento, Ntl.remuneracao, Ntl.responsavel, Ntl.servico, Ntl.sindicato, Ntl.situacao, Ntl.status, Ntl.statusEntrevista, Ntl.statusSolicitacao, Ntl.subDenuncia, Ntl.tarefa, Ntl.tipoArquivo, Ntl.tipoCartao, Ntl.tipoContrato, Ntl.tipoContratoComercial, Ntl.tipoDenuncia, Ntl.tipoDocumento, Ntl.tipoFeriado, Ntl.tipoObrigacaoAcessoria, Ntl.tipoReajuste, Ntl.tipoRevezamento, Ntl.tipoSistema, Ntl.tipoSolicitacao, Ntl.torre, Ntl.unidade, Ntl.unidadeFederacao, Ntl.usuario, Ntl.usuarioGrupo, Ntl.valeTransporteModal, Ntl.valeTransporteUnitario, Ntl.vinculoTela, Ntl.vinculoTelaLink, Sat.analista, Sat.atribuicaoChamadoDetalhe, Sat.chamado, Sat.equipamento, Sat.parceiro, Sat.relatorioChromebook, Sat.relatorioDesktopNotebook, Sat.relatorioImpressora, Sat.relatorioMonitor, Sat.relatorioNtl, Sat.usuario, SaudeSegurancaTrabalho.ltcatProjeto, SaudeSegurancaTrabalho.ltcatUpload, SaudeSegurancaTrabalho.pcmsoProjeto, SaudeSegurancaTrabalho.pcmsoUpload, SaudeSegurancaTrabalho.pgrRelatorioProjetos, SaudeSegurancaTrabalho.pgrRelatorioUpload, SaudeSegurancaTrabalho.ppra, Scf.controleDespesas, Scf.controleDespesasAutomatico, Scf.despesa, Scf.receita, Scf.usuario
+    usuarioCadastroPausa                (varchar        ) <- Funcionario.planejamentoDemissao
+    usuarioCancelamento                 (varchar        ) <- Funcionario.planejamentoDemissao
+    usuarioDataCredito                  (varchar        ) <- Beneficio.processaBeneficio
+    usuarioExclusao                     (varchar        ) <- Beneficio.processaBeneficio, Estoque.entradaMaterial
+    usuarioFechamento                   (varchar        ) <- Beneficio.processaBeneficio, Faturamento.valorPosto, SaudeSegurancaTrabalho.ppraHistoricoClassificacaoRiscos, SaudeSegurancaTrabalho.ppraHistoricoLevantamentoRiscosAmbiente
+    usuarioGrupo                        (int            ) <- Implantacao.funcionario
+    usuarioImportacao                   (varchar        ) <- Funcionario.contrachequeSalarioMensalista
+    usuarioLog                          (varchar        ) <- Funcionario.pedidosFeriasLog
+    usuarioReajuste                     (varchar        ) <- Ntl.projetoCargoSalario, Ntl.projetoCargoSalarioHistorico
+    usuarioUltimoDownload               (varchar        ) <- Funcionario.atestadoSaudeOcupacionalDetalhe, Funcionario.controleFeriasAvisoUpload, Funcionario.folhaContracheque, Funcionario.folhaContrachequeAdiantamento, Funcionario.folhaContrachequeComplementar, Funcionario.folhaDecimo, Funcionario.folhaRendimento, Funcionario.logUploadFolhaPonto
+    usuarioUpload                       (int            ) <- Ntl.obrigacaoAcessoriaEnvios
+    usuarioValida                       (varchar        ) <- Funcionario.relatorioParentesco
+    usuarioValidacao                    (int            ) <- Funcionario.horaExtraDetalhe, Funcionario.pedidoFeriasAdiantamento, Funcionario.pedidosFerias, Funcionario.planejamentoDemissao
+    valeTransporteUsuarioCadastro       (varchar        ) <- Contratacao.candidato
+
+======================================================================
+  MAPEAMENTO SUGERIDO: Campos do banco -> Atributos LDAP
+======================================================================
+
+  Campo no banco          -> Atributo LDAP          -> objectClass
+  ----------------------------------------------------------------
+  nome / nomeCompleto       -> cn / displayName          -> inetOrgPerson
+  nome (primeiro)           -> givenName                 -> inetOrgPerson
+  nome (sobrenome)          -> sn (surname)              -> inetOrgPerson
+  cpf                       -> employeeNumber            -> inetOrgPerson
+  rg                        -> custom: rgNumber          -> custom schema
+  matricula                 -> employeeNumber            -> inetOrgPerson
+  email                     -> mail                      -> inetOrgPerson
+  telefone                  -> telephoneNumber           -> inetOrgPerson
+  celular                   -> mobile                    -> inetOrgPerson
+  endereco                  -> postalAddress             -> inetOrgPerson
+  cep                       -> postalCode                -> inetOrgPerson
+  cidade + uf               -> l (locality) + st         -> inetOrgPerson
+  cargo                     -> title                     -> inetOrgPerson
+  departamento              -> departmentNumber / ou     -> inetOrgPerson
+  dataNascimento            -> custom: birthDate         -> custom schema
+  dataContratacao           -> custom: hireDate          -> custom schema
+  login                     -> uid                       -> inetOrgPerson
+  senha                     -> userPassword              -> inetOrgPerson
+  foto                      -> jpegPhoto                 -> inetOrgPerson
+  banco/agencia/conta       -> NAO COLOCAR NO LDAP       -> manter no MySQL
+  salario                   -> NAO COLOCAR NO LDAP       -> manter no MySQL
+  dados saude               -> NAO COLOCAR NO LDAP       -> manter no MySQL (restrito)
+  pai/mae                   -> NAO COLOCAR NO LDAP       -> manter no MySQL
+
+  IMPORTANTE:
+  - Dados financeiros (banco/agencia/conta/salario) NAO devem ir pro LDAP
+  - Dados de saude NAO devem ir pro LDAP (LGPD Art. 5 - dado sensivel)
+  - Dados de familia NAO devem ir pro LDAP
+  - LDAP = identificacao + contato + cargo/departamento + autenticacao
+  - MySQL = dados financeiros, saude, auditoria, historico
+
+======================================================================
+  ONDE OS DADOS ESTAO HOJE (por tabela)
+======================================================================
+
+  Beneficio.afastamento (6 campos pessoais):
+    - dataAlteracao
+    - descontarCestaBasica
+    - descontarTransporte
+    - descontarVAVR
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Beneficio.afastamentoFuncionario (4 campos pessoais):
+    - dataAlteracao
+    - retornoMesmoMes
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Beneficio.folga (5 campos pessoais):
+    - dataAlteracao
+    - descontarTransporte
+    - descontarVAVR
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Beneficio.folhaPonto (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Beneficio.funcionarioFerias (5 campos pessoais):
+    - dataAlteracao
+    - feriasSolicitacao
+    - pedidoFerias
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Beneficio.parametroFerias (5 campos pessoais):
+    - dataAlteracao
+    - feriasFracionadas
+    - nomeParametro
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Beneficio.parametroFeriasPorPessoa (50 campos pessoais):
+    - abrilImpedidoFerias
+    - abrilMelhorFerias
+    - abrilPiorFerias
+    - agostoImpedidoFerias
+    - agostoMelhorFerias
+    - agostoPiorFerias
+    - coberturaFerias
+    - dataAlteracao
+    - dezembroImpedidoFerias
+    - dezembroMelhorFerias
+    - dezembroPiorFerias
+    - domingoImpedidoFerias
+    - feriasFracionadas
+    - fevereiroImpedidoFerias
+    - fevereiroMelhorFerias
+    - fevereiroPiorFerias
+    - janeiroImpedidoFerias
+    - janeiroMelhorFerias
+    - janeiroPiorFerias
+    - julhoImpedidoFerias
+    - julhoMelhorFerias
+    - julhoPiorFerias
+    - junhoImpedidoFerias
+    - junhoMelhorFerias
+    - junhoPiorFerias
+    - maioImpedidoFerias
+    - maioMelhorFerias
+    - maioPiorFerias
+    - marcoImpedidoFerias
+    - marcoMelhorFerias
+    - marcoPiorFerias
+    - novembroImpedidoFerias
+    - novembroMelhorFerias
+    - novembroPiorFerias
+    - outubroImpedidoFerias
+    - outubroMelhorFerias
+    - outubroPiorFerias
+    - quartaImpedidoFerias
+    - quintaImpedidoFerias
+    - sabadoImpedidoFerias
+    - segundaImpedidoFerias
+    - setembroImpedidoFerias
+    - setembroMelhorFerias
+    - setembroPiorFerias
+    - sextaImpedidoFerias
+    - tempoCancelamentoFerias
+    - tempoConfirmacaoFerias
+    - tercaImpedidoFerias
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Beneficio.pedidoBeneficioExtra (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Beneficio.processaBeneficio (3 campos pessoais):
+    - usuarioDataCredito
+    - usuarioExclusao
+    - usuarioFechamento
+
+  Beneficio.processaBeneficioDetalhe (7 campos pessoais):
+    - diaUtilFerias
+    - diasAbatidosFeriasVT
+    - folgaAbaterVAVR
+    - folgaAbaterVT
+    - nomeProduto
+    - valorTotalPlanoSaude
+    - valorTotalPlanoSaudeBeneficio
+
+  Beneficio.processafuncionarioFerias (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Beneficio.produtoBeneficio (4 campos pessoais):
+    - dataAlteracao
+    - nome
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Contratacao.atestadoSaudeOcupacional (4 campos pessoais):
+    - dataAlteracao
+    - dataRealizacaoAso
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Contratacao.campo (2 campos pessoais):
+    - nome
+    - nomeCompleto
+
+  Contratacao.candidato (89 campos pessoais):
+    - agenciaBanco
+    - bairro
+    - cargo
+    - categoriaCnh
+    - cep
+    - chavePix
+    - cidade
+    - cnh
+    - codigoCid
+    - complemento
+    - contaCorrente
+    - cpf
+    - cpfConjuge
+    - ctps
+    - dataASO
+    - dataAgendamentoAso
+    - dataAlteracao
+    - dataEmissaoCnh
+    - dataEmissaoRg
+    - dataNascimento
+    - dataNascimentoConjuge
+    - dataRealizacaoAso
+    - dataRelatorioASO
+    - dataVencimentoCnh
+    - digitoAgenciaBanco
+    - digitoContaBanco
+    - email
+    - emissorRg
+    - endereco
+    - estado
+    - estadoCivil
+    - fk_banco
+    - horarioEntradaGrauInstrucao
+    - horarioSaidaGrauInstrucao
+    - localRg
+    - logradouro
+    - municipioNascimento
+    - nacionalidade
+    - nomeClinica
+    - nomeCompleto
+    - nomeConjuge
+    - nomeEnderecoColegioUniversidade
+    - nomeMae
+    - nomePai
+    - novoCargo
+    - numero
+    - numeroBermuda
+    - numeroCalca
+    - numeroCamisa
+    - numeroCapaChuva
+    - numeroCartaoVt
+    - numeroCinto
+    - numeroJaleco
+    - numeroMunicipio
+    - numeroPais
+    - numeroPaisConjuge
+    - numeroSaia
+    - numeroSapato
+    - outroTelefone
+    - paisNascimento
+    - pis
+    - possuiContaBancaria
+    - possuiFilhoMenor14
+    - primeiraCnh
+    - racaCor
+    - relatorioASO
+    - rg
+    - sexo
+    - solicitanteAso
+    - telefoneCelular
+    - telefoneResidencial
+    - tipoConta
+    - tipoPix
+    - ufCnh
+    - ufNascimento
+    - ufNascimentoConjuge
+    - usuarioAlteracao
+    - usuarioCadastro
+    - valeTransporteUsuarioCadastro
+    - validaContrato
+    - validaFichaDependenteIr
+    - verificaAso
+    - verificaCargo
+    - verificaDadoConjuge
+    - verificaDadoContato
+    - verificaDependente
+    - verificaEndereco
+    - verificaEscolaridade
+    - verificaFilho
+
+  Contratacao.candidatoDependente (8 campos pessoais):
+    - cpf
+    - dataNascimento
+    - dependenteFilho
+    - dependenteIrrf
+    - dependentePensaoAlimenticia
+    - grauParentescoDependente
+    - nomeCompleto
+    - rg
+
+  Contratacao.candidatoDocumento (2 campos pessoais):
+    - enderecoDocumento
+    - nomeArquivo
+
+  Contratacao.candidatoFilho (3 campos pessoais):
+    - cpf
+    - dataNascimento
+    - nomeCompleto
+
+  Contratacao.candidatoPensaoAlimenticia (3 campos pessoais):
+    - cpf
+    - dataNascimento
+    - nomeCompleto
+
+  Contratacao.candidatoTransporte (2 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+
+  Contratacao.captacaoRecursoEmail (2 campos pessoais):
+    - email
+    - emailPrincipal
+
+  Contratacao.captacaoRecursos (13 campos pessoais):
+    - bairro
+    - cep
+    - cidade
+    - contratado
+    - dataAlteracao
+    - logradouro
+    - nomeCandidato
+    - numero
+    - numeroSolicitacao
+    - ocorrencia
+    - uf
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Contratacao.controleFuncionario (14 campos pessoais):
+    - cargo
+    - dataAdmissao
+    - dataAlteracao
+    - departamento
+    - escalaHorario
+    - indicativoAdmissao
+    - matriculaSCI
+    - regimeJornadaTrabalho
+    - salarioBase
+    - tipoAdmissao
+    - tipoContrato
+    - tipoJornadaESocial
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Contratacao.exportacao (4 campos pessoais):
+    - dataAlteracao
+    - nomeTxtGerado
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Contratacao.implementador (6 campos pessoais):
+    - cpf
+    - dataAlteracao
+    - nome
+    - telefone
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Contratacao.log_excluirCandidatoManual (2 campos pessoais):
+    - nomeCandidato
+    - usuario
+
+  Contratacao.parametroCampo (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Contratacao.parametroContrato (6 campos pessoais):
+    - asoObrigatorio
+    - cargo
+    - dataAlteracao
+    - documentoPlanoSaude
+    - numeroSolicitacao
+    - usuarioAlteracao
+
+  Contratacao.parametroRelatorio (6 campos pessoais):
+    - asoObrigatorio
+    - caminhoPlanoSaudePdf
+    - numeroSolicitacao
+    - relatorioContratoExperienciaTexto1
+    - relatorioContratoExperienciaTexto2
+    - relatorioContratoIntermitenteTexto1
+
+  Contratacao.preCadastroCandidato (27 campos pessoais):
+    - bairroFuncionario
+    - bairroLocalTrabalho
+    - cargo
+    - cepFuncionario
+    - cepLocalTrabalho
+    - cidadeFuncionario
+    - cidadeLocalTrabalho
+    - complementoFuncionario
+    - complementoLocalTrabalho
+    - cpf
+    - dataAlteracao
+    - dataNascimento
+    - email
+    - enderecoFuncionario
+    - enderecoLocalTrabalho
+    - estadoFuncionario
+    - estadoLocalTrabalho
+    - logradouroFuncionario
+    - logradouroLocalTrabalho
+    - nomeCompleto
+    - numeroFuncionario
+    - numeroLocalTrabalho
+    - pis
+    - setor
+    - telefone
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Contratacao.solicitacaoRecursos (20 campos pessoais):
+    - cargo
+    - cargoSalario
+    - dataAlteracao
+    - dataSolicitacao
+    - departamento
+    - departamentoDinamica
+    - departamentoInicial
+    - departamentoSocial
+    - departamentoTecnico
+    - departamentoTeste
+    - escalaHorario
+    - formacao
+    - numeroVagas
+    - observacaoCargo
+    - observacaoEscolaridade
+    - observacaoPlanoDeSaude
+    - salarioBase
+    - tipoContrato
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Contratacao.solicitacaoRecursosHistorico (19 campos pessoais):
+    - cargo
+    - cargoSalario
+    - dataAlteracao
+    - dataSolicitacao
+    - departamento
+    - departamentoDinamica
+    - departamentoInicial
+    - departamentoSocial
+    - departamentoTecnico
+    - departamentoTeste
+    - escalaHorario
+    - formacao
+    - numeroVagas
+    - observacaoCargo
+    - observacaoEscolaridade
+    - observacaoPlanoDeSaude
+    - salarioBase
+    - tipoContrato
+    - usuarioAlteracao
+
+  Contratacao.solicitacaoRecursosInterno (14 campos pessoais):
+    - cargo
+    - dataAlteracao
+    - dataSolicitacao
+    - departamento
+    - escalaHorario
+    - formacao
+    - numeroVagas
+    - observacaoEscolaridade
+    - salarioBase
+    - salarioDiaria
+    - salarioHora
+    - tipoContrato
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Contratacao.tipoTransporte (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Contratacao.trabalheConoscoCurriculo (16 campos pessoais):
+    - bairro
+    - cargoInteresse
+    - cep
+    - complemento
+    - dataAlteracao
+    - email
+    - horarioEntradaGrauInstrucao
+    - horarioSaidaGrauInstrucao
+    - logradouro
+    - nome
+    - nomeEnderecoColegioUniversidade
+    - numero
+    - telefone
+    - uf
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Contratacao.trabalheConoscoCurriculoExperiencia (2 campos pessoais):
+    - cargoInteresse
+    - nomeEmpresa
+
+  Estoque.ajuda (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Estoque.codigoItem (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Estoque.entradaMaterial (12 campos pessoais):
+    - dataAlteracao
+    - fileName
+    - fileNameLogistica
+    - fileNamePdf
+    - motivoAlteracaoUpload
+    - naturezaOperacao
+    - numeroLogistica
+    - numeroNF
+    - sequencialDeclaracao
+    - usuarioAlteracao
+    - usuarioCadastramento
+    - usuarioExclusao
+
+  Estoque.entradaMaterialHistorico (6 campos pessoais):
+    - dataAlteracao
+    - fileName
+    - naturezaOperacao
+    - numeroNF
+    - usuarioAlteracao
+    - usuarioCadastramento
+
+  Estoque.entradaMaterialItem (2 campos pessoais):
+    - numeroChamado
+    - numeroChamadoId
+
+  Estoque.estoque (4 campos pessoais):
+    - dataAlteracao
+    - numero
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Estoque.estoqueMovimento (6 campos pessoais):
+    - dataAlteracao
+    - numeroChamado
+    - numeroChamadoId
+    - numeroDocumento
+    - usuarioAlteracao
+    - usuarioCadastramento
+
+  Estoque.fabricante (4 campos pessoais):
+    - dataAlteracao
+    - numero
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Estoque.fornecimentoUpload (2 campos pessoais):
+    - fileName
+    - usuarioCadastro
+
+  Estoque.grupoItem (4 campos pessoais):
+    - dataAlteracao
+    - numero
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Estoque.localizacaoItem (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Estoque.naturezaOperacao (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Estoque.pedidoMaterial (4 campos pessoais):
+    - dataAlteracao
+    - numeroChamadoId
+    - usuarioAlteracao
+    - usuarioCadastramento
+
+  Estoque.pedidoMaterialItem (2 campos pessoais):
+    - numeroChamado
+    - numeroChamadoId
+
+  Estoque.reservaDocumento (4 campos pessoais):
+    - dataAlteracao
+    - numeroDocumento
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Estoque.saidaMaterial (5 campos pessoais):
+    - clienteProjeto
+    - dataAlteracao
+    - naturezaOperacao
+    - usuarioAlteracao
+    - usuarioCadastramento
+
+  Estoque.saidaMaterialUpload (2 campos pessoais):
+    - nome
+    - usuarioCadastro
+
+  Estoque.tipoItem (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Estoque.unidadeItem (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Faturamento.contrato (12 campos pessoais):
+    - bairro
+    - cep
+    - cidade
+    - cnpj
+    - complemento
+    - contaVinculada
+    - logradouro
+    - numero
+    - numeroContrato
+    - numeroPregao
+    - objetivoContrato
+    - uf
+
+  Faturamento.dadosPlanilha (3 campos pessoais):
+    - cargo
+    - departamento
+    - qtdFolga
+
+  Faturamento.encargo (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Faturamento.gastosFuncionarioPlanejado (4 campos pessoais):
+    - dataAdmissao
+    - dataDemissao
+    - ferias
+    - salario
+
+  Faturamento.gastosFuncionarioReal (4 campos pessoais):
+    - dataAdmissao
+    - dataDemissao
+    - ferias
+    - salario
+
+  Faturamento.importacaoConciliacaoBancaria (4 campos pessoais):
+    - conta
+    - dataAlteracao
+    - tipoConta
+    - usuarioAlteracao
+
+  Faturamento.importacaoContasPagar (9 campos pessoais):
+    - banco
+    - cnpj
+    - conta
+    - contaPg
+    - dataAlteracao
+    - numero
+    - pisReter
+    - usuario
+    - vencimento
+
+  Faturamento.importacaoReceber (6 campos pessoais):
+    - cnpjCliente
+    - dataAlteracao
+    - numeroNf
+    - pisReter
+    - usuarioAlteracao
+    - vencimentoNf
+
+  Faturamento.logEncargo (3 campos pessoais):
+    - dataAlteracao
+    - encargo
+    - usuarioAlteracao
+
+  Faturamento.solicitacao (8 campos pessoais):
+    - cliente
+    - dataAlteracao
+    - dataVencimento
+    - diasAtraso
+    - horaSolicitacao
+    - horarioBaixa
+    - numeroNf
+    - usuarioAlteracao
+
+  Faturamento.tabelaBasicaTorino (3 campos pessoais):
+    - cliente
+    - dataAlteracao
+    - usuario
+
+  Faturamento.torino (4 campos pessoais):
+    - cliente
+    - dataAlteracao
+    - ocorrencia
+    - usuario
+
+  Faturamento.valorPosto (4 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+    - usuarioFechamento
+
+  Funcionario.atestadoSaudeOcupacional (6 campos pessoais):
+    - dataAlteracao
+    - dataProximoAso
+    - dataUltimoAso
+    - tipoExameCadastro
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Funcionario.atestadoSaudeOcupacionalDetalhe (6 campos pessoais):
+    - atestadoSaudeOcupacional
+    - dataProximoAsoLista
+    - dataRealizacaoAso
+    - fileName
+    - tipoExame
+    - usuarioUltimoDownload
+
+  Funcionario.auditoriaSaudeMensal (2 campos pessoais):
+    - matricula
+    - nome
+
+  Funcionario.autorizacaoHoraExtra (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Funcionario.avaliacaoDesempenho (6 campos pessoais):
+    - atraso
+    - dataAlteracao
+    - interacaoSocial
+    - receptividade
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Funcionario.avaliacaoDesempenhoParametro (4 campos pessoais):
+    - dataAlteracao
+    - departamento
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Funcionario.avaliacaoDesempenhoTecnico (6 campos pessoais):
+    - atraso
+    - dataAlteracao
+    - interacaoSocial
+    - receptividade
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Funcionario.avaliacaoTecnica (6 campos pessoais):
+    - atraso
+    - dataAlteracao
+    - interacaoSocial
+    - receptividade
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Funcionario.avisoFeriasUpload (2 campos pessoais):
+    - controleFerias_id
+    - usuario
+
+  Funcionario.centralTarefas (7 campos pessoais):
+    - dataAlteracao
+    - dataFimRecorrencia
+    - dataInicioRecorrencia
+    - departamento
+    - recorrencia
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Funcionario.coberturaFuncionario (2 campos pessoais):
+    - departamento
+    - departamentoFuncionarioFaltante
+
+  Funcionario.contrachequeSalarioMensalista (3 campos pessoais):
+    - cpf
+    - salarioMensalista
+    - usuarioImportacao
+
+  Funcionario.controleFerias (27 campos pessoais):
+    - alteraSolicitacao
+    - alteraSolicitacao2
+    - alteraSolicitacao3
+    - dataAlteracao
+    - dataAlteracaoFim
+    - dataAlteracaoFim11
+    - dataAlteracaoFim12
+    - dataAlteracaoFim13
+    - dataAlteracaoInicio
+    - dataAlteracaoInicio11
+    - dataAlteracaoInicio12
+    - dataAlteracaoInicio13
+    - dataIntegracao1
+    - dataIntegracao2
+    - dataIntegracao3
+    - diasSolicAlteracao
+    - diasSolicAlteracao11
+    - diasSolicAlteracao12
+    - justificaAlteracaoGestor
+    - justificaAlteracaoGestor2
+    - justificaAlteracaoGestor3
+    - justificativaAlteracao
+    - qtdDiasAlteracao11
+    - qtdDiasAlteracao12
+    - qtdDiasAlteracao13
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Funcionario.controleFeriasAvisoUpload (8 campos pessoais):
+    - controleFerias
+    - dataAlteracao
+    - fileName
+    - inicioFerias
+    - usuarioAlteracao
+    - usuarioCadastro
+    - usuarioUltimoDownload
+    - xmlAvisoFerias
+
+  Funcionario.controleFeriasDias (3 campos pessoais):
+    - controleFerias
+    - situacaoFerias
+    - statusFerias
+
+  Funcionario.controleFeriasPedidos (5 campos pessoais):
+    - conjuge
+    - dataAlteracao
+    - filhos
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Funcionario.controleFeriasSubstituto (3 campos pessoais):
+    - controleFerias
+    - periodoFerias
+    - usuarioCadastro
+
+  Funcionario.folgaBancoHoras (5 campos pessoais):
+    - dataAlteracao
+    - dataFolga
+    - tipoFolga
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Funcionario.folgaFolhaPonto (6 campos pessoais):
+    - beneficioFolga
+    - dataAlteracao
+    - descontarTransporte
+    - descontarVAVR
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Funcionario.folhaContracheque (2 campos pessoais):
+    - cpf
+    - usuarioUltimoDownload
+
+  Funcionario.folhaContrachequeAdiantamento (2 campos pessoais):
+    - cpf
+    - usuarioUltimoDownload
+
+  Funcionario.folhaContrachequeComplementar (2 campos pessoais):
+    - cpf
+    - usuarioUltimoDownload
+
+  Funcionario.folhaDePagamento (10 campos pessoais):
+    - cpf
+    - ctps
+    - funcao
+    - nomeCompleto
+    - pis
+    - salarioFgts
+    - salarioInss
+    - salarioLiquido
+    - serieCtps
+    - totalVencimento
+
+  Funcionario.folhaDecimo (2 campos pessoais):
+    - cpf
+    - usuarioUltimoDownload
+
+  Funcionario.folhaPontoMensal (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Funcionario.folhaPontoMensalDetalheDiario (5 campos pessoais):
+    - atraso
+    - atrasoDois
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Funcionario.folhaPontoMensalHistorico (3 campos pessoais):
+    - dataAlteracao
+    - tipoAlteracao
+    - usuarioAlteracao
+
+  Funcionario.folhaRendimento (2 campos pessoais):
+    - cpf
+    - usuarioUltimoDownload
+
+  Funcionario.historicoPedidoFerias (2 campos pessoais):
+    - matricula
+    - usuarioCadastro
+
+  Funcionario.importacaoAuditoriaSaude (8 campos pessoais):
+    - cpf
+    - dataAlteracao
+    - dataNascimento
+    - estadoCivil
+    - matricula
+    - nomeCompleto
+    - sexo
+    - usuarioAlteracao
+
+  Funcionario.importacaoFeriasAviso (7 campos pessoais):
+    - admissao
+    - ctps
+    - dataAlteracao
+    - matricula
+    - recebeFerias
+    - usuario
+    - usuarioAlteracao
+
+  Funcionario.importacaoFeriasAvisoNovo (5 campos pessoais):
+    - admissao
+    - matricula
+    - numeroCtps
+    - recebeFerias
+    - usuario
+
+  Funcionario.importacaoPontoEletronico (3 campos pessoais):
+    - dataAlteracao
+    - pis
+    - usuarioAlteracao
+
+  Funcionario.importacaoSamu (4 campos pessoais):
+    - folga
+    - matricula
+    - nome
+    - usuarioCadastro
+
+  Funcionario.importacaoSamuTemporario (4 campos pessoais):
+    - folga
+    - matricula
+    - nome
+    - usuarioCadastro
+
+  Funcionario.importarAvisoFeriasExportado (9 campos pessoais):
+    - empresaCnpj
+    - empresaEndereco
+    - empresaNome
+    - funcionarioAdmissao
+    - funcionarioCargo
+    - funcionarioNome
+    - funcionarioSalario
+    - remuneracao
+    - usuario
+
+  Funcionario.justificativaGestor (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Funcionario.lancamentoFeedBack (6 campos pessoais):
+    - dataAlteracao
+    - departamento
+    - fileName
+    - usuarioAlteracao
+    - usuarioCadastro
+    - xmlAvisoFerias
+
+  Funcionario.lancamentoHorarioDetalhe (2 campos pessoais):
+    - horario
+    - lancamentoHorario
+
+  Funcionario.lancamentoOcorrencia (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Funcionario.lancamentoOcorrenciaDetalhe (3 campos pessoais):
+    - lancamentoOcorrencia
+    - ocorrencia
+    - totalAtraso
+
+  Funcionario.logUploadFolhaPonto (5 campos pessoais):
+    - dataAlteracao
+    - fileName
+    - usuarioAlteracao
+    - usuarioCadastro
+    - usuarioUltimoDownload
+
+  Funcionario.pedidosFerias (6 campos pessoais):
+    - autorizarAlteracao
+    - dataAlteracao
+    - dataIntegracao
+    - usuarioAlteracao
+    - usuarioIntegracao
+    - usuarioValidacao
+
+  Funcionario.pedidosFeriasLog (3 campos pessoais):
+    - dataIntegracao
+    - usuarioIntegracao
+    - usuarioLog
+
+  Funcionario.pendencia (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Funcionario.planejamentoDemissao (13 campos pessoais):
+    - dataAlteracao
+    - dataDemissao
+    - dataIntegracao
+    - demissaoAssinaturaFuncionario
+    - descontaVAVR
+    - descontaVT
+    - nomeFuncionarioCadastro
+    - usuarioAlteracao
+    - usuarioCadastro
+    - usuarioCadastroPausa
+    - usuarioCancelamento
+    - usuarioIntegracao
+    - usuarioValidacao
+
+  Funcionario.planejamentoDemissaoHistorico (3 campos pessoais):
+    - dataAlteracao
+    - tipoAlteracao
+    - usuarioAlteracao
+
+  Funcionario.protocoloRecebimento (4 campos pessoais):
+    - dataAlteracao
+    - fileNamePdf
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Funcionario.relatorioParentesco (17 campos pessoais):
+    - bairro
+    - caminhoFoto
+    - cep
+    - cidade
+    - complemento
+    - email
+    - endereco
+    - genero
+    - identidadeGenero
+    - logradouro
+    - numero
+    - paisNascimento
+    - racaCor
+    - telefone
+    - uf
+    - ufNascimento
+    - usuarioValida
+
+  Funcionario.relatorioParentescoParente (2 campos pessoais):
+    - matricula
+    - nome
+
+  Funcionario.ronda (2 campos pessoais):
+    - departamento
+    - usuarioCadastro
+
+  Funcionario.solicitacaoAbonoFolha (4 campos pessoais):
+    - dataAlteracao
+    - horarioCobertura
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Funcionario.solicitacaoAlteracaoFolga (6 campos pessoais):
+    - dataAlteracao
+    - dataPrevistaFolga
+    - fileName
+    - tipoFolga
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Funcionario.solicitacaoAlteracaoPausa (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Funcionario.solicitacaoFolha (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Funcionario.solicitacaoJustificativa (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Funcionario.uploadDocumentoFolhaPonto (5 campos pessoais):
+    - dataAlteracao
+    - dataOcorrencia
+    - fileName
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Funcionario.uploadDocumentoFolhaPontoHistorico (4 campos pessoais):
+    - atestado
+    - dataAlteracao
+    - tipoAlteracao
+    - usuarioAlteracao
+
+  Implantacao.funcionario (45 campos pessoais):
+    - admissao
+    - bairro
+    - bancoHoras
+    - cargo
+    - cep
+    - cidade
+    - complemento
+    - conjugeMesmaEmpresa
+    - cpf
+    - ctps
+    - dataAdmissao
+    - dataAlteracao
+    - dataNascimento
+    - departamento
+    - dependentePlanoSaude
+    - diaFeriasUltimoPeriodoGozo
+    - email
+    - endereco
+    - escalaHorario
+    - estadoCivil
+    - estadoCtps
+    - logradouro
+    - matricula
+    - nacionalidade
+    - nome
+    - numeroCartaoVt
+    - numeroLogradouro
+    - numeroTitulo
+    - periodicidadeAso
+    - pisPasep
+    - possuiFilhoMenor14
+    - quadroHorario
+    - rg
+    - salarioBase
+    - serieCtps
+    - sexo
+    - telefone
+    - telefoneResidencia
+    - uf
+    - ultimoAso
+    - ultimoPeriodoFeriasTiradoFim
+    - ultimoPeriodoFeriasTiradoInicio
+    - usuarioAlteracao
+    - usuarioCadastro
+    - usuarioGrupo
+
+  Implantacao.funcionarioDependente (2 campos pessoais):
+    - dataNascimentoDependente
+    - nomeDependente
+
+  Mensageria.solicitacao (8 campos pessoais):
+    - dataAlteracao
+    - dataSolicitacao
+    - departamento
+    - endereco
+    - horaSolicitacao
+    - urgente
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.acompanhamento (2 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+
+  Ntl.administradorDenuncia (2 campos pessoais):
+    - administradorDenunciaNome
+    - email
+
+  Ntl.alteraInformacoes (20 campos pessoais):
+    - agenciaBanco
+    - bairro
+    - banco
+    - cep
+    - chavePix
+    - cidade
+    - complemento
+    - contaBanco
+    - digitoAgenciaBanco
+    - digitoContaBanco
+    - endereco
+    - estado
+    - logradouro
+    - nome
+    - numero
+    - rg
+    - tipoContaBanco
+    - tipoPix
+    - usuarioAprovacaoVT
+    - variacaoBanco
+
+  Ntl.alteraInformacoesEmail (3 campos pessoais):
+    - codigoAlteracao
+    - corporativo
+    - email
+
+  Ntl.alteraInformacoesTelefone (3 campos pessoais):
+    - codigoAlteracao
+    - corporativo
+    - telefone
+
+  Ntl.alteracaoRegistroRep (3 campos pessoais):
+    - codigoHorarioContratual
+    - motivoAlteracao
+    - numeroSequencialPar
+
+  Ntl.ata (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.ataTarefa (3 campos pessoais):
+    - nomeTarefa
+    - numeroTopico
+    - numeroTopicoTarefa
+
+  Ntl.atendimentoRotina (3 campos pessoais):
+    - departamento
+    - emailFuncionario
+    - usuario
+
+  Ntl.banco (5 campos pessoais):
+    - codigoBanco
+    - dataAlteracao
+    - nomeBanco
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.baseConhecimento (5 campos pessoais):
+    - cliente
+    - fileName
+    - tipoContrato
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.baseConhecimentoHistorico (5 campos pessoais):
+    - cliente
+    - dataAlteracao
+    - fileName
+    - tipoContrato
+    - usuarioAlteracao
+
+  Ntl.bdi (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.beneficioIndireto (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.beneficioProjeto (44 campos pessoais):
+    - bancoHoras
+    - cargo
+    - cargoSalario
+    - codigoPlanejamentoDemissao
+    - dataAdmissaoFuncionario
+    - dataAlteracao
+    - dataDemissaoFuncionario
+    - dataRegistro
+    - demissaoAssinatura
+    - demissaoAssinaturaDigitalFuncionario
+    - demissaoDataAssinatura
+    - demissaoDataAssinaturaDigitalFuncionario
+    - demissaoDataCienciaFuncionario
+    - demissaoDataFimAviso
+    - demissaoDataInicioAviso
+    - demissaoOpcaoAvisoTrabalhado
+    - demissaoTipoAviso
+    - departamento
+    - diaAbaterDemissaoVAVR
+    - diaAbaterDemissaoVT
+    - enderecoEntrega
+    - enviarEmail
+    - escalaFerias
+    - escalaFeriasVAVR
+    - folgaFixa
+    - inicioBancoHoras
+    - matricula
+    - municipioDiasUteisVAVR
+    - municipioDiasUteisVT
+    - municipioFerias
+    - numeroCartaoVt
+    - percentualDescontoMesCorrenteVAVR
+    - percentualDescontoMesCorrenteVR
+    - salarioFuncionario
+    - tipoContrato
+    - usuarioAProvacaoContribuicaoSindical
+    - usuarioAlteracao
+    - usuarioCadastro
+    - validadeAso
+    - valorDescontoMesCorrenteVAVR
+    - valorDescontoMesCorrenteVR
+    - valorTotalDependentePlanoSaude
+    - valorTotalPlanoSaude
+    - valorTotalTitularPlanoSaude
+
+  Ntl.beneficioProjetoAvisoPrevio (5 campos pessoais):
+    - dataAlteracao
+    - fileNamePdf
+    - planejamentoDemissao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.beneficioProjetoHistorico (41 campos pessoais):
+    - bancoHoras
+    - cargo
+    - cargoSalario
+    - dataAdmissaoFuncionario
+    - dataAlteracao
+    - dataDemissaoFuncionario
+    - dataRegistro
+    - demissaoAssinatura
+    - demissaoAssinaturaDigitalFuncionario
+    - demissaoDataAssinatura
+    - demissaoDataAssinaturaDigitalFuncionario
+    - demissaoDataCienciaFuncionario
+    - demissaoDataFimAviso
+    - demissaoDataInicioAviso
+    - demissaoOpcaoAvisoTrabalhado
+    - demissaoTipoAviso
+    - departamento
+    - diaAbaterDemissaoVAVR
+    - diaAbaterDemissaoVT
+    - enderecoEntrega
+    - enviarEmail
+    - escalaFerias
+    - escalaFeriasVAVR
+    - inicioBancoHoras
+    - matricula
+    - municipioDiasUteisVAVR
+    - municipioDiasUteisVT
+    - municipioFerias
+    - numeroCartaoVt
+    - percentualDescontoMesCorrenteVAVR
+    - percentualDescontoMesCorrenteVR
+    - salarioFuncionario
+    - tipoContrato
+    - usuarioAlteracao
+    - usuarioCadastro
+    - validadeAso
+    - valorDescontoMesCorrenteVAVR
+    - valorDescontoMesCorrenteVR
+    - valorTotalDependentePlanoSaude
+    - valorTotalPlanoSaude
+    - valorTotalTitularPlanoSaude
+
+  Ntl.beneficioProjetoPlanoSaudeDependenteHistorico (2 campos pessoais):
+    - codigoPlanoDependente
+    - dependente
+
+  Ntl.beneficioProjetoVT (2 campos pessoais):
+    - UF
+    - municipio
+
+  Ntl.cadastroInicial (53 campos pessoais):
+    - admissao
+    - bairro
+    - banco_agencia
+    - categoria_cnh
+    - celular
+    - cep
+    - cnh
+    - codigo_matricula
+    - complemento_endereco
+    - conjuge
+    - conta_deposito
+    - cpf
+    - data_emissao_rg
+    - data_nascimento
+    - ddd
+    - ddd_celular
+    - demissao
+    - digito_serie_ctps
+    - email
+    - emissao_cnh
+    - endereco
+    - logradouro
+    - matricula
+    - nascimentoConjuge
+    - nome
+    - nomeCidadeRes
+    - nome_banco
+    - nome_cargo
+    - nome_centro_custo
+    - nome_da_cidade
+    - nome_pais_nascimento
+    - nome_sindicato
+    - numero
+    - numero_cargo
+    - numero_carteira_trab
+    - numero_centro_custo
+    - numero_escala
+    - numero_pais_nascimento
+    - orgao_emissor_rg
+    - pis
+    - rg
+    - salario
+    - sexo
+    - sindicato_numero
+    - telefone
+    - tipoContratoTrabalho
+    - tipo_conta
+    - uf
+    - uf_carteira_identidade
+    - uf_carteira_trab
+    - uf_cnh
+    - ultimo_exame_aso
+    - vencimento_cnh
+
+  Ntl.calendario (6 campos pessoais):
+    - dataAlteracao
+    - municipio
+    - nome
+    - uf
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.campoParametrizacao (4 campos pessoais):
+    - accordion
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.cargo (6 campos pessoais):
+    - codigoCargoSCI
+    - dataAlteracao
+    - salario
+    - usuarioAlteracao
+    - usuarioCadastro
+    - validadeAso
+
+  Ntl.cargoExameComplementar (2 campos pessoais):
+    - cargo
+    - exameComplementar
+
+  Ntl.cargoSindicato (4 campos pessoais):
+    - dataAlteracao
+    - piso
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.cargoSubstituto (4 campos pessoais):
+    - cargo
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.cargoSubstitutoDetalhe (2 campos pessoais):
+    - cargo
+    - cargoSubstituto
+
+  Ntl.categoriaSolicitacao (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.classe (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.clinica (6 campos pessoais):
+    - agendamentoEmail
+    - agendamentoHorario
+    - dataAlteracao
+    - emailDeAgendamento
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.contrato (8 campos pessoais):
+    - contaVinculada
+    - dataAlteracao
+    - ferias
+    - numeroContrato
+    - numeroPregao
+    - objetoContrato
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.contratoContato (7 campos pessoais):
+    - celular
+    - contrato
+    - email
+    - funcao
+    - nome
+    - setor
+    - telefone
+
+  Ntl.contratoFaturamento (9 campos pessoais):
+    - bairroFaturamento
+    - cepFaturamento
+    - cidadeFaturamento
+    - complementoFaturamento
+    - contrato
+    - logradouroFaturamento
+    - numeroFaturamento
+    - pisConfisCs
+    - ufFaturamento
+
+  Ntl.convenioSaude (5 campos pessoais):
+    - cnpj
+    - dataAlteracao
+    - registroANS
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.coordenadorDenuncia (2 campos pessoais):
+    - coordenadorDenunciaNome
+    - email
+
+  Ntl.decimoTerceiro (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.denuncia (2 campos pessoais):
+    - dataApuracao
+    - funcionarioApuracao
+
+  Ntl.denunciaAcompanhamento (2 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+
+  Ntl.denunciaAcusados (7 campos pessoais):
+    - dataAlteracao
+    - departamento
+    - email
+    - nome
+    - telefone
+    - usuario
+    - usuarioAlteracao
+
+  Ntl.denunciaApuracao (6 campos pessoais):
+    - dataAlteracao
+    - departamento
+    - email
+    - nome
+    - telefone
+    - usuarioAlteracao
+
+  Ntl.denunciaPermissao (4 campos pessoais):
+    - dataAlteracao
+    - email
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.departamento (84 campos pessoais):
+    - abrilImpedidoFerias
+    - abrilMelhorFerias
+    - abrilPiorFerias
+    - agostoImpedidoFerias
+    - agostoMelhorFerias
+    - agostoPiorFerias
+    - autorizacaoDadosContrato
+    - bancoHoras
+    - bloqueiaFolga
+    - coberturaFerias
+    - codigoCliente
+    - compensaHorario
+    - dataAlteracao
+    - dezembroImpedidoFerias
+    - dezembroMelhorFerias
+    - dezembroPiorFerias
+    - domingoImpedidoFerias
+    - emailAlteracaoDados
+    - emailAso
+    - emailAtestadoComprovante
+    - emailDemissao
+    - emailFerias
+    - emailLtcatPgrPcmso
+    - emailNepotismo
+    - emailProtocoloPonto
+    - emailRecrutamento
+    - feriasDpFimPeriodo
+    - feriasFracionadas
+    - feriasFuncionarioFimPeriodo
+    - feriasGestorFimPeriodo
+    - feriasPlanejadas
+    - fevereiroImpedidoFerias
+    - fevereiroMelhorFerias
+    - fevereiroPiorFerias
+    - implantacaoBancoHoras
+    - implantacaoEnderecoEntrega
+    - implantacaoFeriasFracionadas
+    - implantacaoMunicipioDiasUteis
+    - implantacaoMunicipioDiasUteisVT
+    - implantacaoValidadeAso
+    - imprimeCargo
+    - janeiroImpedidoFerias
+    - janeiroMelhorFerias
+    - janeiroPiorFerias
+    - julhoImpedidoFerias
+    - julhoMelhorFerias
+    - julhoPiorFerias
+    - junhoImpedidoFerias
+    - junhoMelhorFerias
+    - junhoPiorFerias
+    - liberacaoAbonoPeriodo
+    - liberacaoDecimoAdiantado
+    - maioImpedidoFerias
+    - maioMelhorFerias
+    - maioPiorFerias
+    - marcoImpedidoFerias
+    - marcoMelhorFerias
+    - marcoPiorFerias
+    - novembroImpedidoFerias
+    - novembroMelhorFerias
+    - novembroPiorFerias
+    - outubroImpedidoFerias
+    - outubroMelhorFerias
+    - outubroPiorFerias
+    - periodicidadeAvaliacao
+    - quantidadeAlteracaoFolgaDepartamento
+    - quantidadeMaximaAlteracaoFolga
+    - quartaImpedidoFerias
+    - quintaImpedidoFerias
+    - recebeEmailSistema
+    - reciboFerias
+    - sabadoImpedidoFerias
+    - segundaImpedidoFerias
+    - setembroImpedidoFerias
+    - setembroMelhorFerias
+    - setembroPiorFerias
+    - sextaImpedidoFerias
+    - tempoCancelamentoFerias
+    - tempoConfirmacaoFerias
+    - tercaImpedidoFerias
+    - tipoContrato
+    - usuarioAlteracao
+    - usuarioCadastro
+    - validadeAso
+
+  Ntl.departamentoEmail (2 campos pessoais):
+    - departamento
+    - email
+
+  Ntl.departamentoResponsavel (12 campos pessoais):
+    - departamento
+    - emailAlteracaoDados
+    - emailAso
+    - emailAtestadoComprovante
+    - emailDemissao
+    - emailFerias
+    - emailFeriasAgendamento
+    - emailNepotismo
+    - emailProtocoloPonto
+    - emailRecrutamento
+    - nomeResponsavelDepartamentoLogin
+    - responsavelDepartamentoLogin
+
+  Ntl.departamentoResponsavelCliente (3 campos pessoais):
+    - departamento
+    - nomeResponsavelDepartamentoLogin
+    - responsavelDepartamentoLogin
+
+  Ntl.departamentoResponsavelFolga (3 campos pessoais):
+    - departamento
+    - nomeResponsavelDepartamentoLogin
+    - responsavelDepartamentoLogin
+
+  Ntl.departamentoTelefone (4 campos pessoais):
+    - departamento
+    - telefone
+    - telefonePrincipal
+    - telefoneWpp
+
+  Ntl.diasUteisPorMunicipio (6 campos pessoais):
+    - cidade
+    - dataAlteracao
+    - municipio
+    - unidadeFederacao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.duvidasFrequentes (2 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+
+  Ntl.duvidasFrequentesMenu (2 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+
+  Ntl.empresa (84 campos pessoais):
+    - abrilImpedidoFerias
+    - abrilMelhorFerias
+    - abrilPiorFerias
+    - agostoImpedidoFerias
+    - agostoMelhorFerias
+    - agostoPiorFerias
+    - bairro
+    - bancoHoras
+    - bloquearIpDivergente
+    - cep
+    - cidade
+    - cnpj
+    - compensaHorario
+    - complemento
+    - dataAlteracao
+    - dezembroImpedidoFerias
+    - dezembroMelhorFerias
+    - dezembroPiorFerias
+    - diaMaximoAlteracaoFolga
+    - domingoImpedidoFerias
+    - emailProtocoloPonto
+    - feriasDpFimPeriodo
+    - feriasFracionadas
+    - feriasFuncionarioFimPeriodo
+    - feriasGestorFimPeriodo
+    - feriasPlanejadas
+    - fevereiroImpedidoFerias
+    - fevereiroMelhorFerias
+    - fevereiroPiorFerias
+    - implantacaoBancoHoras
+    - implantacaoEnderecoEntrega
+    - implantacaoFeriasFracionadas
+    - implantacaoMunicipioDiasUteis
+    - implantacaoMunicipioDiasUteisVT
+    - implantacaoValidadeAso
+    - imprimeCargo
+    - janeiroImpedidoFerias
+    - janeiroMelhorFerias
+    - janeiroPiorFerias
+    - julhoImpedidoFerias
+    - julhoMelhorFerias
+    - julhoPiorFerias
+    - junhoImpedidoFerias
+    - junhoMelhorFerias
+    - junhoPiorFerias
+    - liberacaoAbonoPeriodo
+    - liberacaoDecimoAdiantado
+    - liberacaoSolicitacaoFeriasFuturas
+    - logradouro
+    - maioImpedidoFerias
+    - maioMelhorFerias
+    - maioPiorFerias
+    - marcoImpedidoFerias
+    - marcoMelhorFerias
+    - marcoPiorFerias
+    - nome
+    - novembroImpedidoFerias
+    - novembroMelhorFerias
+    - novembroPiorFerias
+    - numero
+    - numeroRep
+    - outubroImpedidoFerias
+    - outubroMelhorFerias
+    - outubroPiorFerias
+    - periodicidadeAvaliacao
+    - quantidadeMaximaAlteracaoFolga
+    - quartaImpedidoFerias
+    - quintaImpedidoFerias
+    - reciboFerias
+    - sabadoImpedidoFerias
+    - segundaImpedidoFerias
+    - setembroImpedidoFerias
+    - setembroMelhorFerias
+    - setembroPiorFerias
+    - sextaImpedidoFerias
+    - tempoCancelamentoFerias
+    - tempoConfirmacaoFerias
+    - tercaImpedidoFerias
+    - tipoContrato
+    - tipoLogradouro
+    - uf
+    - usuarioAlteracao
+    - usuarioCadastro
+    - validadeAso
+
+  Ntl.empresaTelefone (2 campos pessoais):
+    - telefone
+    - telefonePrincipal
+
+  Ntl.escala (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.escalaHorarios (2 campos pessoais):
+    - nomeDia
+    - nomeSemana
+
+  Ntl.especializacao (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.evento (9 campos pessoais):
+    - bairro
+    - cep
+    - cidade
+    - complemento
+    - logradouro
+    - numero
+    - tipoLogradouro
+    - uf
+    - usuarioCadastro
+
+  Ntl.exameComplementar (4 campos pessoais):
+    - dataAlteracao
+    - exameComplementar
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.feriado (6 campos pessoais):
+    - dataAlteracao
+    - municipio
+    - recorrente
+    - unidadeFederacao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.feriasTercoConstitucional (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.fornecedor (17 campos pessoais):
+    - bairro
+    - cep
+    - cidade
+    - clienteFornecedor
+    - cnpj
+    - codigoCliente
+    - codigoDepartamento
+    - complemento
+    - dataAlteracao
+    - endereco
+    - logradouro
+    - nomeDepartamento
+    - numero
+    - uf
+    - unidadeFederacao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.fornecedorDadosBancarios (6 campos pessoais):
+    - agenciaBanco
+    - contaCorrente
+    - digitoAgenciaBanco
+    - digitoContaBanco
+    - fk_banco
+    - tipoConta
+
+  Ntl.fornecedorEmail (2 campos pessoais):
+    - email
+    - emailPrincipal
+
+  Ntl.fornecedorTelefone (3 campos pessoais):
+    - telefone
+    - telefonePrincipal
+    - telefoneWpp
+
+  Ntl.funcao (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.funcionalidade (4 campos pessoais):
+    - dataAlteracao
+    - nome
+    - nomeCompleto
+    - usuarioAlteracao
+
+  Ntl.funcionario (48 campos pessoais):
+    - agenciaBanco
+    - bairro
+    - banco
+    - bancoHoras
+    - cargo
+    - categoriaCNH
+    - cep
+    - chavePix
+    - cidade
+    - cnh
+    - codigoCid
+    - complemento
+    - contaBanco
+    - cpf
+    - dataCancelamentoPlanoSaude
+    - dataDemissao
+    - dataEmissaoCNH
+    - dataEmissaoRG
+    - dataNascimento
+    - dataRegistro
+    - dataVencimentoCNH
+    - digitoAgenciaBanco
+    - digitoContaBanco
+    - endereco
+    - estadoCivil
+    - horarioEntradaGrauInstrucao
+    - horarioSaidaGrauInstrucao
+    - inicioBancoHoras
+    - logradouro
+    - nome
+    - nomeEnderecoColegioUniversidade
+    - numeroCarteiraTrabalho
+    - numeroLogradouro
+    - orgaoEmissorRG
+    - paisNascimento
+    - pisPasep
+    - primeiraHabilitacaoCNH
+    - rg
+    - sexo
+    - tipoContaBanco
+    - tipoContrato
+    - tipoPix
+    - ufCNH
+    - ufCarteiraTrabalho
+    - ufIdentidade
+    - ufLogradouro
+    - ufNascimento
+    - variacaoBanco
+
+  Ntl.funcionarioDependente (7 campos pessoais):
+    - cpfDependente
+    - dataNascimentoDependente
+    - grauParentescoDependente
+    - nomeDependente
+    - orgaoEmissorDependente
+    - rgDependente
+    - tipoDependente
+
+  Ntl.funcionarioDependenteHistorico (9 campos pessoais):
+    - codigoDependente
+    - cpfDependente
+    - dataNascimentoDependente
+    - grauParentescoDependente
+    - nomeDependente
+    - orgaoEmissorDependente
+    - rgDependente
+    - tipoAlteracao
+    - tipoDependente
+
+  Ntl.funcionarioEmail (2 campos pessoais):
+    - corporativo
+    - email
+
+  Ntl.funcionarioEmailHistorico (4 campos pessoais):
+    - codigoEmail
+    - corporativo
+    - email
+    - tipoAlteracao
+
+  Ntl.funcionarioEnderecoHistorico (9 campos pessoais):
+    - bairro
+    - cep
+    - cidade
+    - codigoAlteracao
+    - complemento
+    - endereco
+    - logradouro
+    - numero
+    - uf
+
+  Ntl.funcionarioHistorico (49 campos pessoais):
+    - agenciaBanco
+    - bairro
+    - banco
+    - bancoHoras
+    - cargo
+    - categoriaCNH
+    - cep
+    - chavePix
+    - cidade
+    - cnh
+    - codigoCid
+    - complemento
+    - contaBanco
+    - cpf
+    - dataAlteracao
+    - dataCancelamentoPlanoSaude
+    - dataDemissao
+    - dataEmissaoCNH
+    - dataEmissaoRG
+    - dataNascimento
+    - dataRegistro
+    - dataVencimentoCNH
+    - digitoAgenciaBanco
+    - digitoContaBanco
+    - endereco
+    - horarioEntradaGrauInstrucao
+    - horarioSaidaGrauInstrucao
+    - inicioBancoHoras
+    - logradouro
+    - nome
+    - nomeEnderecoColegioUniversidade
+    - numeroCarteiraTrabalho
+    - numeroLogradouro
+    - orgaoEmissorRG
+    - paisNascimento
+    - pisPasep
+    - primeiraHabilitacaoCNH
+    - rg
+    - sexo
+    - tipoContaBanco
+    - tipoContrato
+    - tipoPix
+    - ufCNH
+    - ufCarteiraTrabalho
+    - ufIdentidade
+    - ufLogradouro
+    - ufNascimento
+    - usuarioAlteracao
+    - variacaoBanco
+
+  Ntl.funcionarioPensaoAlimenticia (3 campos pessoais):
+    - cpf
+    - dataNascimento
+    - nomeCompleto
+
+  Ntl.funcionarioPeriodoAquisitivoDetalhe (5 campos pessoais):
+    - fimFerias
+    - inicioFerias
+    - qtdDiasFerias
+    - solicitacaoFerias
+    - valorDasFerias
+
+  Ntl.funcionarioTelefone (2 campos pessoais):
+    - corporativo
+    - telefone
+
+  Ntl.funcionarioTelefoneHistorico (4 campos pessoais):
+    - codigoTelefone
+    - corporativo
+    - telefone
+    - tipoAlteracao
+
+  Ntl.funcionarioTransporte (2 campos pessoais):
+    - codigoAlteracao
+    - numeroCartao
+
+  Ntl.funcionarioValeTransporteValido (2 campos pessoais):
+    - codigoAlteracao
+    - unidadeFederacao
+
+  Ntl.grauInstrucao (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.grupo (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.importacaoCadastroFuncionario (17 campos pessoais):
+    - celular
+    - cep
+    - complemento_endereco
+    - cpf
+    - data_emissao_rg
+    - data_nascimento
+    - email
+    - nome
+    - numero
+    - numero_carteira_trab
+    - orgao_emissor_rg
+    - pis
+    - rg
+    - sexo
+    - telefone
+    - uf
+    - uf_carteira_trab
+
+  Ntl.importacaoFerias (6 campos pessoais):
+    - CPF
+    - FimPeriodoFerias
+    - InicioPeriodoFerias
+    - Nome
+    - QtdeDiasFerias
+    - matricula
+
+  Ntl.importacaoVinculoBeneficio (12 campos pessoais):
+    - NumeroCentroCusto
+    - admissao
+    - bancoHoras
+    - cpf
+    - departamento
+    - matricula
+    - nome
+    - numeroCargo
+    - numeroEscala
+    - sindicatoNumero
+    - tipoContratoTrabalho
+    - ultimoExameAso
+
+  Ntl.indiceReajuste (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.inicioReajuste (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.inss (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.insumo (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.ir (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.iss (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.lancamento (7 campos pessoais):
+    - abateBancoHoras
+    - abonaAtraso
+    - considerarRegistroBranco
+    - dataAlteracao
+    - tipoContagemDias
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.localizacao (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.logBdi (2 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+
+  Ntl.logBeneficioProjeto (2 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+
+  Ntl.logEmpresa (2 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+
+  Ntl.logErro (5 campos pessoais):
+    - hostName
+    - nomeProcedure
+    - numeroErro
+    - numeroLinha
+    - usuario
+
+  Ntl.logFolhaPontoDetalheDiario (2 campos pessoais):
+    - atraso
+    - usuarioCadastro
+
+  Ntl.logFuncionario (2 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+
+  Ntl.logInsumo (2 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+
+  Ntl.logPermissao (3 campos pessoais):
+    - dataAlteracao
+    - usuario
+    - usuarioAlteracao
+
+  Ntl.logPermissaoGrupo (2 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+
+  Ntl.logProjeto (2 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+
+  Ntl.logRegistroRep (8 campos pessoais):
+    - codigoHorarioContratual
+    - cpfCnpjEmpregador
+    - cpfFuncionario
+    - cpfFuncionarioCadastro
+    - dataHoraCadastro
+    - nomeFuncionario
+    - tipoOperacao
+    - tipoRegistro
+
+  Ntl.logValoresProjeto (4 campos pessoais):
+    - dataAlteracao
+    - descontoFolhaPlanoSaude
+    - usuarioAlteracao
+    - valorDescontoFolhaPlanoSaude
+
+  Ntl.logValoresSindicato (6 campos pessoais):
+    - dataAlteracao
+    - percentualAuxilioSaude
+    - percentualBolsaPlanoSaude
+    - usuarioAlteracao
+    - valorAuxilioSaude
+    - valorBolsaPlanoSaude
+
+  Ntl.menuSubModulo (5 campos pessoais):
+    - dataAlteracao
+    - nome
+    - pai
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.modeloImportacao (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.modeloSolucao (3 campos pessoais):
+    - dataAlteracao
+    - nome
+    - usuarioAlteracao
+
+  Ntl.modulo (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.motivoAfastamento (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.multaFGTS (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.municipio (5 campos pessoais):
+    - codCliente
+    - dataAlteracao
+    - unidadeFederacao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.notificacaoRotina (2 campos pessoais):
+    - dataGeracao
+    - departamento
+
+  Ntl.obrigacaoAcessoriaEnvios (2 campos pessoais):
+    - dataVencimento
+    - usuarioUpload
+
+  Ntl.ordemServico (7 campos pessoais):
+    - consideracao
+    - dataAlteracao
+    - dataEmailEnviado
+    - emailEnviado
+    - nomeOrdemServico
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.ordemServicoDetalhe (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.ordemServicoInformativo (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.ordemServicoParametro (4 campos pessoais):
+    - dataAlteracao
+    - diaTesteCorrecao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.ordemServicoTarefa (5 campos pessoais):
+    - dataAlteracao
+    - fileName
+    - nomeTarefa
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.ordemServicoTarefaPlanejamento (5 campos pessoais):
+    - dataAlteracao
+    - fileName
+    - nomeTarefaPlanejamento
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.ordemServicoVersao (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.parametro (7 campos pessoais):
+    - asoObrigatório
+    - corpoEmail
+    - dataAlteracao
+    - email
+    - linkName
+    - senha
+    - usuarioAlteracao
+
+  Ntl.parametroHistorico (7 campos pessoais):
+    - asoObrigatório
+    - corpoEmail
+    - dataAlteracao
+    - email
+    - linkName
+    - senha
+    - usuarioAlteracao
+
+  Ntl.parametroResponsavelSolicitacoes (3 campos pessoais):
+    - manutencaoPredialEmail
+    - realocacaoPessoasEmail
+    - servicosExternosEmail
+
+  Ntl.parametroSistema (5 campos pessoais):
+    - cnpj
+    - dataAlteracao
+    - email
+    - nome
+    - usuarioAlteracao
+
+  Ntl.periodoRenovacao (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.periodoVigencia (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.pisConfisCs (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.planejamentoDemissaoComprovante (5 campos pessoais):
+    - dataAlteracao
+    - fileNamePdf
+    - planejamentoDemissao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.portal (4 campos pessoais):
+    - dataAlteracao
+    - endereco
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.posto (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.pregao (5 campos pessoais):
+    - dataAlteracao
+    - numeroPregao
+    - orgaoLicitante
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.pregaoDocumento (2 campos pessoais):
+    - endereco
+    - nomeArquivo
+
+  Ntl.produto (4 campos pessoais):
+    - convenioSaude
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.produtoServico (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.projeto (95 campos pessoais):
+    - abrilImpedidoFerias
+    - abrilMelhorFerias
+    - abrilPiorFerias
+    - agostoImpedidoFerias
+    - agostoMelhorFerias
+    - agostoPiorFerias
+    - bairro
+    - bancoHoras
+    - bloquearIpDivergente
+    - bloqueiaFolga
+    - cep
+    - cidade
+    - cnpj
+    - coberturaFerias
+    - codigoCliente
+    - codigoContrato
+    - compensaHorario
+    - complemento
+    - contrato
+    - contratoSYSGEF
+    - dataAlteracao
+    - dataInicioContrato
+    - descontoFeriasVAVR
+    - descontoFeriasVT
+    - descontoFolhaPlanoSaude
+    - dezembroImpedidoFerias
+    - dezembroMelhorFerias
+    - dezembroPiorFerias
+    - diaMaximoAlteracaoFolga
+    - domingoImpedidoFerias
+    - emailProtocoloPonto
+    - endereco
+    - enviaEmailFeriasFuncionario
+    - estado
+    - feriasDpFimPeriodo
+    - feriasFracionadas
+    - feriasFuncionarioFimPeriodo
+    - feriasGestorFimPeriodo
+    - feriasPlanejadas
+    - fevereiroImpedidoFerias
+    - fevereiroMelhorFerias
+    - fevereiroPiorFerias
+    - implantacaoBancoHoras
+    - implantacaoEnderecoEntrega
+    - implantacaoFeriasFracionadas
+    - implantacaoMunicipioDiasUteis
+    - implantacaoMunicipioDiasUteisVT
+    - implantacaoValidadeAso
+    - imprimeCargo
+    - informacaoFolhaPonto
+    - janeiroImpedidoFerias
+    - janeiroMelhorFerias
+    - janeiroPiorFerias
+    - julhoImpedidoFerias
+    - julhoMelhorFerias
+    - julhoPiorFerias
+    - junhoImpedidoFerias
+    - junhoMelhorFerias
+    - junhoPiorFerias
+    - liberacaoAbonoPeriodo
+    - liberacaoDecimoAdiantado
+    - maioImpedidoFerias
+    - maioMelhorFerias
+    - maioPiorFerias
+    - marcoImpedidoFerias
+    - marcoMelhorFerias
+    - marcoPiorFerias
+    - municipioFerias
+    - novembroImpedidoFerias
+    - novembroMelhorFerias
+    - novembroPiorFerias
+    - numeroCentroCusto
+    - numeroEndereco
+    - outubroImpedidoFerias
+    - outubroMelhorFerias
+    - outubroPiorFerias
+    - periodicidadeAvaliacao
+    - quantidadeMaximaAlteracaoFolga
+    - quartaImpedidoFerias
+    - quintaImpedidoFerias
+    - reciboFerias
+    - sabadoImpedidoFerias
+    - segundaImpedidoFerias
+    - setembroImpedidoFerias
+    - setembroMelhorFerias
+    - setembroPiorFerias
+    - sextaImpedidoFerias
+    - tempoCancelamentoFerias
+    - tempoConfirmacaoFerias
+    - tercaImpedidoFerias
+    - tipoContrato
+    - usuarioAlteracao
+    - usuarioCadastro
+    - validadeAso
+    - valorDescontoFolhaPlanoSaude
+
+  Ntl.projetoCargoSalario (10 campos pessoais):
+    - adicionalNoturno
+    - cargo
+    - cargoSindicato
+    - formacao
+    - percentualAdicionalNoturno
+    - piso
+    - remuneracao
+    - requisitosCargo
+    - salario
+    - usuarioReajuste
+
+  Ntl.projetoCargoSalarioHistorico (9 campos pessoais):
+    - cargo
+    - cargoSindicato
+    - codigoCargoSalario
+    - formacao
+    - piso
+    - requisitosCargo
+    - salario
+    - tipoAlteracao
+    - usuarioReajuste
+
+  Ntl.projetoContato (9 campos pessoais):
+    - departamento
+    - email
+    - fileNameContato
+    - filePathContato
+    - fileTypeContato
+    - funcao
+    - nome
+    - telefone
+    - telefoneRecado
+
+  Ntl.projetoContatoHistorico (8 campos pessoais):
+    - codigoContato
+    - departamento
+    - email
+    - funcao
+    - nome
+    - telefone
+    - telefoneRecado
+    - tipoAlteracao
+
+  Ntl.projetoEmail (4 campos pessoais):
+    - departamentoEmail
+    - email
+    - funcaoEmail
+    - nomeEmail
+
+  Ntl.projetoFaturamento (9 campos pessoais):
+    - bairroFaturamento
+    - cepFaturamento
+    - cidadeFaturamento
+    - cnpjFaturamento
+    - complementoFaturamento
+    - logradouroFaturamento
+    - numeroFaturamento
+    - pisConfisCs
+    - ufFaturamento
+
+  Ntl.projetoFaturamentoHistorico (9 campos pessoais):
+    - bairroFaturamento
+    - cepFaturamento
+    - cidadeFaturamento
+    - cnpjFaturamento
+    - complementoFaturamento
+    - logradouroFaturamento
+    - numeroFaturamento
+    - tipoAlteracao
+    - ufFaturamento
+
+  Ntl.projetoHistorico (83 campos pessoais):
+    - abrilImpedidoFerias
+    - abrilMelhorFerias
+    - abrilPiorFerias
+    - agostoImpedidoFerias
+    - agostoMelhorFerias
+    - agostoPiorFerias
+    - bairro
+    - bancoHoras
+    - bloquearIpDivergente
+    - bloqueiaFolga
+    - cep
+    - cidade
+    - cnpj
+    - compensaHorario
+    - complemento
+    - contrato
+    - contratoSYSGEF
+    - dataAlteracao
+    - dataInicioContrato
+    - descontoFeriasVAVR
+    - descontoFeriasVT
+    - descontoFolhaPlanoSaude
+    - dezembroImpedidoFerias
+    - dezembroMelhorFerias
+    - dezembroPiorFerias
+    - diaMaximoAlteracaoFolga
+    - domingoImpedidoFerias
+    - emailProtocoloPonto
+    - endereco
+    - enviaEmailFeriasFuncionario
+    - estado
+    - feriasFracionadas
+    - fevereiroImpedidoFerias
+    - fevereiroMelhorFerias
+    - fevereiroPiorFerias
+    - implantacaoBancoHoras
+    - implantacaoEnderecoEntrega
+    - implantacaoFeriasFracionadas
+    - implantacaoMunicipioDiasUteis
+    - implantacaoMunicipioDiasUteisVT
+    - implantacaoValidadeAso
+    - imprimeCargo
+    - janeiroImpedidoFerias
+    - janeiroMelhorFerias
+    - janeiroPiorFerias
+    - julhoImpedidoFerias
+    - julhoMelhorFerias
+    - julhoPiorFerias
+    - junhoImpedidoFerias
+    - junhoMelhorFerias
+    - junhoPiorFerias
+    - maioImpedidoFerias
+    - maioMelhorFerias
+    - maioPiorFerias
+    - marcoImpedidoFerias
+    - marcoMelhorFerias
+    - marcoPiorFerias
+    - municipioFerias
+    - novembroImpedidoFerias
+    - novembroMelhorFerias
+    - novembroPiorFerias
+    - numeroCentroCusto
+    - numeroEndereco
+    - outubroImpedidoFerias
+    - outubroMelhorFerias
+    - outubroPiorFerias
+    - periodicidadeAvaliacao
+    - quantidadeMaximaAlteracaoFolga
+    - quartaImpedidoFerias
+    - quintaImpedidoFerias
+    - sabadoImpedidoFerias
+    - segundaImpedidoFerias
+    - setembroImpedidoFerias
+    - setembroMelhorFerias
+    - setembroPiorFerias
+    - sextaImpedidoFerias
+    - tempoCancelamentoFerias
+    - tempoConfirmacaoFerias
+    - tercaImpedidoFerias
+    - usuarioAlteracao
+    - usuarioCadastro
+    - validadeAso
+    - valorDescontoFolhaPlanoSaude
+
+  Ntl.projetoHorarioCobertura (4 campos pessoais):
+    - dataAlteracao
+    - departamento
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.projetoResponsavelCliente (2 campos pessoais):
+    - nomeClienteLogin
+    - responsavelClienteLogin
+
+  Ntl.projetoResponsavelClienteHistorico (4 campos pessoais):
+    - codigoCliente
+    - nomeClienteLogin
+    - responsavelClienteLogin
+    - tipoAlteracao
+
+  Ntl.projetoResponsavelHistorico (2 campos pessoais):
+    - responsavelLogin
+    - tipoAlteracao
+
+  Ntl.projetoTelefone (4 campos pessoais):
+    - departamentoTelefone
+    - funcaoTelefone
+    - nomeTelefone
+    - telefone
+
+  Ntl.projetoTelefoneHistorico (5 campos pessoais):
+    - codigoTelefone
+    - departamentoTelefone
+    - funcaoTelefone
+    - nomeTelefone
+    - telefone
+
+  Ntl.protocoloRecebimentoDocumento (4 campos pessoais):
+    - dataAlteracao
+    - fileNamePdf
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.remuneracao (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.reservaSala (3 campos pessoais):
+    - desejaMicrofone
+    - duracaoReuniao
+    - qndMicrofone
+
+  Ntl.responsavel (5 campos pessoais):
+    - dataAlteracao
+    - nome
+    - telefone
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.responsavelDenuncia (2 campos pessoais):
+    - email
+    - responsavelDenunciaNome
+
+  Ntl.servico (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.sindicato (28 campos pessoais):
+    - abateBancoHoras
+    - adicionalNoturno
+    - bairro
+    - cep
+    - cidade
+    - cnpj
+    - complemento
+    - dataAlteracao
+    - descontarFeriasCestaBasica
+    - descontoFeriasAlimentacao
+    - descontoFeriasRefeicao
+    - estado
+    - horaFinalAdicionalNoturno
+    - horaInicialAdicionalNoturno
+    - logradouro
+    - numeroEndereco
+    - numeroRep
+    - observacaoAuxilioSaude
+    - percentualAuxilioSaude
+    - percentualBolsaPlanoSaude
+    - percentualHoraExtraDomingoFeriadoNoturno
+    - percentualHoraExtraSegundaSabadoNoturno
+    - prazoAgendamentoFolga
+    - tipoLogradouro
+    - usuarioAlteracao
+    - usuarioCadastro
+    - valorAuxilioSaude
+    - valorBolsaPlanoSaude
+
+  Ntl.sindicatoCargoSalario (3 campos pessoais):
+    - cargo
+    - cboNumero
+    - salario
+
+  Ntl.sindicatoTelefone (4 campos pessoais):
+    - departamento
+    - descricaoDepartamento
+    - nome
+    - telefone
+
+  Ntl.situacao (5 campos pessoais):
+    - corFonte
+    - corFundo
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.status (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.statusEntrevista (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.statusSolicitacao (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.subDenuncia (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.tarefa (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.tarefaProjeto (2 campos pessoais):
+    - dataAlteracao
+    - nomeTarefa
+
+  Ntl.tarefaProjetoNovo (3 campos pessoais):
+    - dataAlteracao
+    - nomeTarefa
+    - pai
+
+  Ntl.tipoArquivo (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.tipoCartao (5 campos pessoais):
+    - dataAlteracao
+    - municipio
+    - uf
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.tipoContrato (5 campos pessoais):
+    - codigoCliente
+    - dataAlteracao
+    - descricaoContrato
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.tipoDenuncia (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.tipoFeriado (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.tipoObrigacaoAcessoria (7 campos pessoais):
+    - dataAlteracao
+    - diaVencimento
+    - duracao
+    - recorrencia
+    - recorrente
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.tipoReajuste (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.tipoRevezamento (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.tipoSistema (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.tipoSolicitacao (6 campos pessoais):
+    - dataAlteracao
+    - departamento
+    - nome
+    - usuarioAlteracao
+    - usuarioCadastro
+    - usuarioEmail
+
+  Ntl.tipoSolicitacaoArquivo (2 campos pessoais):
+    - nome
+    - usuario
+
+  Ntl.torre (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.unidade (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.unidadeFederacao (5 campos pessoais):
+    - codigoCliente
+    - dataAlteracao
+    - unidadeFederacao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.usuario (11 campos pessoais):
+    - contador
+    - dataAlteracao
+    - email
+    - login
+    - nomeUsuario
+    - restaurarSenha
+    - senha
+    - senhaAnterior
+    - tipoUsuario
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.usuarioGrupo (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.usuarioGrupoHistorico (2 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+
+  Ntl.usuarioHistorico (10 campos pessoais):
+    - dataAlteracao
+    - email
+    - login
+    - nomeUsuario
+    - restaurarSenha
+    - senha
+    - senhaAnterior
+    - tipoUsuario
+    - usuario
+    - usuarioAlteracao
+
+  Ntl.valeTransporteModal (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.valeTransporteUnitario (5 campos pessoais):
+    - dataAlteracao
+    - municipio
+    - unidadeFederacao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.vinculoTela (4 campos pessoais):
+    - dataAlteracao
+    - nomeTela
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Ntl.vinculoTelaLink (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Sat.acompanhamentoChamado (2 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+
+  Sat.analista (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Sat.atribuicaoChamado (5 campos pessoais):
+    - cliente
+    - ferias
+    - folga
+    - numeroChamado
+    - numeroChamadoId
+
+  Sat.atribuicaoChamadoDetalhe (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Sat.chamado (15 campos pessoais):
+    - bairro
+    - cep
+    - cidade
+    - cliente
+    - clienteNtl
+    - complemento
+    - dataAlteracao
+    - logradouro
+    - nomeContato
+    - numeroLogradouro
+    - telefoneContato
+    - tipoLogradouro
+    - ufLogradouro
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Sat.cliente (12 campos pessoais):
+    - bairro
+    - cep
+    - cidade
+    - cnpj
+    - complemento
+    - dataAlteracao
+    - logradouro
+    - nome
+    - numero
+    - tipoLogradouro
+    - uf
+    - usuarioAlteracao
+
+  Sat.equipamento (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Sat.parametro (4 campos pessoais):
+    - asoObrigatório
+    - corpoEmail
+    - email
+    - senha
+
+  Sat.parceiro (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Sat.relatorioChromebook (12 campos pessoais):
+    - bairro
+    - cidade
+    - cliente
+    - codigoCliente
+    - dataAlteracao
+    - endereco
+    - numeroAtivo
+    - numeroChamadoId
+    - problemaEncontrado
+    - ufLogradouro
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Sat.relatorioDesktopNotebook (12 campos pessoais):
+    - bairro
+    - cidade
+    - cliente
+    - codigoCliente
+    - dataAlteracao
+    - endereco
+    - numeroAtivo
+    - numeroChamadoId
+    - numeroVersao
+    - ufLogradouro
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Sat.relatorioImpressora (12 campos pessoais):
+    - bairro
+    - cidade
+    - cliente
+    - codigoCliente
+    - dataAlteracao
+    - endereco
+    - numeroAtivo
+    - numeroChamadoId
+    - problemaEncontrado
+    - ufLogradouro
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Sat.relatorioMonitor (11 campos pessoais):
+    - bairro
+    - cidade
+    - cliente
+    - codigoCliente
+    - dataAlteracao
+    - endereco
+    - numeroAtivo
+    - numeroChamadoId
+    - ufLogradouro
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Sat.relatorioNtl (10 campos pessoais):
+    - cliente
+    - contato
+    - dataAlteracao
+    - endereco
+    - numeroAtivo
+    - numeroChamadoId
+    - problemaEncontrado
+    - telefone
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Sat.tabelaBasicaTorino (3 campos pessoais):
+    - cliente
+    - dataAlteracao
+    - usuario
+
+  Sat.torino (4 campos pessoais):
+    - cliente
+    - dataAlteracao
+    - ocorrencia
+    - usuario
+
+  Sat.usuario (9 campos pessoais):
+    - dataAlteracao
+    - email
+    - login
+    - nomeUsuario
+    - restauraSenha
+    - senha
+    - tipoUsuario
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  SaudeSegurancaTrabalho.LTCATParametro (4 campos pessoais):
+    - emailVencimento
+    - envioEmail1
+    - envioEmail2
+    - envioEmail3
+
+  SaudeSegurancaTrabalho.PCMSOParametro (4 campos pessoais):
+    - emailVencimento
+    - envioEmail1
+    - envioEmail2
+    - envioEmail3
+
+  SaudeSegurancaTrabalho.PGRParametro (4 campos pessoais):
+    - emailVencimento
+    - envioEmail1
+    - envioEmail2
+    - envioEmail3
+
+  SaudeSegurancaTrabalho.atestadoSaudeOcupacionalParametro (4 campos pessoais):
+    - emailVencimento
+    - envioEmail1
+    - envioEmail2
+    - envioEmail3
+
+  SaudeSegurancaTrabalho.ltcat (4 campos pessoais):
+    - dataAlteracao
+    - nome
+    - recorrente
+    - usuarioAlteracao
+
+  SaudeSegurancaTrabalho.ltcatUpload (2 campos pessoais):
+    - fileName
+    - usuarioCadastro
+
+  SaudeSegurancaTrabalho.pcmso (4 campos pessoais):
+    - dataAlteracao
+    - nome
+    - recorrente
+    - usuarioAlteracao
+
+  SaudeSegurancaTrabalho.pcmsoUpload (2 campos pessoais):
+    - fileName
+    - usuarioCadastro
+
+  SaudeSegurancaTrabalho.pgrRelatorio (4 campos pessoais):
+    - dataAlteracao
+    - nome
+    - recorrente
+    - usuarioAlteracao
+
+  SaudeSegurancaTrabalho.pgrRelatorioUpload (2 campos pessoais):
+    - fileName
+    - usuarioCadastro
+
+  SaudeSegurancaTrabalho.ppra (3 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  SaudeSegurancaTrabalho.ppraClassificacaoRiscos (5 campos pessoais):
+    - cargo
+    - complemento
+    - departamentoRiscos
+    - jornada
+    - numeroEmpregados
+
+  SaudeSegurancaTrabalho.ppraHistoricoClassificacaoRiscos (5 campos pessoais):
+    - cargo
+    - complemento
+    - jornada
+    - numeroEmpregados
+    - usuarioFechamento
+
+  SaudeSegurancaTrabalho.ppraHistoricoLevantamentoRiscosAmbiente (3 campos pessoais):
+    - departamento
+    - riscosConhecidos
+    - usuarioFechamento
+
+  SaudeSegurancaTrabalho.ppraLevantamentoRiscosAmbiente (2 campos pessoais):
+    - departamento
+    - riscosConhecidos
+
+  SaudeSegurancaTrabalho.ppraRelatorio (2 campos pessoais):
+    - fileName
+    - recorrente
+
+  Scf.controleDespesas (8 campos pessoais):
+    - banco
+    - contabil
+    - dataAlteracao
+    - encargos
+    - porcentagemBanco
+    - provisionamento
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Scf.controleDespesasAutomatico (8 campos pessoais):
+    - banco
+    - contabil
+    - dataAlteracao
+    - encargos
+    - porcentagemBanco
+    - provisionamento
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Scf.despesa (9 campos pessoais):
+    - dataAlteracao
+    - energiaEletrica
+    - pis
+    - provisaoFerias
+    - provisaoFgtsFerias
+    - provisaoInssFerias
+    - telefone
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Scf.receita (5 campos pessoais):
+    - dataAlteracao
+    - retencaoPis
+    - retencaoPisCumulativa
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Scf.usuario (8 campos pessoais):
+    - dataAlteracao
+    - login
+    - nomeUsuario
+    - restauraSenha
+    - senha
+    - tipoUsuario
+    - usuarioAlteracao
+    - usuarioCadastro
+
+  Solicitacao.acompanhamento (2 campos pessoais):
+    - dataAlteracao
+    - usuarioAlteracao
+
+  Solicitacao.solicitacao (8 campos pessoais):
+    - dataAlteracao
+    - dataHoraSolucao
+    - departamento
+    - email
+    - emailAtribuido
+    - horaSolucionado
+    - usuarioAlteracao
+    - usuarioAtribuido
+
+  Solicitacao.solicitacaoAtendimento (8 campos pessoais):
+    - acompanharEmail
+    - dataAlteracao
+    - dataHoraSolucao
+    - departamento
+    - emailAtribuido
+    - emailSolicitante
+    - usuarioAlteracao
+    - usuarioAtribuido

@@ -1,0 +1,341 @@
+============================================================
+  DADOS FINANCEIROS
+============================================================
+
+  Destino LDAP: NAO - Manter APENAS no MySQL (acesso restrito)
+  Colunas encontradas: 123
+
+  CAMPOS UNICOS ENCONTRADOS (52):
+  ------------------------------------------------------------
+
+  abateBancoHoras
+    Tipo: bit
+    Presente em 2 tabelas:
+      - Ntl.lancamento
+      - Ntl.sindicato
+
+  agenciaBanco
+    Tipo: varchar
+    Presente em 5 tabelas:
+      - Contratacao.candidato
+      - Ntl.alteraInformacoes
+      - Ntl.fornecedorDadosBancarios
+      - Ntl.funcionario
+      - Ntl.funcionarioHistorico
+
+  banco
+    Tipo: varchar
+    Presente em 6 tabelas:
+      - Faturamento.importacaoContasPagar
+      - Ntl.alteraInformacoes
+      - Ntl.funcionario
+      - Ntl.funcionarioHistorico
+      - Scf.controleDespesas
+      - Scf.controleDespesasAutomatico
+
+  banco_agencia
+    Tipo: int
+    Presente em 1 tabelas:
+      - Ntl.cadastroInicial
+
+  bancoHoras
+    Tipo: bit
+    Presente em 10 tabelas:
+      - Implantacao.funcionario
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.funcionario
+      - Ntl.funcionarioHistorico
+      - Ntl.importacaoVinculoBeneficio
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  chavePix
+    Tipo: varchar
+    Presente em 4 tabelas:
+      - Contratacao.candidato
+      - Ntl.alteraInformacoes
+      - Ntl.funcionario
+      - Ntl.funcionarioHistorico
+
+  codigoBanco
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.banco
+
+  codigoContato
+    Tipo: int
+    Presente em 1 tabelas:
+      - Ntl.projetoContatoHistorico
+
+  conta
+    Tipo: varchar
+    Presente em 2 tabelas:
+      - Faturamento.importacaoConciliacaoBancaria
+      - Faturamento.importacaoContasPagar
+
+  conta_deposito
+    Tipo: int
+    Presente em 1 tabelas:
+      - Ntl.cadastroInicial
+
+  contaBanco
+    Tipo: varchar
+    Presente em 3 tabelas:
+      - Ntl.alteraInformacoes
+      - Ntl.funcionario
+      - Ntl.funcionarioHistorico
+
+  contabil
+    Tipo: decimal
+    Presente em 2 tabelas:
+      - Scf.controleDespesas
+      - Scf.controleDespesasAutomatico
+
+  contador
+    Tipo: bit
+    Presente em 1 tabelas:
+      - Ntl.usuario
+
+  contaPg
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Faturamento.importacaoContasPagar
+
+  contato
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Sat.relatorioNtl
+
+  contaVinculada
+    Tipo: bit
+    Presente em 2 tabelas:
+      - Faturamento.contrato
+      - Ntl.contrato
+
+  dataVencimento
+    Tipo: datetime
+    Presente em 4 tabelas:
+      - Estoque.entradaMaterialFormaPagamento
+      - Faturamento.solicitacao
+      - Ntl.obrigacaoAcessoriaEnvios
+      - Ntl.obrigacaoAcessoriaVencimentos
+
+  descontarCestaBasica
+    Tipo: int
+    Presente em 1 tabelas:
+      - Beneficio.afastamento
+
+  descontarTransporte
+    Tipo: int
+    Presente em 3 tabelas:
+      - Beneficio.afastamento
+      - Beneficio.folga
+      - Funcionario.folgaFolhaPonto
+
+  descontarVAVR
+    Tipo: int
+    Presente em 3 tabelas:
+      - Beneficio.afastamento
+      - Beneficio.folga
+      - Funcionario.folgaFolhaPonto
+
+  descontaVAVR
+    Tipo: bit
+    Presente em 1 tabelas:
+      - Funcionario.planejamentoDemissao
+
+  descontaVT
+    Tipo: bit
+    Presente em 1 tabelas:
+      - Funcionario.planejamentoDemissao
+
+  diaVencimento
+    Tipo: int
+    Presente em 1 tabelas:
+      - Ntl.tipoObrigacaoAcessoria
+
+  digitoAgenciaBanco
+    Tipo: varchar
+    Presente em 5 tabelas:
+      - Contratacao.candidato
+      - Ntl.alteraInformacoes
+      - Ntl.fornecedorDadosBancarios
+      - Ntl.funcionario
+      - Ntl.funcionarioHistorico
+
+  digitoContaBanco
+    Tipo: varchar
+    Presente em 5 tabelas:
+      - Contratacao.candidato
+      - Ntl.alteraInformacoes
+      - Ntl.fornecedorDadosBancarios
+      - Ntl.funcionario
+      - Ntl.funcionarioHistorico
+
+  filePathContato
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.projetoContato
+
+  fileTypeContato
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.projetoContato
+
+  fk_banco
+    Tipo: int
+    Presente em 2 tabelas:
+      - Contratacao.candidato
+      - Ntl.fornecedorDadosBancarios
+
+  funcionarioSalario
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Funcionario.importarAvisoFeriasExportado
+
+  implantacaoBancoHoras
+    Tipo: bit
+    Presente em 4 tabelas:
+      - Ntl.departamento
+      - Ntl.empresa
+      - Ntl.projeto
+      - Ntl.projetoHistorico
+
+  inicioBancoHoras
+    Tipo: datetime
+    Presente em 4 tabelas:
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+      - Ntl.funcionario
+      - Ntl.funcionarioHistorico
+
+  porcentagemBanco
+    Tipo: decimal
+    Presente em 2 tabelas:
+      - Scf.controleDespesas
+      - Scf.controleDespesasAutomatico
+
+  possuiContaBancaria
+    Tipo: bit
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
+  salario
+    Tipo: decimal
+    Presente em 7 tabelas:
+      - Faturamento.gastosFuncionarioPlanejado
+      - Faturamento.gastosFuncionarioReal
+      - Ntl.cadastroInicial
+      - Ntl.cargo
+      - Ntl.projetoCargoSalario
+      - Ntl.projetoCargoSalarioHistorico
+      - Ntl.sindicatoCargoSalario
+
+  salarioBase
+    Tipo: decimal
+    Presente em 5 tabelas:
+      - Contratacao.controleFuncionario
+      - Contratacao.solicitacaoRecursos
+      - Contratacao.solicitacaoRecursosHistorico
+      - Contratacao.solicitacaoRecursosInterno
+      - Implantacao.funcionario
+
+  salarioDiaria
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.solicitacaoRecursosInterno
+
+  salarioFgts
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Funcionario.folhaDePagamento
+
+  salarioFuncionario
+    Tipo: decimal
+    Presente em 2 tabelas:
+      - Ntl.beneficioProjeto
+      - Ntl.beneficioProjetoHistorico
+
+  salarioHora
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Contratacao.solicitacaoRecursosInterno
+
+  salarioInss
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Funcionario.folhaDePagamento
+
+  salarioLiquido
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Funcionario.folhaDePagamento
+
+  salarioMensalista
+    Tipo: decimal
+    Presente em 1 tabelas:
+      - Funcionario.contrachequeSalarioMensalista
+
+  tipo_conta
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Ntl.cadastroInicial
+
+  tipoConta
+    Tipo: int
+    Presente em 3 tabelas:
+      - Contratacao.candidato
+      - Faturamento.importacaoConciliacaoBancaria
+      - Ntl.fornecedorDadosBancarios
+
+  tipoContaBanco
+    Tipo: int
+    Presente em 3 tabelas:
+      - Ntl.alteraInformacoes
+      - Ntl.funcionario
+      - Ntl.funcionarioHistorico
+
+  tipoContagemDias
+    Tipo: int
+    Presente em 2 tabelas:
+      - Ntl.lancamento
+      - Ntl.lancamentoSindicato
+
+  tipoPix
+    Tipo: int
+    Presente em 4 tabelas:
+      - Contratacao.candidato
+      - Ntl.alteraInformacoes
+      - Ntl.funcionario
+      - Ntl.funcionarioHistorico
+
+  totalVencimento
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Funcionario.folhaDePagamento
+
+  variacaoBanco
+    Tipo: varchar
+    Presente em 3 tabelas:
+      - Ntl.alteraInformacoes
+      - Ntl.funcionario
+      - Ntl.funcionarioHistorico
+
+  vencimento
+    Tipo: varchar
+    Presente em 1 tabelas:
+      - Faturamento.importacaoContasPagar
+
+  vencimentoNf
+    Tipo: date
+    Presente em 1 tabelas:
+      - Faturamento.importacaoReceber
+
+  verificaDadoContato
+    Tipo: int
+    Presente em 1 tabelas:
+      - Contratacao.candidato
+
